@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { MobileBar } from "@/components/layout/MobileBar";
 import { MobileSearchSheet } from "@/components/booking/MobileSearchSheet";
 import { QuickView } from "@/components/booking/QuickView";
+import { PreviewGate } from "@/components/PreviewGate";
 import { site } from "@/content/site";
 import { asset } from "@/lib/basePath";
 import "./globals.css";
@@ -64,6 +65,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <MobileBar />
           <MobileSearchSheet />
           <QuickView />
+          {/* No price quoted yet: Approve concept + Book a call instead of checkout. */}
+          <PreviewGate site="girls-getaways" staffPath="/staff-2d44f8" clientName="Girls Getaways" cta="call" />
         </BookingProvider>
       </body>
     </html>
