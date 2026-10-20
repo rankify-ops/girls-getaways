@@ -13,3 +13,6 @@ scrape/*.html
 
 # third-party audit working files (client IDs — keep out of the public repo)
 audit
+
+.vercel
+.env*
