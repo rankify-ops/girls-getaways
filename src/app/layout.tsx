@@ -1,11 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
-import { BookingProvider } from "@/lib/booking";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
-import { MobileBar } from "@/components/layout/MobileBar";
-import { MobileSearchSheet } from "@/components/booking/MobileSearchSheet";
-import { QuickView } from "@/components/booking/QuickView";
 import { site } from "@/content/site";
 import { asset } from "@/lib/basePath";
 import "./globals.css";
@@ -56,16 +50,7 @@ export const viewport: Viewport = { themeColor: "#fffdfc" };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-AU" className={`${inter.variable} ${serif.variable}`}>
-      <body>
-        <BookingProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <MobileBar />
-          <MobileSearchSheet />
-          <QuickView />
-        </BookingProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
