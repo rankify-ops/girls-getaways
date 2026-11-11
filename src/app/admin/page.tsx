@@ -31,12 +31,13 @@ export default async function AdminDashboard() {
         </Link>
       }
     >
-      {source === "seed" && (
+      {source === "captured" && (
         <div className="adm-banner mb-5">
           <ISparkle size={18} />
           <span className="min-w-0">
-            <b>Preview mode.</b> The database isn&apos;t connected yet, so this is showing the{" "}
-            {packages.length} packages captured from the current website. Nothing saves until Supabase is wired in.
+            <b>Read-only preview.</b> All {packages.length} packages from the live website, exactly as the site
+            renders them. Editing and publishing live in the Rankify portal, which owns the logins and keeps a
+            record of every change — this is here so you can see the shape of it first.
           </span>
         </div>
       )}

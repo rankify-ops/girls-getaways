@@ -2,8 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Shell } from "@/components/admin/Shell";
 import { PackageEditor } from "@/components/admin/PackageEditor";
-import { getPackages, seedImageName } from "@/lib/admin-data";
-import { asset } from "@/lib/basePath";
+import { getPackages } from "@/lib/admin-data";
 import { destinations, STYLES } from "@/content/site";
 
 export const revalidate = 0;
@@ -20,7 +19,7 @@ export default async function EditPackage({ params }: { params: Promise<{ slug: 
   const pkg = data.find((p) => p.slug === slug);
   if (!pkg) notFound();
 
-  const image = pkg.heroImage ?? (seedImageName(pkg.slug) ? asset(`/img/${seedImageName(pkg.slug)}-1600.webp`) : null);
+  const image = pkg.heroImage ? `${pkg.heroImage}?format=1500w` : null;
 
   return (
     <Shell
@@ -35,7 +34,7 @@ export default async function EditPackage({ params }: { params: Promise<{ slug: 
       <PackageEditor
         pkg={pkg}
         image={image}
-        readOnly={source === "seed"}
+        readOnly={source !== "database"}
         destinations={destinations.map((d) => ({ slug: d.slug, name: d.name }))}
         styles={[...STYLES]}
       />

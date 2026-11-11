@@ -88,22 +88,40 @@ export function PackageEditor({ pkg, image, readOnly, destinations, styles }: Pr
 
         <section className="adm-card adm-card-pad grid gap-4">
           <h2 className="adm-display text-[21px]">Pricing &amp; group size</h2>
-          <div className="grid gap-4 sm:grid-cols-3">
-            <div>
-              <label className="adm-label" htmlFor="pk-price">From (per person)</label>
-              <input id="pk-price" className="adm-field" inputMode="decimal" value={form.priceFrom} disabled={readOnly}
-                placeholder="Leave blank for “on request”" onChange={(e) => set("priceFrom", e.target.value)} />
+          {/* Price per group size is the real pricing model — there is no single
+              "from" figure to edit, and the group range is read off this table
+              rather than stored separately where it could drift. */}
+          <div>
+            <span className="adm-label">Price per group size</span>
+            <div className="overflow-hidden rounded-[var(--a-r-md)] border border-[var(--a-line)]">
+              <table className="w-full text-[13.5px]">
+                <thead>
+                  <tr className="bg-[var(--a-subtle)] text-left text-[11px] uppercase tracking-[0.12em] text-[var(--a-ink-500)]">
+                    <th scope="col" className="px-4 py-2 font-semibold">No. of girls</th>
+                    <th scope="col" className="px-4 py-2 text-right font-semibold">Price per person</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {pkg.priceTable.map((r, i) => (
+                    <tr key={`${r.girls}-${r.price}-${i}`} className="border-t border-[var(--a-line)]">
+                      <td className="px-4 py-2 text-[var(--a-ink-700)]">{r.girls}</td>
+                      <td className="px-4 py-2 text-right tabular-nums text-[var(--a-ink-900)]">
+                        ${r.price.toLocaleString("en-AU")}
+                      </td>
+                    </tr>
+                  ))}
+                  {pkg.priceTable.length === 0 && (
+                    <tr>
+                      <td colSpan={2} className="px-4 py-3 text-[var(--a-ink-400)]">Price on request</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
             </div>
-            <div>
-              <label className="adm-label" htmlFor="pk-gmin">Min girls</label>
-              <input id="pk-gmin" className="adm-field" inputMode="numeric" value={form.guestsMin} disabled={readOnly}
-                onChange={(e) => set("guestsMin", e.target.value)} />
-            </div>
-            <div>
-              <label className="adm-label" htmlFor="pk-gmax">Max girls</label>
-              <input id="pk-gmax" className="adm-field" inputMode="numeric" value={form.guestsMax} disabled={readOnly}
-                onChange={(e) => set("guestsMax", e.target.value)} />
-            </div>
+            <p className="adm-hint">
+              {pkg.priceTable.length} group sizes · lowest ${Math.min(...pkg.priceTable.map((r) => r.price)).toLocaleString("en-AU")} pp.
+              A size can appear twice where a package offers two kinds of accommodation.
+            </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <div>

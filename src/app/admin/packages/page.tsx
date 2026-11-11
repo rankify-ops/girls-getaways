@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Shell } from "@/components/admin/Shell";
 import { IPlus } from "@/components/admin/AdminIcons";
-import { getPackages, placeLabel, priceLabel, seedImageName } from "@/lib/admin-data";
+import { getPackages, placeLabel, priceLabel } from "@/lib/admin-data";
 import { PackageBrowser } from "@/components/admin/PackageBrowser";
-import { asset } from "@/lib/basePath";
 
 export const metadata = { title: "Packages" };
 export const revalidate = 0;
@@ -11,11 +10,11 @@ export const revalidate = 0;
 export default async function PackagesPage() {
   const { data, source } = await getPackages();
 
-  // The seed has no uploaded hero yet, so fall back to the optimised local
-  // photography the public site already ships.
   const cards = data.map((p) => ({
     ...p,
-    image: p.heroImage ?? (seedImageName(p.slug) ? asset(`/img/${seedImageName(p.slug)}-800.webp`) : null),
+    // Their photography is still served from Squarespace until the portal
+    // owns the files; ask for a card-sized rendition rather than the original.
+    image: p.heroImage ? `${p.heroImage}?format=750w` : null,
     place: placeLabel(p),
     price: priceLabel(p),
   }));
@@ -23,7 +22,7 @@ export default async function PackagesPage() {
   return (
     <Shell
       title="Packages"
-      subtitle={`${data.length} getaways${source === "seed" ? " · preview data" : ""}`}
+      subtitle={`${data.length} getaways${source === "captured" ? " · live catalogue, editing in the portal" : ""}`}
       actions={
         <Link href="/admin/packages/new" className="adm-btn adm-btn-rose">
           <IPlus size={16} /> New package
