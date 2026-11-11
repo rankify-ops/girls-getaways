@@ -34436,5 +34436,57 @@
     "type": "blog post"
    }
   ]
+ },
+ "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/14401bdb-6d88-4580-a8e6-756c5fce59ce/favicon.ico": {
+  "path": "brand/favicon-0a24ab04.ico",
+  "kind": "image",
+  "chrome": true,
+  "bytes": 2014,
+  "uses": [
+   {
+    "page": "site header/footer",
+    "type": "brand"
+   }
+  ],
+  "seen_on_pages": 341
+ },
+ "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1627795612284-1B46TY8MVNBAEJE8CJB7/GIRLS+GETAWAYS+WORDMARK-03.png": {
+  "path": "brand/GIRLS-GETAWAYS-WORDMARK-03-9fd40d98.png",
+  "kind": "image",
+  "chrome": true,
+  "bytes": 157755,
+  "uses": [
+   {
+    "page": "site header/footer",
+    "type": "brand"
+   }
+  ],
+  "seen_on_pages": 341
+ },
+ "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/244a2eab-9347-4664-85f4-2ffab5853982/1280px-HD_transparent_picture.png": {
+  "path": "brand/1280px-HD_transparent_picture-9ff7ec91.png",
+  "kind": "image",
+  "chrome": true,
+  "bytes": 703,
+  "uses": [
+   {
+    "page": "site header/footer",
+    "type": "brand"
+   }
+  ],
+  "seen_on_pages": 341
+ },
+ "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/6afa0c0b-5e16-40a1-a5a8-083f1bbd99fe/EDM%2BHeader5.jpg": {
+  "path": "brand/EDM-Header5-9ab3a022.jpg",
+  "kind": "image",
+  "chrome": true,
+  "bytes": 60340,
+  "uses": [
+   {
+    "page": "site header/footer",
+    "type": "brand"
+   }
+  ],
+  "seen_on_pages": 341
  }
 }
