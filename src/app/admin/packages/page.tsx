@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Shell } from "@/components/admin/Shell";
 import { IPlus } from "@/components/admin/AdminIcons";
 import { getPackages, placeLabel, priceLabel } from "@/lib/admin-data";
+import { imageAt } from "@/lib/portal";
 import { PackageBrowser } from "@/components/admin/PackageBrowser";
 
 export const metadata = { title: "Packages" };
@@ -14,7 +15,7 @@ export default async function PackagesPage() {
     ...p,
     // Their photography is still served from Squarespace until the portal
     // owns the files; ask for a card-sized rendition rather than the original.
-    image: p.heroImage ? `${p.heroImage}?format=750w` : null,
+    image: imageAt(p.heroImage, 750),
     place: placeLabel(p),
     price: priceLabel(p),
   }));

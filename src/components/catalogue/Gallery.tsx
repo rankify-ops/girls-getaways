@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { IconClose, IconNext, IconPrev } from "@/components/ui/Icons";
+import { imageAt } from "@/lib/portal";
 
 /**
  * A package's photography.
@@ -43,7 +44,7 @@ export function Gallery({ images, title }: { images: string[]; title: string }) 
               aria-label={`${title} — photo ${i + 1} of ${images.length}`}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={`${src}?format=750w`} alt="" loading="lazy" decoding="async" />
+              <img src={imageAt(src, 750)!} alt="" loading="lazy" decoding="async" />
             </button>
           </li>
         ))}
@@ -65,7 +66,7 @@ export function Gallery({ images, title }: { images: string[]; title: string }) 
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={`${images[open]}?format=2500w`}
+            src={imageAt(images[open], 2500)!}
             alt={`${title} — photo ${open + 1}`}
             className="max-h-[88svh] max-w-full rounded-[var(--rs)] object-contain"
             onClick={(e) => e.stopPropagation()}

@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { IconSearch, IconUsers, IconMoon, IconClose } from "@/components/ui/Icons";
-import { fromPrice, type PriceRow } from "@/lib/portal";
+import { fromPrice, imageAt, type PriceRow } from "@/lib/portal";
 import { pretty } from "@/lib/catalogue";
 
 /*
@@ -229,7 +229,7 @@ function PackageCard({ p }: { p: Card }) {
         {p.heroImage && (
           // Remote Squarespace photography until the portal owns the files.
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={`${p.heroImage}?format=1000w`} alt="" loading="lazy" decoding="async" />
+          <img src={imageAt(p.heroImage, 1000)!} alt="" loading="lazy" decoding="async" />
         )}
         <span aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/45 to-transparent" />
       </span>

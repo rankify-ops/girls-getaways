@@ -145,3 +145,17 @@ export async function fetchPackages(): Promise<PortalPackage[] | null> {
     return null;
   }
 }
+
+/**
+ * An image URL asking for roughly `width` pixels.
+ *
+ * Squarespace serves renditions off a `?format=NNNw` query; the portal's media
+ * store serves one fixed rendition per id and ignores the query, so adding one
+ * there is noise — and a cache-buster the day it stops being ignored. Galleries
+ * are still on Squarespace while the heroes have moved, so this has to handle
+ * both, and it stays in one place so the next host only changes it here.
+ */
+export function imageAt(url: string | null | undefined, width: number): string | null {
+  if (!url) return null;
+  return /(\/\/|\.)squarespace(-cdn)?\.com\//.test(url) ? `${url}?format=${width}w` : url;
+}

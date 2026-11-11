@@ -5,6 +5,7 @@ import {
   getCatalogue, getPackage, guestsText, packageHref, placeText, pretty, priceFromOf,
 } from "@/lib/catalogue";
 import { IconArrow, IconCheck, IconMoon, IconUsers } from "@/components/ui/Icons";
+import { imageAt } from "@/lib/portal";
 import { Gallery } from "@/components/catalogue/Gallery";
 import { EnquiryPanel } from "@/components/catalogue/EnquiryPanel";
 import { EnquiryForm } from "@/components/catalogue/EnquiryForm";
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: p.title,
       description: p.blurb ?? undefined,
-      images: p.heroImage ? [{ url: `${p.heroImage}?format=1200w` }] : undefined,
+      images: p.heroImage ? [{ url: imageAt(p.heroImage, 1200)! }] : undefined,
     },
   };
 }
@@ -56,7 +57,7 @@ export default async function PackagePage({ params }: { params: Promise<{ slug: 
         <div className="absolute inset-0 -z-10 overflow-hidden bg-ink">
           {p.heroImage && (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={`${p.heroImage}?format=2500w`} alt="" className="size-full object-cover" fetchPriority="high" />
+            <img src={imageAt(p.heroImage, 2500)!} alt="" className="size-full object-cover" fetchPriority="high" />
           )}
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(35,31,32,.5)_0%,rgba(35,31,32,.15)_38%,rgba(35,31,32,.72)_100%)]" />
         </div>
@@ -179,7 +180,7 @@ export default async function PackagePage({ params }: { params: Promise<{ slug: 
                     <span className="plate plate-zoom block aspect-[10/11] rounded-[var(--r)]">
                       {o.heroImage && (
                         // eslint-disable-next-line @next/next/no-img-element
-                        <img src={`${o.heroImage}?format=1000w`} alt="" loading="lazy" decoding="async" />
+                        <img src={imageAt(o.heroImage, 1000)!} alt="" loading="lazy" decoding="async" />
                       )}
                     </span>
                     <span className="serif mt-4 block text-[23px] leading-tight text-ink group-hover:text-clay-deep">

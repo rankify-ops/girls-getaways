@@ -4,6 +4,7 @@ import { Shell } from "@/components/admin/Shell";
 import { PackageEditor } from "@/components/admin/PackageEditor";
 import { getPackages } from "@/lib/admin-data";
 import { allStyles, destinations, getCatalogue } from "@/lib/catalogue";
+import { imageAt } from "@/lib/portal";
 
 export const revalidate = 0;
 
@@ -19,7 +20,7 @@ export default async function EditPackage({ params }: { params: Promise<{ slug: 
   const pkg = data.find((p) => p.slug === slug);
   if (!pkg) notFound();
 
-  const image = pkg.heroImage ? `${pkg.heroImage}?format=1500w` : null;
+  const image = imageAt(pkg.heroImage, 1500);
 
   return (
     <Shell
