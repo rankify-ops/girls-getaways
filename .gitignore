@@ -16,3 +16,6 @@ audit
 
 .vercel
 .env*
+
+# Package photography pulled off Squarespace — large, and the portal will own it
+assets-raw/packages

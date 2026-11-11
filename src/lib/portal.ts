@@ -119,6 +119,13 @@ export async function fetchPackages(): Promise<PortalPackage[] | null> {
     const body = (await res.json()) as { items?: ApiItem[] };
     if (!Array.isArray(body.items)) return null;
 
+    // An empty collection is a miss, not an answer. The collection can exist
+    // before its import has run, and `200 {"items": []}` is valid JSON — so
+    // trusting it would blank the catalogue and look like a site with no
+    // content rather than one waiting on an import. An empty catalogue is
+    // never the right answer for this client.
+    if (body.items.length === 0) return null;
+
     return body.items.map(mapItem).sort((a, b) => a.position - b.position);
   } catch {
     return null;
