@@ -19,7 +19,7 @@
       "name": "Mudgee",
       "state": "NSW",
       "blurb": "If you’re looking for wine and good times, escape to Mudgee with your girlfriends and embrace the town’s old-class charm and gourmet delights.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 8
     }
   },
@@ -31,7 +31,7 @@
       "name": "Gold Coast",
       "state": "QLD",
       "blurb": "One hour south of Brisbane, discover the magic of the Gold Coast’s glistening beaches, lush hinterland and idyllic seaside suburbs.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 7
     }
   },
@@ -43,7 +43,7 @@
       "name": "Hunter Valley",
       "state": "NSW",
       "blurb": "The centre of Hunter Valley wine country, scenic Pokolbin is a not-to-be-missed destination for ladies looking to do it all.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 7
     }
   },
@@ -55,7 +55,7 @@
       "name": "Noosa",
       "state": "QLD",
       "blurb": "With poolside cocktails and beachside banquets, Noosa is one of those dreamy getaway destinations not to be missed.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 7
     }
   },
@@ -67,7 +67,7 @@
       "name": "Byron Bay",
       "state": "NSW",
       "blurb": "Fall in love with the laid-back vibes of Australia’s favourite beach town. Byron Bay serves up sun, sand and serenity in spades.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 6
     }
   },
@@ -79,7 +79,7 @@
       "name": "Newcastle",
       "state": "NSW",
       "blurb": "The lively city of Newcastle, is a coastal treasure, featuring breathtaking beaches, a rich historical backdrop, and a wide array of exciting experiences for everyone to enjoy.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 6
     }
   },
@@ -91,7 +91,7 @@
       "name": "Port Stephens",
       "state": "NSW",
       "blurb": "A picturesque patch of coast just 2.5 hours drive north of Sydney, Port Stephens is an idyllic place for a weekend escape.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 6
     }
   },
@@ -103,7 +103,7 @@
       "name": "Brisbane",
       "state": "QLD",
       "blurb": "Riverside restaurants, rooftop bars, and glamorous accommodation await in Queensland’s sun-soaked capital of Brisbane.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 5
     }
   },
@@ -127,7 +127,7 @@
       "name": "Melbourne",
       "state": "VIC",
       "blurb": "Navigate your way through Melbourne’s vibrant laneways and city streets and you’ll find a mecca of all things trendy and tasty.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 4
     }
   },
@@ -139,7 +139,7 @@
       "name": "Mollymook",
       "state": null,
       "blurb": "With endless ocean views and exceptional regional dining, Mollymook is a charming holiday destination that will delight all of your senses.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 4
     }
   },
@@ -151,7 +151,7 @@
       "name": "Sunshine Coast",
       "state": "QLD",
       "blurb": "With pristine beaches framed by rainforests and mountain peaks, Queensland’s Sunshine Coast is a slice of paradise just waiting to be explored.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 4
     }
   },
@@ -163,7 +163,7 @@
       "name": "Sydney",
       "state": "NSW",
       "blurb": "With glistening harbour views, beautiful beaches and an attractive bar and dining scene, a Sydney girls weekend will be one to remember.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 4
     }
   },
@@ -175,7 +175,7 @@
       "name": "Gerringong",
       "state": "NSW",
       "blurb": "The perfect combination of coast and country, an escape to Gerringong is the ideal getaway for ladies who relax best by the sea.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 3
     }
   },
@@ -187,7 +187,7 @@
       "name": "Great Ocean Road",
       "state": "VIC",
       "blurb": "When it comes to weekend road trips, little compares to the rugged beauty, beaches, and incredible landscapes along Victoria’s Great Ocean Road.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 3
     }
   },
@@ -199,7 +199,7 @@
       "name": "Bali",
       "state": "Bali",
       "blurb": "Luxuriate in Canggu Bali, sample the best of Bali, private villas, day spas, natural waterfalls and iconic beach clubs you will never want to leave.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/69796a6489dac93a0ae03f1c/1785637878818/alternative+beach+Bali.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/69796a6489dac93a0ae03f1c/1785637878818/alternative+beach+Bali.jpg",
       "package_count": 2
     }
   },
@@ -223,7 +223,7 @@
       "name": "Blue Mountains",
       "state": "NSW",
       "blurb": "Be enchanted by the beauty of the Blue Mountains, home to World Heritage-listed wilderness, endless vistas and quaint villages.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
     }
   },
@@ -235,7 +235,7 @@
       "name": "Central Coast",
       "state": "NSW",
       "blurb": "Escape the city crowds and immerse yourselves in the nature and beauty of the Central Coast, situated an hour north of Sydney.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
     }
   },
@@ -247,7 +247,7 @@
       "name": "Gerroa",
       "state": null,
       "blurb": "The perfect combination of coast and country, an escape to Gerringong is the ideal getaway for ladies who relax best by the sea.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
     }
   },
@@ -259,7 +259,7 @@
       "name": "Jervis Bay",
       "state": "NSW",
       "blurb": "Famous for its white sand beaches and tranquil swimming and snorkeling spots, Jervis Bay on the NSW South Coast is a beach-lovers paradise.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
     }
   },
@@ -283,7 +283,7 @@
       "name": "Kiama",
       "state": null,
       "blurb": "For pure coastal bliss escape to the seaside town of Kiama, where days are spent hanging by the ocean and exploring local treasures.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
     }
   },
@@ -295,7 +295,7 @@
       "name": "Mornington Peninsula",
       "state": "VIC",
       "blurb": "One hour south of Melbourne, the Mornington Peninsula is a haven of beautiful coastlines, boutique wineries, renowned restaurants, and natural hot springs.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
     }
   },
@@ -307,7 +307,7 @@
       "name": "Orange",
       "state": "NSW",
       "blurb": "Quickly becoming the next must-visit wine region, the pretty country town of Orange is perfect for a gourmet girls’ weekend.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
     }
   },
@@ -319,7 +319,7 @@
       "name": "Sydney Surrounds",
       "state": "NSW",
       "blurb": "With tranquil bays, cool cafes and luxe day spas, Sydney’s surrounds certainly hit the spot if you’re looking for a relaxed-yet-chic getaway.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
     }
   },
@@ -343,7 +343,7 @@
       "name": "Western Australia",
       "state": null,
       "blurb": "Choose from some of the popular WA destinations, the coastal city of Fremantle & the unique Rottnest Island. Discover the Dunsborough & Margaret River Wine country, famous for beautiful wines and scenery.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
     }
   },
@@ -415,7 +415,7 @@
       "name": "Snowy Mountains",
       "state": "NSW",
       "blurb": "Home to Australia’s highest peak, the adventure wonderland is brimming with fun experiences, from thrilling downhill runs on pristine snow to music festivals, wine tasting, fascinating heritage",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 1
     }
   },
@@ -427,7 +427,7 @@
       "name": "South Australia",
       "state": null,
       "blurb": "From blue-water beaches to rolling vineyard hills, enjoy everything from wildlife to wine on a girls getaway in South Australia. Discover our range of getaways from the city to Adelaide Hills, Barossa, the beaches and beyond.",
-      "image": "http://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
+      "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 1
     }
   },

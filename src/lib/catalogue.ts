@@ -1,6 +1,6 @@
 import catalogueJson from "../../docs/portal-handoff/packages.json";
 import destinationsJson from "../../docs/portal-handoff/destinations.json";
-import { fetchPackages, fromPrice, type PortalPackage, type PriceRow } from "./portal";
+import { fetchPackages, fromPrice, https, type PortalPackage, type PriceRow } from "./portal";
 
 /*
  * The catalogue the website renders: all 123 packages captured from their
@@ -44,11 +44,11 @@ function fromCapture(item: RawItem, i: number): Package {
     guestsMin: sizes.length ? Math.min(...sizes) : num(d.guests_min),
     guestsMax: sizes.length ? Math.max(...sizes) : num(d.guests_max),
     nights: num(d.nights),
-    heroImage: str(d.hero_image),
+    heroImage: https(d.hero_image),
     inclusions: Array.isArray(d.inclusions) ? (d.inclusions as Package["inclusions"]) : [],
     styles: Array.isArray(d.styles) ? (d.styles as string[]) : [],
     position: item.position ?? i,
-    gallery: Array.isArray(d.gallery) ? (d.gallery as string[]) : [],
+    gallery: Array.isArray(d.gallery) ? (d.gallery as string[]).map((g) => https(g) ?? g) : [],
   };
 }
 
@@ -61,7 +61,7 @@ export const destinations: Destination[] = (destinationsJson as RawItem[]).map((
   name: str(d.data.name) ?? d.slug,
   state: str(d.data.state),
   blurb: str(d.data.blurb),
-  image: str(d.data.image),
+  image: https(d.data.image),
 }));
 
 const destName = new Map(destinations.map((d) => [d.slug, d.name]));

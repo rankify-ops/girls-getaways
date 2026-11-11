@@ -62,6 +62,20 @@ export function priceLabel(rows: PriceRow[] | undefined | null): string {
 }
 
 const str = (v: unknown): string | null => (typeof v === "string" && v.trim() ? v.trim() : null);
+
+/**
+ * Image URLs, always over https.
+ *
+ * Their photography was captured out of Squarespace as http://static1… and
+ * this site is served over https, which makes every one of those mixed
+ * content: some browsers upgrade it silently, others block it and the hero
+ * simply does not appear. Coerced here rather than trusted, because the
+ * fallback JSON and any future re-scrape can reintroduce the http form.
+ */
+export const https = (v: unknown): string | null => {
+  const u = str(v);
+  return u ? u.replace(/^http:\/\//i, "https://") : null;
+};
 const num = (v: unknown): number | null => (typeof v === "number" && Number.isFinite(v) ? v : null);
 
 /** One API item → the shape the site renders. Exported so it can be tested offline. */
@@ -88,7 +102,7 @@ export function mapItem(item: ApiItem, index = 0): PortalPackage {
     guestsMin: priceTable.length ? Math.min(...priceTable.map((r) => r.girls)) : num(d.guests_min),
     guestsMax: priceTable.length ? Math.max(...priceTable.map((r) => r.girls)) : num(d.guests_max),
     nights: num(d.nights),
-    heroImage: str(d.hero_image),
+    heroImage: https(d.hero_image),
     inclusions: rawInclusions
       .map((r) => ({ text: String(r.text ?? "").trim(), included: r.included !== false }))
       .filter((r) => r.text),

@@ -15,6 +15,7 @@ import { NextResponse } from "next/server";
 
 const BASE = process.env.PORTAL_API_BASE;
 const SITE_ID = process.env.PORTAL_SITE_ID;
+const WEB3FORMS_KEY = process.env.WEB3FORMS_KEY;
 
 const text = (v: unknown, max: number): string | undefined => {
   const s = typeof v === "string" ? v.trim() : "";
@@ -63,5 +64,55 @@ export async function POST(req: Request) {
 
   if (res.status === 429) return NextResponse.json({ error: "rate-limited" }, { status: 429 });
   if (!res.ok) return NextResponse.json({ error: "upstream" }, { status: 502 });
+
+  // Stored first, emailed second, never both at once.
+  //
+  // Parallel posts can disagree quietly, and the bad case reads as success: an
+  // email arrives for an enquiry that was never recorded, and whoever replies
+  // is answering something with no row behind it. Storing first means the
+  // email is always a notification about an enquiry that definitely exists.
+  //
+  // The email is a courtesy on top. If it fails the enquiry is already safe,
+  // so this never changes what the visitor is told — it is logged and dropped.
+  await notify({ name, email, phone, size, on, message: text(input.message, 4000), item: text(input.item, 200) });
+
   return new NextResponse(null, { status: 204 });
+}
+
+type Notice = {
+  name: string;
+  email?: string;
+  phone?: string;
+  size: number;
+  on?: string;
+  message?: string;
+  item?: string;
+};
+
+async function notify(n: Notice) {
+  if (!WEB3FORMS_KEY) return; // no key configured yet — the row is still stored
+  try {
+    await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "content-type": "application/json", accept: "application/json" },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: `New enquiry — ${n.item ?? "Girls Getaways"}`,
+        from_name: "Girls Getaways website",
+        // Web3Forms uses this for the reply-to, so a reply goes to the person
+        // who enquired rather than into the void.
+        email: n.email,
+        package: n.item ?? "—",
+        name: n.name,
+        phone: n.phone ?? "—",
+        girls: Number.isFinite(n.size) && n.size > 0 ? n.size : "—",
+        preferred_date: n.on ?? "—",
+        message: n.message ?? "—",
+        note: "Recorded in the portal at app.rankify.com.au — reply there, not to this email.",
+      }),
+      cache: "no-store",
+    });
+  } catch (err) {
+    console.error("enquiry stored but the notification email failed", err);
+  }
 }
