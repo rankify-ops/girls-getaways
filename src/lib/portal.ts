@@ -36,6 +36,7 @@ export type PortalPackage = {
   guestsMax: number | null;
   nights: number | null;
   heroImage: string | null;
+  gallery: string[];
   inclusions: { text: string; included: boolean }[];
   styles: string[];
   position: number;
@@ -103,6 +104,7 @@ export function mapItem(item: ApiItem, index = 0): PortalPackage {
     guestsMax: priceTable.length ? Math.max(...priceTable.map((r) => r.girls)) : num(d.guests_max),
     nights: num(d.nights),
     heroImage: https(d.hero_image),
+    gallery: Array.isArray(d.gallery) ? (d.gallery as unknown[]).map((g) => https(g)).filter((g): g is string => !!g) : [],
     inclusions: rawInclusions
       .map((r) => ({ text: String(r.text ?? "").trim(), included: r.included !== false }))
       .filter((r) => r.text),

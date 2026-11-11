@@ -6,6 +6,7 @@ import {
 } from "@/lib/catalogue";
 import { IconArrow, IconCheck, IconMoon, IconUsers } from "@/components/ui/Icons";
 import { imageAt } from "@/lib/portal";
+import { PackageJsonLd } from "@/components/catalogue/PackageJsonLd";
 import { Gallery } from "@/components/catalogue/Gallery";
 import { EnquiryPanel } from "@/components/catalogue/EnquiryPanel";
 import { EnquiryForm } from "@/components/catalogue/EnquiryForm";
@@ -52,6 +53,8 @@ export default async function PackagePage({ params }: { params: Promise<{ slug: 
 
   return (
     <>
+      <PackageJsonLd p={p} />
+
       {/* Hero */}
       <section className="relative isolate flex min-h-[62svh] flex-col justify-end pb-10 pt-32 md:min-h-[70svh]">
         <div className="absolute inset-0 -z-10 overflow-hidden bg-ink">

@@ -16,7 +16,7 @@ import { fetchPackages, fromPrice, https, type PortalPackage, type PriceRow } fr
  */
 
 export type { PriceRow };
-export type Package = PortalPackage & { gallery: string[] };
+export type Package = PortalPackage;
 
 type RawItem = {
   slug: string;
@@ -70,9 +70,11 @@ const destName = new Map(destinations.map((d) => [d.slug, d.name]));
 export async function getCatalogue(): Promise<Package[]> {
   const live = await fetchPackages();
   if (!live) return captured;
-  // The portal has no gallery field yet; keep the captured one until it does.
+  // The portal serves galleries now, from its own media store. Fall back to
+  // the captured list only where a package somehow has none, so a package
+  // never loses its photography to an import that missed it.
   const galleries = new Map(captured.map((p) => [p.slug, p.gallery]));
-  return live.map((p) => ({ ...p, gallery: galleries.get(p.slug) ?? [] }));
+  return live.map((p) => (p.gallery.length ? p : { ...p, gallery: galleries.get(p.slug) ?? [] }));
 }
 
 export async function getPackage(slug: string): Promise<Package | null> {

@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { MobileBar } from "@/components/layout/MobileBar";
 import { MobileSearchSheet } from "@/components/booking/MobileSearchSheet";
 import { QuickView } from "@/components/booking/QuickView";
+import { ViewBeacon } from "@/components/analytics/ViewBeacon";
 
 /*
  * Chrome for the public website only.
@@ -20,6 +21,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
       <MobileBar />
       <MobileSearchSheet />
       <QuickView />
+      <ViewBeacon />
     </BookingProvider>
   );
 }
