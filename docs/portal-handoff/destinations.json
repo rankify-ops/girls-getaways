@@ -1,0 +1,244 @@
+[
+  {
+    "slug": "sydney",
+    "status": "published",
+    "position": 0,
+    "data": {
+      "name": "Sydney",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "sydney-surrounds",
+    "status": "published",
+    "position": 1,
+    "data": {
+      "name": "Sydney Surrounds",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "blue-mountains",
+    "status": "published",
+    "position": 2,
+    "data": {
+      "name": "Blue Mountains",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "hunter-valley",
+    "status": "published",
+    "position": 3,
+    "data": {
+      "name": "Hunter Valley",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "central-coast",
+    "status": "published",
+    "position": 4,
+    "data": {
+      "name": "Central Coast",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "newcastle",
+    "status": "published",
+    "position": 5,
+    "data": {
+      "name": "Newcastle",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "port-stephens",
+    "status": "published",
+    "position": 6,
+    "data": {
+      "name": "Port Stephens",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "byron-bay",
+    "status": "published",
+    "position": 7,
+    "data": {
+      "name": "Byron Bay",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "north-coast",
+    "status": "published",
+    "position": 8,
+    "data": {
+      "name": "North Coast",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "mudgee",
+    "status": "published",
+    "position": 9,
+    "data": {
+      "name": "Mudgee",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "orange",
+    "status": "published",
+    "position": 10,
+    "data": {
+      "name": "Orange",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "southern-highlands",
+    "status": "published",
+    "position": 11,
+    "data": {
+      "name": "Southern Highlands",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "south-coast",
+    "status": "published",
+    "position": 12,
+    "data": {
+      "name": "South Coast",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "snowy-mountains",
+    "status": "published",
+    "position": 13,
+    "data": {
+      "name": "Snowy Mountains",
+      "state": "NSW",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "brisbane",
+    "status": "published",
+    "position": 14,
+    "data": {
+      "name": "Brisbane",
+      "state": "QLD",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "gold-coast",
+    "status": "published",
+    "position": 15,
+    "data": {
+      "name": "Gold Coast",
+      "state": "QLD",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "sunshine-coast",
+    "status": "published",
+    "position": 16,
+    "data": {
+      "name": "Sunshine Coast",
+      "state": "QLD",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "melbourne",
+    "status": "published",
+    "position": 17,
+    "data": {
+      "name": "Melbourne",
+      "state": "VIC",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "mornington-peninsula",
+    "status": "published",
+    "position": 18,
+    "data": {
+      "name": "Mornington Peninsula",
+      "state": "VIC",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "great-ocean-road",
+    "status": "published",
+    "position": 19,
+    "data": {
+      "name": "Great Ocean Road",
+      "state": "VIC",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "canberra",
+    "status": "published",
+    "position": 20,
+    "data": {
+      "name": "Canberra",
+      "state": "ACT",
+      "blurb": null,
+      "image": null
+    }
+  },
+  {
+    "slug": "adelaide-hills",
+    "status": "published",
+    "position": 21,
+    "data": {
+      "name": "Adelaide Hills",
+      "state": "SA",
+      "blurb": null,
+      "image": null
+    }
+  }
+]

@@ -1,0 +1,399 @@
+[
+  {
+    "slug": "rooftop-spas-beauty-bars",
+    "status": "published",
+    "position": 0,
+    "data": {
+      "title": "Rooftop Spas & Beauty Bars",
+      "venue": null,
+      "destination": "brisbane",
+      "area": null,
+      "blurb": "Two nights in a boutique hotel with a resort-style rooftop spa, pool and city views — a little luxury, a little pampering and a little retail therapy.",
+      "price_from": null,
+      "guests_min": null,
+      "guests_max": null,
+      "nights": 2,
+      "hero_image": "/img/pk-rooftop-1600.webp",
+      "styles": [
+        "Luxury",
+        "Girl's Day"
+      ],
+      "tag": "Featured",
+      "popular": true,
+      "slots_left": null,
+      "legacy_path": "/package-search/brisbane/rooftop-spas-beauty-bars"
+    }
+  },
+  {
+    "slug": "luxury-spas-resort-bars",
+    "status": "published",
+    "position": 1,
+    "data": {
+      "title": "Luxury Spas & Resort Bars",
+      "venue": null,
+      "destination": "hunter-valley",
+      "area": null,
+      "blurb": "A weekend with your besties and wine — escape with the gals and nowhere to be once you get there.",
+      "price_from": 699,
+      "guests_min": 2,
+      "guests_max": 18,
+      "nights": null,
+      "hero_image": "/img/pk-hunter-1600.webp",
+      "styles": [
+        "Luxury",
+        "Winter Wines"
+      ],
+      "tag": "Trending",
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/hunter-valley/luxury-spas-resort-bars"
+    }
+  },
+  {
+    "slug": "retro-and-relax",
+    "status": "published",
+    "position": 2,
+    "data": {
+      "title": "Retro & Relax",
+      "venue": null,
+      "destination": "brisbane",
+      "area": null,
+      "blurb": "Two nights in a central apartment, starting with a relaxing pamper treatment before a gin-themed afternoon tea.",
+      "price_from": 429,
+      "guests_min": 4,
+      "guests_max": 12,
+      "nights": 2,
+      "hero_image": "/img/pk-retro-1600.webp",
+      "styles": [
+        "Classic",
+        "Girl's Day"
+      ],
+      "tag": "Trending",
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/brisbane/retro-and-relax"
+    }
+  },
+  {
+    "slug": "around-the-world-in-byron-bay",
+    "status": "published",
+    "position": 3,
+    "data": {
+      "title": "Around the World in Byron Bay",
+      "venue": null,
+      "destination": "byron-bay",
+      "area": null,
+      "blurb": "World-class beaches, an Asian banquet and a Mediterranean feast — see the world from the comfort of Byron.",
+      "price_from": 695,
+      "guests_min": 4,
+      "guests_max": 9,
+      "nights": null,
+      "hero_image": "/img/pk-byron-1600.webp",
+      "styles": [
+        "Classic",
+        "Hens"
+      ],
+      "tag": "Trending",
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/byron-bay/around-the-world-in-byron-bay"
+    }
+  },
+  {
+    "slug": "moonlighting-in-mudgee",
+    "status": "published",
+    "position": 4,
+    "data": {
+      "title": "Moonlighting in Mudgee",
+      "venue": null,
+      "destination": "mudgee",
+      "area": null,
+      "blurb": "The full private-retreat experience: sparkling pools, spas, saunas, fire pits and a home cinema, plus a wine tour and gourmet lunch.",
+      "price_from": 699,
+      "guests_min": 6,
+      "guests_max": 12,
+      "nights": null,
+      "hero_image": "/img/pk-mudgee-1600.webp",
+      "styles": [
+        "Luxury",
+        "Winter Wines",
+        "Hens"
+      ],
+      "tag": "Trending",
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/mudgee/moonlighting-in-mudgee"
+    }
+  },
+  {
+    "slug": "pamper-in-paradise",
+    "status": "published",
+    "position": 5,
+    "data": {
+      "title": "Pamper in Paradise",
+      "venue": null,
+      "destination": "sunshine-coast",
+      "area": "Mooloolaba",
+      "blurb": "Luxury seaside accommodation with no particular place to go — for when relaxing and winding down is exactly what you need.",
+      "price_from": 375,
+      "guests_min": 3,
+      "guests_max": 7,
+      "nights": null,
+      "hero_image": "/img/pk-pamper-1600.webp",
+      "styles": [
+        "Classic",
+        "Girl's Day"
+      ],
+      "tag": "Trending",
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/sunshine-coast/mooloolaba/pamper-in-paradise"
+    }
+  },
+  {
+    "slug": "inner-city-oasis",
+    "status": "published",
+    "position": 6,
+    "data": {
+      "title": "Inner City Oasis",
+      "venue": "The Calile Hotel",
+      "destination": "brisbane",
+      "area": null,
+      "blurb": null,
+      "price_from": null,
+      "guests_min": null,
+      "guests_max": null,
+      "nights": null,
+      "hero_image": "/img/pk-calile-1600.webp",
+      "styles": [
+        "Luxury"
+      ],
+      "tag": null,
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/brisbane/inner-city-oasis"
+    }
+  },
+  {
+    "slug": "poolside-palm-oasis",
+    "status": "published",
+    "position": 7,
+    "data": {
+      "title": "Poolside Palm Oasis",
+      "venue": "La Belle Vallée",
+      "destination": "south-coast",
+      "area": "Kangaroo Valley",
+      "blurb": null,
+      "price_from": null,
+      "guests_min": null,
+      "guests_max": null,
+      "nights": null,
+      "hero_image": "/img/pk-bellevallee-1600.webp",
+      "styles": [
+        "Luxury",
+        "Hens"
+      ],
+      "tag": null,
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/kangaroo-valley/poolside-palm-oasis"
+    }
+  },
+  {
+    "slug": "decadent-detox",
+    "status": "published",
+    "position": 8,
+    "data": {
+      "title": "Decadent Detox",
+      "venue": "Greenhouse the Bathhouse",
+      "destination": "gold-coast",
+      "area": "Burleigh Heads",
+      "blurb": null,
+      "price_from": null,
+      "guests_min": null,
+      "guests_max": null,
+      "nights": null,
+      "hero_image": "/img/pk-greenhouse-1600.webp",
+      "styles": [
+        "Girl's Day"
+      ],
+      "tag": null,
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/gold-coast/burleigh-heads/brunch-bubbles-besties"
+    }
+  },
+  {
+    "slug": "beauties-bars-and-bubbles",
+    "status": "published",
+    "position": 9,
+    "data": {
+      "title": "Beauties, Bars & Bubbles",
+      "venue": "Pinchy’s Lobster & Champagne Bar",
+      "destination": "melbourne",
+      "area": null,
+      "blurb": null,
+      "price_from": null,
+      "guests_min": null,
+      "guests_max": null,
+      "nights": null,
+      "hero_image": "/img/pk-pinchys-1600.webp",
+      "styles": [
+        "Hens",
+        "Classic"
+      ],
+      "tag": null,
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/melbourne/beauties-bars-and-bubbles"
+    }
+  },
+  {
+    "slug": "shorelines-and-grapevines",
+    "status": "published",
+    "position": 10,
+    "data": {
+      "title": "Shorelines & Grapevines",
+      "venue": "The Palm Co",
+      "destination": "south-coast",
+      "area": "Gerringong",
+      "blurb": null,
+      "price_from": null,
+      "guests_min": null,
+      "guests_max": null,
+      "nights": null,
+      "hero_image": "/img/pk-palmco-1600.webp",
+      "styles": [
+        "Winter Wines",
+        "Classic"
+      ],
+      "tag": null,
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/gerringong/shorelines-and-grapevines"
+    }
+  },
+  {
+    "slug": "brunch-bubbles-besties",
+    "status": "published",
+    "position": 11,
+    "data": {
+      "title": "Brunch, Bubbles & Besties",
+      "venue": "The Tropic",
+      "destination": "gold-coast",
+      "area": "Burleigh Heads",
+      "blurb": null,
+      "price_from": null,
+      "guests_min": null,
+      "guests_max": null,
+      "nights": null,
+      "hero_image": "/img/pk-tropic-1600.webp",
+      "styles": [
+        "Hens",
+        "Girl's Day"
+      ],
+      "tag": null,
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/gold-coast/burleigh-heads/brunch-bubbles-besties"
+    }
+  },
+  {
+    "slug": "bayside-bliss",
+    "status": "published",
+    "position": 12,
+    "data": {
+      "title": "Bayside Bliss",
+      "venue": "Mandala Beach House",
+      "destination": "south-coast",
+      "area": "Jervis Bay",
+      "blurb": null,
+      "price_from": null,
+      "guests_min": null,
+      "guests_max": null,
+      "nights": null,
+      "hero_image": "/img/pk-mandala-1600.webp",
+      "styles": [
+        "Classic"
+      ],
+      "tag": null,
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/jervis-bay/bayside-bliss"
+    }
+  },
+  {
+    "slug": "relaxation-retreat",
+    "status": "published",
+    "position": 13,
+    "data": {
+      "title": "Relaxation Retreat",
+      "venue": "Leisure Inn Spires",
+      "destination": "blue-mountains",
+      "area": null,
+      "blurb": null,
+      "price_from": null,
+      "guests_min": null,
+      "guests_max": null,
+      "nights": null,
+      "hero_image": "/img/pk-spires-1600.webp",
+      "styles": [
+        "Winter Wines",
+        "Classic"
+      ],
+      "tag": null,
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/blue-mountains/relaxation-retreat"
+    }
+  },
+  {
+    "slug": "glamour-glow-and-gourmet",
+    "status": "published",
+    "position": 14,
+    "data": {
+      "title": "Glamour, Glow & Gourmet",
+      "venue": "Sundara Beach House",
+      "destination": "south-coast",
+      "area": "Gerringong",
+      "blurb": null,
+      "price_from": null,
+      "guests_min": null,
+      "guests_max": null,
+      "nights": null,
+      "hero_image": "/img/pk-sundara-1600.webp",
+      "styles": [
+        "Luxury",
+        "Hens"
+      ],
+      "tag": null,
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/gerringong/glamour-glow-and-gourmet"
+    }
+  },
+  {
+    "slug": "vincentia-views",
+    "status": "published",
+    "position": 15,
+    "data": {
+      "title": "Vincentia Views",
+      "venue": "Bethany Beach House",
+      "destination": "south-coast",
+      "area": "Jervis Bay",
+      "blurb": null,
+      "price_from": null,
+      "guests_min": null,
+      "guests_max": null,
+      "nights": null,
+      "hero_image": "/img/pk-bethany-1600.webp",
+      "styles": [
+        "Classic"
+      ],
+      "tag": null,
+      "popular": false,
+      "slots_left": null,
+      "legacy_path": "/package-search/nsw-south-coast/jervis-bay/vincentia-views"
+    }
+  }
+]
