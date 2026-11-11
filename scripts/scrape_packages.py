@@ -52,16 +52,46 @@ def text(s: str) -> str:
     description.
     """
     s = re.sub(r"<(?:style|script)[^>]*>.*?</(?:style|script)>", " ", s, flags=re.S | re.I)
-    return html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", s))).strip()
+    out = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", s)))
+    # Their meta descriptions are double-encoded, so one unescape leaves a
+    # literal "&nbsp;" in the copy — which renders as those five characters in
+    # a portal textarea. Unescape until it stops changing, then fold the
+    # non-breaking spaces it produces into ordinary ones.
+    for _ in range(2):
+        once = html.unescape(out)
+        if once == out:
+            break
+        out = once
+    return re.sub(r"\s+", " ", out.replace("\xa0", " ")).strip()
 
 
-def section(article: str, heading: str) -> str:
+# Everything from here on is the page furniture that follows the last section:
+# the booking button, the tag list and the footer. The NOTES section runs to
+# the end of the article, so without this they get glued onto the real note.
+TAIL = re.compile(
+    r"(View Booking Terms|BOOKING REQUEST|Book(ing)? (Now|Request)|GG Team|"
+    r"Terms\s*&\s*Conditions|JOIN THE GG|Share this|Previous Next)",
+    re.I,
+)
+
+
+def section(article: str, heading: str, trim_tail: bool = False) -> str:
     """The markup between one h2 and the next."""
     m = re.search(
         rf"<h2[^>]*>\s*(?:<[^>]+>\s*)*{heading}.*?</h2>(.*?)(?=<h2|\Z)",
         article, re.S | re.I,
     )
-    return m.group(1) if m else ""
+    if not m:
+        return ""
+    body = m.group(1)
+    if trim_tail:
+        # Cut on the markup, not the text, so a sentence that merely mentions
+        # "terms and conditions" mid-note survives.
+        cut = TAIL.search(text(body))
+        if cut:
+            kept = text(body)[: cut.start()].strip()
+            return kept
+    return body
 
 
 def parse(url: str, page: str) -> dict:
@@ -105,9 +135,11 @@ def parse(url: str, page: str) -> dict:
     inclusions = [text(li) for li in re.findall(r"<li[^>]*>(.*?)</li>", section(article, "INCLUSIONS"), re.S)]
     inclusions = [i for i in inclusions if i]
 
-    getaway = text(section(article, "THE GETAWAY"))
-    notes = text(section(article, "NOTES"))
-    escape_style = text(section(article, "ESCAPE STYLE"))
+    # Any section can be the last one on a given page, so every one of these
+    # gets the page furniture trimmed — not just NOTES.
+    getaway = text(section(article, "THE GETAWAY", trim_tail=True))
+    notes = text(section(article, "NOTES", trim_tail=True))
+    escape_style = text(section(article, "ESCAPE STYLE", trim_tail=True))
 
     desc = re.findall(r'<meta (?:property="og:description"|name="description") content="([^"]+)"', page)
     hero = re.findall(r'<meta property="og:image" content="([^"]+)"', page)
@@ -128,7 +160,9 @@ def parse(url: str, page: str) -> dict:
             "venue": venue,
             "destination": dest,
             "area": path.split("/")[3] if len(path.split("/")) > 4 else None,
-            "blurb": html.unescape(desc[0]).strip() if desc else None,
+            # Through text(), not a bare unescape: their meta descriptions are
+            # double-encoded, so one pass leaves a literal "&nbsp;" behind.
+            "blurb": text(desc[0]) if desc else None,
             "description": getaway or None,
             "notes": notes or None,
             "escape_style": escape_style or None,
