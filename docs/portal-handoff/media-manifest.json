@@ -653,7 +653,9 @@
     "page": "/package-search/bali/bali-bliss-8pbl2",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/bali-bliss-8pbl2.jpg",
+  "hero_for": "bali-bliss-8pbl2"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635486494359-RJ2RHOVAS81GEW8RHFBX/Noosa_Noosa-Stephanie-Day-Spa%281%29.jpg": {
   "path": "gallery/Noosa_Noosa-Stephanie-Day-Spa-1--b2cf5828.jpg",
@@ -921,7 +923,9 @@
     "page": "/package-search/hunter-valley/grazing-lazing-hunter-valley",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/grazing-lazing-hunter-valley.jpg",
+  "hero_for": "grazing-lazing-hunter-valley"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1722937270689-ZRKPLGFHLYQN8DI6JXEH/Hens%2BParties.png": {
   "path": "gallery/Hens-Parties-4d6506d6.png",
@@ -1153,7 +1157,9 @@
     "page": "/package-search/port-stephens/massages-and-mimosas-2",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/massages-and-mimosas-2.jpg",
+  "hero_for": "massages-and-mimosas-2"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1790121879675-W08USIYH042DN4ISD67B/Hens%2BParties.webp": {
   "path": "gallery/Hens-Parties-52a17ed8.webp",
@@ -1321,7 +1327,9 @@
     "page": "/package-search/brisbane/rooftop-spas-beauty-bars",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/rooftop-spas-beauty-bars.png",
+  "hero_for": "rooftop-spas-beauty-bars"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1787116392824-5CZ6DCCI9ILKVN85R9FM/0E0A1061-rB%2B%25281%2529.jpg": {
   "path": "gallery/0E0A1061-rB--281-29-1e4ec16b.jpg",
@@ -1805,7 +1813,9 @@
     "page": "/package-search/hunter-valley/luxury-spas-resort-bars",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/luxury-spas-resort-bars.png",
+  "hero_for": "luxury-spas-resort-bars"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1787116453741-TIPYRYMYHE6RZXDE6K2N/Screenshot%2B2026-08-19%2Bat%2B14.47.11.png": {
   "path": "gallery/Screenshot-2026-08-19-at-14.47.11-f226c2a7.png",
@@ -1889,7 +1899,9 @@
     "page": "/package-search/brisbane/retro-and-relax",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/retro-and-relax.jpg",
+  "hero_for": "retro-and-relax"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1667258563414-H04PJYC281DPTEWV42O4/BEACH+BREAKS.png": {
   "path": "gallery/BEACH-BREAKS-53409e89.png",
@@ -2081,7 +2093,9 @@
     "page": "/package-search/byron-bay/around-the-world-in-byron-bay",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/around-the-world-in-byron-bay.webp",
+  "hero_for": "around-the-world-in-byron-bay"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1759371363165-7E9R6V01SHQQVB6I3HV3/Meriton-Suites-Herschel-Street-Brisbane-Suite.webp": {
   "path": "gallery/Meriton-Suites-Herschel-Street-Brisbane-Suite-8971e792.webp",
@@ -2273,7 +2287,9 @@
     "page": "/package-search/mudgee/moonlighting-in-mudgee",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/moonlighting-in-mudgee.webp",
+  "hero_for": "moonlighting-in-mudgee"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1774145719568-RP0MQ04F5LT8EQBGTXRJ/Foodie+Feasts.png": {
   "path": "gallery/Foodie-Feasts-a50001f0.png",
@@ -2453,7 +2469,9 @@
     "page": "/package-search/sunshine-coast/mooloolaba/pamper-in-paradise",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/pamper-in-paradise.webp",
+  "hero_for": "pamper-in-paradise"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1776053474809-VOR5QTTXBBS6QEX02K6K/mudgee-explorer-wine-tours-1-hens-weekend-experience.jpg": {
   "path": "gallery/mudgee-explorer-wine-tours-1-hens-weekend-experience-b9daf943.jpg",
@@ -2669,7 +2687,9 @@
     "page": "/package-search/hunter-valley/hamptons-in-the-hunter",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/hamptons-in-the-hunter.webp",
+  "hero_for": "hamptons-in-the-hunter"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1774143858812-NAZAWSUE1JUW3Z1EGNIU/Black_Pamper%2BDays.png": {
   "path": "gallery/Black_Pamper-Days-92c21429.png",
@@ -2753,7 +2773,9 @@
     "page": "/package-search/sunshine-coast/mooloolaba/oasis-to-ocean-mooloolaba",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/oasis-to-ocean-mooloolaba.webp",
+  "hero_for": "oasis-to-ocean-mooloolaba"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1774137986849-24KU6Z5SLY52KXRO6LTK/Hens+Parties.png": {
   "path": "gallery/Hens-Parties-68d7339a.png",
@@ -2925,7 +2947,9 @@
     "page": "/package-search/hunter-valley/wines-in-the-vines",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/wines-in-the-vines.webp",
+  "hero_for": "wines-in-the-vines"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1776049970033-JW8NKRRQYO1I4H60TDTT/a61c7351db6ff269df3e31e5ff1c1ef940f67ff62be34fccee152b1bacc47188.jpeg": {
   "path": "gallery/a61c7351db6ff269df3e31e5ff1c1ef940f67ff62be34fccee152b1bacc47188-b7449aaa.jpeg",
@@ -3141,7 +3165,9 @@
     "page": "/package-search/sydney/vivid-views",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/vivid-views.jpg",
+  "hero_for": "vivid-views"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1645667008204-88O936GOBFC9THT1PTMS/Sydney-CBD_Our-Little-Secret_Captain-Cook-Cruises%2810%29.jpg": {
   "path": "gallery/Sydney-CBD_Our-Little-Secret_Captain-Cook-Cruises-10--be379d75.jpg",
@@ -3285,7 +3311,9 @@
     "page": "/package-search/bali/bali-bliss",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/bali-bliss.jpg",
+  "hero_for": "bali-bliss"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1774938107394-TJ333SZ3SSUPA1XMG8WA/HYmGrEK8F9dfHu1KJDFNFnAX4TEVM-cZrCsnniIviAu8AXyyQG08zhWKZFSdOGJAn-2bL870r2W6__k891X-QwbZPeUUcPFL_6P8F3RnHjwxuQofViy0HgOW7lScHhoYvtQsSxFVBZXbdi6xTYoTvMbDXKZKJCcnfyXWmd9a68CN6ykz6jfnBLRIHymWm4NC.jpeg": {
   "path": "gallery/HYmGrEK8F9dfHu1KJDFNFnAX4TEVM-cZrCsnniIviAu8AXyyQG08zhWKZFSdOGJAn-2bL870r2W6__k8-91d87fc0",
@@ -3461,7 +3489,9 @@
     "page": "/package-search/central-coast/hacienda-haven",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/hacienda-haven.jpg",
+  "hero_for": "hacienda-haven"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1723510962638-6NOXKOSCX4FPO8KYGJJN/10.png": {
   "path": "gallery/10-2a08ebdf.png",
@@ -3845,7 +3875,9 @@
     "page": "/package-search/sydney-surrounds/all-is-calm",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/all-is-calm.jpg",
+  "hero_for": "all-is-calm"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1632195168605-NS7S8QUKUBLLMV6GZE60/Beach+Breaks.png": {
   "path": "gallery/Beach-Breaks-e0958eaa.png",
@@ -4033,7 +4065,9 @@
     "page": "/package-search/sunshine-coast/mooloolaba/me-time-mooloolaba",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/me-time-mooloolaba.png",
+  "hero_for": "me-time-mooloolaba"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1759995836746-SB3PYCVETCXDR40ZHFNO/Image-empty-state.jpeg": {
   "path": "gallery/Image-empty-state-e2f063dc.jpeg",
@@ -4141,7 +4175,9 @@
     "page": "/package-search/central-coast/gourmet-gals-and-gin-pals",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/gourmet-gals-and-gin-pals.webp",
+  "hero_for": "gourmet-gals-and-gin-pals"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1760049107452-X46QZ7NY1IX2HJEQZM1P/c8d19d952102ca34b5dcbc64d7490de3.jpg": {
   "path": "gallery/c8d19d952102ca34b5dcbc64d7490de3-7cbab036.jpg",
@@ -4333,7 +4369,9 @@
     "page": "/package-search/something-in-the-orange",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/something-in-the-orange.webp",
+  "hero_for": "something-in-the-orange"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1760338428928-TPZ1XN7RKBG3H5LS33WW/summer%2Bdrinking.jpg": {
   "path": "gallery/summer-drinking-a668965d.jpg",
@@ -4609,7 +4647,9 @@
     "page": "/package-search/noosa/namaste-noosa",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/namaste-noosa.webp",
+  "hero_for": "namaste-noosa"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1758808302383-9BLVJRSDN5MB2PMSPYAF/Hens+Parties.png": {
   "path": "gallery/Hens-Parties-63b4414d.png",
@@ -4929,7 +4969,9 @@
     "page": "/package-search/brisbane/escape-to-escape",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/escape-to-escape.webp",
+  "hero_for": "escape-to-escape"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1631176683038-T5Y67EKQOZ92VL1879RR/Luxury%2BStays.png": {
   "path": "gallery/Luxury-Stays-52fac6f4.png",
@@ -5081,7 +5123,9 @@
     "page": "/package-search/sunshine-coast/mooloolaba/beaches-bars-bubbles-mooloolaba",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/beaches-bars-bubbles-mooloolaba.webp",
+  "hero_for": "beaches-bars-bubbles-mooloolaba"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1759381591469-IZDYKAINS46TSRUISPZA/ChatGPT%2BImage%2BOct%2B2%252C%2B2025%252C%2B03_05_28%2BPM.png": {
   "path": "gallery/ChatGPT-Image-Oct-2-2C-2025-2C-03_05_28-PM-4c76c29f.png",
@@ -5257,7 +5301,9 @@
     "page": "/package-search/brisbane/soaks-in-the-city",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/soaks-in-the-city.webp",
+  "hero_for": "soaks-in-the-city"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1760339015178-C5J6LTKUBWEY4ORK1TZD/summer%2Bdrinking.jpg": {
   "path": "gallery/summer-drinking-b1f9b2ea.jpg",
@@ -5353,7 +5399,9 @@
     "page": "/package-search/brisbane/riverviews-and-seafoods",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/riverviews-and-seafoods.webp",
+  "hero_for": "riverviews-and-seafoods"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1759371510830-U780JWIRF3CVUM5CBREN/Screenshot+2025-10-01+at+9.41.47%E2%80%AFPM.png": {
   "path": "gallery/Screenshot-2025-10-01-at-9.41.47-PM-78396885.png",
@@ -5497,7 +5545,9 @@
     "page": "/package-search/noosa/spirit-of-noosa",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/spirit-of-noosa.webp",
+  "hero_for": "spirit-of-noosa"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1759289626443-2IK8NT4UJHNSQ3J3K92R/Screenshot%2B2025-10-01%2Bat%2B1.31.04%25E2%2580%25AFPM.png": {
   "path": "gallery/Screenshot-2025-10-01-at-1.31.04-E2-80-AFPM-8fb79053.png",
@@ -5653,7 +5703,9 @@
     "page": "/package-search/noosa/riverside-riviera-noosa",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/riverside-riviera-noosa.png",
+  "hero_for": "riverside-riviera-noosa"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1742802469738-1SLKBP07WFINAGN5S3TN/Foodie+Feasts.png": {
   "path": "gallery/Foodie-Feasts-98b6c276.png",
@@ -5753,7 +5805,9 @@
     "page": "/package-search/mudgee/grape-escape2",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/grape-escape2.webp",
+  "hero_for": "grape-escape2"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1758769777741-X8X76GVI1J3EKXOKKDO9/Noosa4.jpg": {
   "path": "gallery/Noosa4-82f74bac.jpg",
@@ -5933,7 +5987,9 @@
     "page": "/package-search/berry-nsw/feel-at-home",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/feel-at-home.png",
+  "hero_for": "feel-at-home"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1758514833777-D682OAASLJ3ZW9BX7AGH/Screen%2BShot%2B2025-09-22%2Bat%2B2.19.17%2Bpm.png": {
   "path": "gallery/Screen-Shot-2025-09-22-at-2.19.17-pm-c89c8e5c.png",
@@ -6213,7 +6269,9 @@
     "page": "/package-search/gold-coast/burleigh-heads/brunch-bubbles-besties",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/brunch-bubbles-besties.jpg",
+  "hero_for": "brunch-bubbles-besties"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1722223272427-YG1E4XH7E12TNGJAZUZD/Hens+Parties.png": {
   "path": "gallery/Hens-Parties-d67b20f5.png",
@@ -6521,7 +6579,9 @@
     "page": "/package-search/port-stephens/views-to-views",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/views-to-views.jpg",
+  "hero_for": "views-to-views"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635346165314-1SIRYZRAWIC17E8SR770/Broadbeach_Sunset%26Sand_Platters+and+Blooms2.jpg": {
   "path": "gallery/Broadbeach_Sunset-Sand_Platters-and-Blooms2-ac10f375.jpg",
@@ -6665,7 +6725,9 @@
     "page": "/package-search/port-stephens/babes-in-the-bay",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/babes-in-the-bay.png",
+  "hero_for": "babes-in-the-bay"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1732150792540-RWHRIG4GOW7JWHV6FDN4/Foodie+Feasts.png": {
   "path": "gallery/Foodie-Feasts-9d41bdaa.png",
@@ -6845,7 +6907,9 @@
     "page": "/package-search/byron-bay/gal-tribes-and-byron-vibes",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/gal-tribes-and-byron-vibes.png",
+  "hero_for": "gal-tribes-and-byron-vibes"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1726102438131-6ZTUOB6L39RGOZJPHM2R/Hens+Parties.png": {
   "path": "gallery/Hens-Parties-b2563729.png",
@@ -6993,7 +7057,9 @@
     "page": "/package-search/port-stephens/tea-by-the-sea",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/tea-by-the-sea.png",
+  "hero_for": "tea-by-the-sea"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1729475166982-B9G6V2KX7MMBKX5OJ60Y/11.png": {
   "path": "gallery/11-3853a6fd.png",
@@ -7149,7 +7215,9 @@
     "page": "/package-search/mudgee/glamour-girls-go-gourmet",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/glamour-girls-go-gourmet.png",
+  "hero_for": "glamour-girls-go-gourmet"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1726102713211-7PL73B2M2BIWDLPOWAKB/12.png": {
   "path": "gallery/12-99401399.png",
@@ -7341,7 +7409,9 @@
     "page": "/package-search/western-australia/sips-bites-and-island-sights",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/sips-bites-and-island-sights.png",
+  "hero_for": "sips-bites-and-island-sights"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1726095413082-O6RHV17ZIY5M8A2AGD71/15.png": {
   "path": "gallery/15-6cc66564.png",
@@ -7449,7 +7519,9 @@
     "page": "/package-search/western-australia/coastal-bliss-and-winery-sips",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/coastal-bliss-and-winery-sips.png",
+  "hero_for": "coastal-bliss-and-winery-sips"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1723422366840-P4FE55PRLGKM6JZSKWPS/6.png": {
   "path": "gallery/6-6a277e11.png",
@@ -7605,7 +7677,9 @@
     "page": "/package-search/terrigal/cocktails-by-the-coastline",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/cocktails-by-the-coastline.png",
+  "hero_for": "cocktails-by-the-coastline"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1722935707043-ENGGDW1XQN5JB2TXC73Q/1.png": {
   "path": "gallery/1-267659e6.png",
@@ -7929,7 +8003,9 @@
     "page": "/package-search/mudgee/zin-and-zen",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/zin-and-zen.png",
+  "hero_for": "zin-and-zen"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1722145513661-F93VBH6OZVS7W4Y34TTQ/2.png": {
   "path": "gallery/2-fd537455.png",
@@ -8109,7 +8185,9 @@
     "page": "/package-search/mudgee/pools-and-pinots",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/pools-and-pinots.png",
+  "hero_for": "pools-and-pinots"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1721884100652-C6VB6150XIQ1NOAPITVY/1.png": {
   "path": "gallery/1-046d3d99.png",
@@ -8253,7 +8331,9 @@
     "page": "/package-search/newcastle/nourishing-night-in",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/nourishing-night-in.png",
+  "hero_for": "nourishing-night-in"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1721884186308-6GP7WC88HQA2MW0BPHV0/12.png": {
   "path": "gallery/12-7740926f.png",
@@ -8385,7 +8465,9 @@
     "page": "/package-search/port-stephens/whispers-and-secrets",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/whispers-and-secrets.png",
+  "hero_for": "whispers-and-secrets"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1719899087708-IYCW7ID54CTHW127LO8W/Newcastle_SharpandCoPlatters.jpeg": {
   "path": "gallery/Newcastle_SharpandCoPlatters-c1ab8ebf.jpeg",
@@ -8661,7 +8743,9 @@
     "page": "/package-search/hunter-valley/country-air-and-gourmet-fare",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/country-air-and-gourmet-fare.png",
+  "hero_for": "country-air-and-gourmet-fare"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1710468939320-UE14SRBJ8ZHOFAZJ94AZ/2.png": {
   "path": "gallery/2-6e15b3d2.png",
@@ -9017,7 +9101,9 @@
     "page": "/package-search/gold-coast/gals-on-vacay",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/gals-on-vacay.jpg",
+  "hero_for": "gals-on-vacay"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1710466569016-V3GA2645SXWRW85PLFEF/Black_Pamper%2BDays.png": {
   "path": "gallery/Black_Pamper-Days-8cae25c5.png",
@@ -9313,7 +9399,9 @@
     "page": "/package-search/glenelg/sunsets-by-the-pier",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/sunsets-by-the-pier.jpg",
+  "hero_for": "sunsets-by-the-pier"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1677043143808-J774ZDCWPL3QS3SREQYE/Foodie+Feasts.png": {
   "path": "gallery/Foodie-Feasts-5ab1a814.png",
@@ -9525,7 +9613,9 @@
     "page": "/package-search/mollymook/mediterranean-retreat",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/mediterranean-retreat.jpg",
+  "hero_for": "mediterranean-retreat"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1695652581902-OGDLQ52LSYGKCWPJCBZ6/Glenelg_Lucianos-on-the-Marina_1.jpg": {
   "path": "gallery/Glenelg_Lucianos-on-the-Marina_1-e7334b91.jpg",
@@ -10177,7 +10267,9 @@
     "page": "/package-search/newcastle/go-with-the-flow",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/go-with-the-flow.jpg",
+  "hero_for": "go-with-the-flow"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1692082370010-CVS4YYUQWIO6RZVUJZUL/Kiama_Cedar-Springs_Rachael-tagg.jpg": {
   "path": "gallery/Kiama_Cedar-Springs_Rachael-tagg-62808f00.jpg",
@@ -10201,7 +10293,9 @@
     "page": "/package-search/kiama/sanctuary-for-the-soul",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/sanctuary-for-the-soul.jpg",
+  "hero_for": "sanctuary-for-the-soul"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1691556835314-MTAMRA1KWKZ2ZPN856YV/Kiama_Cedar-Springs_Sol-flare-photography_2.jpg": {
   "path": "gallery/Kiama_Cedar-Springs_Sol-flare-photography_2-6a6aec3e.jpg",
@@ -10537,7 +10631,9 @@
     "page": "/package-search/newcastle/fun-nights-city-lights",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/fun-nights-city-lights.jpg",
+  "hero_for": "fun-nights-city-lights"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1691127238422-NU8JL5U2FKI49R6XUH2Y/Newcastle_Earp-Distilling-Co_3.jpg": {
   "path": "gallery/Newcastle_Earp-Distilling-Co_3-3f2a0b86.jpg",
@@ -10669,7 +10765,9 @@
     "page": "/package-search/mornington-peninsula/blairgowrie-bliss",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/blairgowrie-bliss.jpg",
+  "hero_for": "blairgowrie-bliss"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1633411694457-MRVXD72WRPJ7KYUQYXMN/Newcastle_Coastal-Escape_Quest-Newcastle%283%29.jpg": {
   "path": "gallery/Newcastle_Coastal-Escape_Quest-Newcastle-3--a1d2ba3b.jpg",
@@ -11081,7 +11179,9 @@
     "page": "/package-search/gerroa/the-palm-oasis",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/the-palm-oasis.jpg",
+  "hero_for": "the-palm-oasis"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1681439032364-0DYX93VMQ1T9E1MANE9R/The-Palm-House-Gerroa_Beachfront-Accommodation_Group-Getaway_NSW-South-Coast-16.jpg": {
   "path": "gallery/The-Palm-House-Gerroa_Beachfront-Accommodation_Group-Getaway_NSW-South-Coast-16-60ea1dd7.",
@@ -11385,7 +11485,9 @@
     "page": "/package-search/south-australia/vines-vistas",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/vines-vistas.jpg",
+  "hero_for": "vines-vistas"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1679293532929-132WPLC81BRKECCR6CKO/AdelaideHills_SimonTolleyWines_22.jpg": {
   "path": "gallery/AdelaideHills_SimonTolleyWines_22-3b250e75.jpg",
@@ -11601,7 +11703,9 @@
     "page": "/package-search/newcastle/coastal-escape",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/coastal-escape.jpg",
+  "hero_for": "coastal-escape"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1680186679750-PXE9CYNP2TPZQXVHUFXF/Adelaide+Hills_The+Lane+Vineyard.jpg": {
   "path": "gallery/Adelaide-Hills_The-Lane-Vineyard-018ffa92.jpg",
@@ -11665,7 +11769,9 @@
     "page": "/package-search/mudgee/secluded-country-charm",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/secluded-country-charm.jpg",
+  "hero_for": "secluded-country-charm"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1727756322597-Q5B5IA0XX9ZF3JC3XS5M/1.png": {
   "path": "gallery/1-ed50ab5e.png",
@@ -11961,7 +12067,9 @@
     "page": "/package-search/sydney-surrounds/serenity-soak-sips",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/serenity-soak-sips.jpg",
+  "hero_for": "serenity-soak-sips"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1666326581388-KBVKSBLKC7EERQWGRFCO/The-Bathhouse_03.jpg": {
   "path": "gallery/The-Bathhouse_03-5f1bcd2e.jpg",
@@ -12225,7 +12333,9 @@
     "page": "/package-search/hunter-valley/chateaus-and-estates",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/chateaus-and-estates.jpg",
+  "hero_for": "chateaus-and-estates"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1666327546522-M9CJSVKDG4HN4QMVKJ50/Brookfield-Teahouse02.jpg": {
   "path": "gallery/Brookfield-Teahouse02-79799fef.jpg",
@@ -12453,7 +12563,9 @@
     "page": "/package-search/kangaroo-valley/saddle-ridge-retreat",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/saddle-ridge-retreat.jpg",
+  "hero_for": "saddle-ridge-retreat"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1662449247452-J8Q0AABKR8YXD657FUM1/Saddleridge_AbbieMelle_139.jpg": {
   "path": "gallery/Saddleridge_AbbieMelle_139-bf9ec84d.jpg",
@@ -12721,7 +12833,9 @@
     "page": "/package-search/victoria-daylesford/charming-vinos-views",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/charming-vinos-views.jpg",
+  "hero_for": "charming-vinos-views"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1660047102718-KJLMB08HBP5LJDBTZEZU/The-Sticks-Kangaroo-Valley-Luxury-Stays-4.jpg": {
   "path": "gallery/The-Sticks-Kangaroo-Valley-Luxury-Stays-4-641135bd.jpg",
@@ -12977,7 +13091,9 @@
     "page": "/package-search/victoria-daylesford/luxury-on-lake-daylesford",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/luxury-on-lake-daylesford.jpeg",
+  "hero_for": "luxury-on-lake-daylesford"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1661826584360-8ECOQLCDJL24OX7MPZQ1/Discover-Daylesford-Discover-Passing-Clouds-Winery.jpg": {
   "path": "gallery/Discover-Daylesford-Discover-Passing-Clouds-Winery-3a0e3347.jpg",
@@ -13169,7 +13285,9 @@
     "page": "/package-search/mollymook/waves-and-wine",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/waves-and-wine.png",
+  "hero_for": "waves-and-wine"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1662687578320-KJYG00X0PZAVY10T83J0/Daylesford_Beppe_Grant-Jackson01.jpg": {
   "path": "gallery/Daylesford_Beppe_Grant-Jackson01-08668b13.jpg",
@@ -13361,7 +13479,9 @@
     "page": "/package-search/kangaroo-valley/visionary-in-the-valley",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/visionary-in-the-valley.jpg",
+  "hero_for": "visionary-in-the-valley"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635403410126-UKPM5QN6AO57WNPLJ45W/Mollymook_South-Coast-Serenity_Cupitts-Estate_Destination-NSW%283%29.jpg": {
   "path": "gallery/Mollymook_South-Coast-Serenity_Cupitts-Estate_Destination-NSW-3--85ac70d4.jpg",
@@ -13637,7 +13757,9 @@
     "page": "/package-search/cooma-nestled-in-the-snowy-mountains",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/cooma-nestled-in-the-snowy-mountains.jpg",
+  "hero_for": "cooma-nestled-in-the-snowy-mountains"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1659497481742-UKG8O7UWNW0606Q5HKLM/The-Sticks-Kangaroo-Valley-Touchdown-Helicopter-9.jpg": {
   "path": "gallery/The-Sticks-Kangaroo-Valley-Touchdown-Helicopter-9-dd9b6e5e.jpg",
@@ -13853,7 +13975,9 @@
     "page": "/package-search/port-stephens/sparkling-seas-cocktail-high-teas",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/sparkling-seas-cocktail-high-teas.jpg",
+  "hero_for": "sparkling-seas-cocktail-high-teas"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1658379993243-LQQUFHGEBGDKB000YJ9X/Cooma_Pha%27s-Thai.jpg": {
   "path": "gallery/Cooma_Pha-s-Thai-6ef51088.jpg",
@@ -14209,7 +14333,9 @@
     "page": "/package-search/nsw-south-coast/gerringong/beauty-and-the-beach",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/beauty-and-the-beach.jpg",
+  "hero_for": "beauty-and-the-beach"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1653380391805-QSGLVB4I2E27VWJWILTE/Port-Stephens-Accommodation_Little-Kingsley-Beach-House-3.jpg": {
   "path": "gallery/Port-Stephens-Accommodation_Little-Kingsley-Beach-House-3-1c97b000.jpg",
@@ -14461,7 +14587,9 @@
     "page": "/package-search/nsw-south-coast/milton/sips-and-scenery",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/sips-and-scenery.jpg",
+  "hero_for": "sips-and-scenery"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1651736208906-3KQIL1HUE87ZUEF8FT29/Gerringong_Shorelines-and-Grapevines_Soul-Revival-And-Spa%283%29.jpg": {
   "path": "gallery/Gerringong_Shorelines-and-Grapevines_Soul-Revival-And-Spa-3--b10170eb.jpg",
@@ -14769,7 +14897,9 @@
     "page": "/package-search/great-ocean-road/slice-of-the-surf-coast",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/slice-of-the-surf-coast.jpg",
+  "hero_for": "slice-of-the-surf-coast"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1650432985670-IZJGSWXKF9K78ZZNKQJY/Milton_Sips-and-Scenery_Milkhaus-Milton-2.jpg": {
   "path": "gallery/Milton_Sips-and-Scenery_Milkhaus-Milton-2-8c49c149.jpg",
@@ -15165,7 +15295,9 @@
     "page": "/package-search/blue-mountains/mystic-mountains",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/mystic-mountains.jpg",
+  "hero_for": "mystic-mountains"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1648451320523-I6CPY2X5GCF6BGZ9NOYC/Slice-of-the-Surf-Coast_The-Hideaway-Torquay_Mt-Duneed-Estate-6.jpg": {
   "path": "gallery/Slice-of-the-Surf-Coast_The-Hideaway-Torquay_Mt-Duneed-Estate-6-96ac3274.jpg",
@@ -15457,7 +15589,9 @@
     "page": "/package-search/nsw-south-coast/milton/milton-magic",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/milton-magic.jpg",
+  "hero_for": "milton-magic"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635468572696-VITZ5HAM4AM9GDFSMXB0/Blue-Mountains_Destination-NSW.jpg": {
   "path": "gallery/Blue-Mountains_Destination-NSW-28f1d8f4.jpg",
@@ -15605,7 +15739,9 @@
     "page": "/package-search/nsw-south-coast/gerringong/seaside-serenity",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/seaside-serenity.jpg",
+  "hero_for": "seaside-serenity"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1646886953581-WRBLDP7871YV428U5OXK/Milton_Woodstock-Retreat_yoga%281%29.jpg": {
   "path": "gallery/Milton_Woodstock-Retreat_yoga-1--b8e26a5e.jpg",
@@ -15881,7 +16017,9 @@
     "page": "/package-search/nsw-south-coast/ulladulla/holiday-in-the-hamptons",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/holiday-in-the-hamptons.jpg",
+  "hero_for": "holiday-in-the-hamptons"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1644377828441-CDFCEAJKAABKUFC9XIWO/Gerringong_Glamour-Glow-Gourmet_Hill-Kitchen-Bar%283%29.jpg": {
   "path": "gallery/Gerringong_Glamour-Glow-Gourmet_Hill-Kitchen-Bar-3--66ad3a6c.jpg",
@@ -16217,7 +16355,9 @@
     "page": "/package-search/nsw-south-coast/kiama/bikinis-and-martinis",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/bikinis-and-martinis.jpg",
+  "hero_for": "bikinis-and-martinis"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1642567348974-6KY09XIG0MM2QW1CTX7Z/Mollymook_Rise-and-Wine_Annies-Grazing-Boxes.jpg": {
   "path": "gallery/Mollymook_Rise-and-Wine_Annies-Grazing-Boxes-e8f6d646.jpg",
@@ -16385,7 +16525,9 @@
     "page": "/package-search/nsw-south-coast/mollymook/south-coast-treasure",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/south-coast-treasure.jpg",
+  "hero_for": "south-coast-treasure"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1637818885046-NAD6HMAV2LFJXA9NIUH7/South-Coast_Bikinis-and-Martinis.jpg": {
   "path": "gallery/South-Coast_Bikinis-and-Martinis-89c03c6b.jpg",
@@ -16649,7 +16791,9 @@
     "page": "/package-search/gerroa/good-times-in-gerroa",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/good-times-in-gerroa.jpg",
+  "hero_for": "good-times-in-gerroa"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1637903630332-O5P1K4697E0AALEP7C4D/South-Coast_Coast-Watch.jpg": {
   "path": "gallery/South-Coast_Coast-Watch-877e2ce7.jpg",
@@ -16877,7 +17021,9 @@
     "page": "/package-search/byron-bay/home-in-the-hinterland",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/home-in-the-hinterland.jpg",
+  "hero_for": "home-in-the-hinterland"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1637736044398-PCTRTGKX53R0G2I52KOU/South-Coast_Good-Times-in-Gerroa_The-G-at-Gerroa%2813%29.jpg": {
   "path": "gallery/South-Coast_Good-Times-in-Gerroa_The-G-at-Gerroa-13--7fe13448.jpg",
@@ -17213,7 +17359,9 @@
     "page": "/package-search/gold-coast/burleigh-heads/decadent-detox",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/decadent-detox.jpg",
+  "hero_for": "decadent-detox"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635920179941-T79XCOH85XYA3F8OPA9M/Byron-Bay_Home-in-the-Hinterland_Husk-Distillery%282%29.jpg": {
   "path": "gallery/Byron-Bay_Home-in-the-Hinterland_Husk-Distillery-2--79ac373f.jpg",
@@ -17489,7 +17637,9 @@
     "page": "/package-search/mudgee/lakeside-luxury",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/lakeside-luxury.jpg",
+  "hero_for": "lakeside-luxury"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635463019037-0I5QFLBFCWA6O2NR6MTH/Mudgee_Lakeside-Luxury_Evanslea%284%29.jpg": {
   "path": "gallery/Mudgee_Lakeside-Luxury_Evanslea-4--8fa8a56a.jpg",
@@ -17717,7 +17867,9 @@
     "page": "/package-search/mudgee/mudgee-memories",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/mudgee-memories.jpg",
+  "hero_for": "mudgee-memories"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635463155868-QNGLH7EWN9IQ7TDX8H71/Mudgee_Pamper.jpg": {
   "path": "gallery/Mudgee_Pamper-4041b382.jpg",
@@ -17981,7 +18133,9 @@
     "page": "/package-search/berry-nsw/livin-lakeside",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/livin-lakeside.jpg",
+  "hero_for": "livin-lakeside"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1684404645013-7V24CC9BQTPQYB31R9VQ/Mudgee_Mudgee-Memories_Bellevue-House-6.jpg": {
   "path": "gallery/Mudgee_Mudgee-Memories_Bellevue-House-6-67baf15d.jpg",
@@ -18233,7 +18387,9 @@
     "page": "/package-search/gold-coast/broadbeach/bellinis-in-broadbeach",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/bellinis-in-broadbeach.png",
+  "hero_for": "bellinis-in-broadbeach"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635305903251-YEWCOM02DVQA21UJD6X7/Berry_Livin-Lakeside_Winery.jpg": {
   "path": "gallery/Berry_Livin-Lakeside_Winery-b007ccd5.jpg",
@@ -18377,7 +18533,9 @@
     "page": "/package-search/gold-coast/broadbeach/sunset-sand",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/sunset-sand.jpg",
+  "hero_for": "sunset-sand"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635295337355-YD1E0BLZGXYKBWHKOOQJ/Broadbeach_Sunset%26Sand_QTHighTea_QTHotels.jpg": {
   "path": "gallery/Broadbeach_Sunset-Sand_QTHighTea_QTHotels-6a412ef1.jpg",
@@ -18625,7 +18783,9 @@
     "page": "/package-search/gold-coast/broadbeach/coastal-champagne",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/coastal-champagne.jpg",
+  "hero_for": "coastal-champagne"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635225471659-F1HG1HRT9BC8MJCJ3Q5L/Broadbeach_CoastalChampagne_AvaniBroadbeachResidences_AvaniHotels_27.jpg": {
   "path": "gallery/Broadbeach_CoastalChampagne_AvaniBroadbeachResidences_AvaniHotels_27-793a3e7d.jpg",
@@ -18841,7 +19001,9 @@
     "page": "/package-search/newcastle/five-star-sensation",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/five-star-sensation.jpg",
+  "hero_for": "five-star-sensation"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635294535853-0EJ4GJCX9JS3CRRAG0HI/Broadbeach_CoastalChampagne_Greendays_4.jpg": {
   "path": "gallery/Broadbeach_CoastalChampagne_Greendays_4-9ee1661a.jpg",
@@ -19161,7 +19323,9 @@
     "page": "/package-search/newcastle/next-level-newcastle",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/next-level-newcastle.jpg",
+  "hero_for": "next-level-newcastle"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1649736962398-UH27KT3W4FN68YTUW79U/Five-Star-Sensation_Newcastle_Light-Years-10.jpg": {
   "path": "gallery/Five-Star-Sensation_Newcastle_Light-Years-10-3b17fac5.jpg",
@@ -19353,7 +19517,9 @@
     "page": "/package-search/great-ocean-road/girls-on-the-great-ocean-road",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/girls-on-the-great-ocean-road.jpg",
+  "hero_for": "girls-on-the-great-ocean-road"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635197258014-9G1IQ3XJN2IO3V8HEHMY/Newcastle_Next-Level-Newcastle_Crystalbrook-Kinglsey%2812%29.jpg": {
   "path": "gallery/Newcastle_Next-Level-Newcastle_Crystalbrook-Kinglsey-12--49c93156.jpg",
@@ -19665,7 +19831,9 @@
     "page": "/package-search/melbourne/beauties-bars-and-bubbles",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/beauties-bars-and-bubbles.jpg",
+  "hero_for": "beauties-bars-and-bubbles"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/b6d41fa9-c429-48ab-a0cf-6f1133c1fd0d/State-of-Grace.jpg": {
   "path": "gallery/State-of-Grace-87639fa5.jpg",
@@ -19857,7 +20025,9 @@
     "page": "/package-search/great-ocean-road/lets-wine-down",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/lets-wine-down.jpg",
+  "hero_for": "lets-wine-down"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635299631846-LF2P0G0AEL262NMT8184/Great-Ocean-Road_Lets-Wine-Down_The-Summer-House%282%29.jpg": {
   "path": "gallery/Great-Ocean-Road_Lets-Wine-Down_The-Summer-House-2--b536c4be.jpg",
@@ -20109,7 +20279,9 @@
     "page": "/package-search/melbourne/wine-dine-and-unwind",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/wine-dine-and-unwind.jpeg",
+  "hero_for": "wine-dine-and-unwind"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1664862355822-SFLOLO09ME9T13LS1PCU/WineryTour.jpg": {
   "path": "gallery/WineryTour-a84b9448.jpg",
@@ -20277,7 +20449,9 @@
     "page": "/package-search/melbourne/grace-and-glamour",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/grace-and-glamour.jpg",
+  "hero_for": "grace-and-glamour"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1686187439311-825CAIJO5D2DTKLVF6P4/_84576657_193903268592633_2047999242017435081_n.jpg": {
   "path": "gallery/_84576657_193903268592633_2047999242017435081_n-a9b76876.jpg",
@@ -20457,7 +20631,9 @@
     "page": "/package-search/melbourne/cocktails-and-hidden-bar-trails",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/cocktails-and-hidden-bar-trails.jpg",
+  "hero_for": "cocktails-and-hidden-bar-trails"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1664866294446-X7MYA5KT0F34NM11BK6C/Melbourne_Beauties-Bars-and-Bubbles_Quest-Hotels%2810%29.jpeg": {
   "path": "gallery/Melbourne_Beauties-Bars-and-Bubbles_Quest-Hotels-10--dfb045fb.jpeg",
@@ -20637,7 +20813,9 @@
     "page": "/package-search/sydney/a-night-of-indulgence",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/a-night-of-indulgence.jpeg",
+  "hero_for": "a-night-of-indulgence"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635042502597-ZMHOPYY48GBDPDOYTJUU/Sydney-CBD_A-Night-Of-Indulgence_Ben-Mack.jpg": {
   "path": "gallery/Sydney-CBD_A-Night-Of-Indulgence_Ben-Mack-dcd87e93.jpg",
@@ -20713,7 +20891,9 @@
     "page": "/package-search/sydney/cocktail-sippin-and-city-livin",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/cocktail-sippin-and-city-livin.jpg",
+  "hero_for": "cocktail-sippin-and-city-livin"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1656984751228-QHH5U5N98ZYCAHLC4JW6/Lotus+the+Galeries+2.jpeg": {
   "path": "gallery/Lotus-the-Galeries-2-5216f7d4.jpeg",
@@ -20881,7 +21061,9 @@
     "page": "/package-search/sydney/our-little-secret",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/our-little-secret.jpg",
+  "hero_for": "our-little-secret"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635040551833-GOINYGDXLNAKI918NOOL/Sydney-CBD_Our-Little-Secret_Captain-Cook-Cruises%288%29.jpg": {
   "path": "gallery/Sydney-CBD_Our-Little-Secret_Captain-Cook-Cruises-8--a3005535.jpg",
@@ -21041,7 +21223,9 @@
     "page": "/package-search/gold-coast/coolangatta/stay-golden",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/stay-golden.jpg",
+  "hero_for": "stay-golden"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635072272320-I8Z9PDDC6I8BAM5KJSP9/Coolangatta_StayGolden_OaksCalypsoPlazaSuites_1.jpg": {
   "path": "gallery/Coolangatta_StayGolden_OaksCalypsoPlazaSuites_1-1f7b3590.jpg",
@@ -21209,7 +21393,9 @@
     "page": "/package-search/byron-bay/sip-soak-and-sunbathe",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/sip-soak-and-sunbathe.jpg",
+  "hero_for": "sip-soak-and-sunbathe"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1634797820818-X2W1KJ2PSWWHCN89VVTO/Byron-Bay_Fat-Frog-Beach-Houses_Beach-Architects.jpg": {
   "path": "gallery/Byron-Bay_Fat-Frog-Beach-Houses_Beach-Architects-1960d151.jpg",
@@ -21401,7 +21587,9 @@
     "page": "/package-search/byron-bay/penthouses-pools-and-pina-coladas",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/penthouses-pools-and-pina-coladas.jpg",
+  "hero_for": "penthouses-pools-and-pina-coladas"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1634724054546-GGAOQVF5X7UES2KVXP2N/Byron-Bay_Sip-Soak-Sunbathe_Platter-Me-Beautiful.jpg": {
   "path": "gallery/Byron-Bay_Sip-Soak-Sunbathe_Platter-Me-Beautiful-dd96fc55.jpg",
@@ -21557,7 +21745,9 @@
     "page": "/package-search/byron-bay/beyond-the-dunes",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/beyond-the-dunes.jpg",
+  "hero_for": "beyond-the-dunes"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1634722756160-T7F59YAP6QNLM8YV1Y98/Byron-Bay_Beyond-the-Dunes_Elements-of-Byron%286%29.jpg": {
   "path": "gallery/Byron-Bay_Beyond-the-Dunes_Elements-of-Byron-6--2356e6ef.jpg",
@@ -21813,7 +22003,9 @@
     "page": "/package-search/jervis-bay/waterfront-wow-factor",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/waterfront-wow-factor.jpg",
+  "hero_for": "waterfront-wow-factor"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635659430189-8JYTU5Z8FA8DFQEO5369/Jervis-Bay_Waterfront-Wow-Factor_Shearwater-Beach-House_Something-Wild-Creative-11.jpg": {
   "path": "gallery/Jervis-Bay_Waterfront-Wow-Factor_Shearwater-Beach-House_Something-Wild-Creative--7e5359ae",
@@ -22117,7 +22309,9 @@
     "page": "/package-search/currarong/footsteps-to-the-sea",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/footsteps-to-the-sea.jpg",
+  "hero_for": "footsteps-to-the-sea"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1633493684405-DWXG2LX2JB8CAB62M2GL/SouthCoast_Currarong_FootstepstotheSea_SupercallaPrivateProperties_14.jpg": {
   "path": "gallery/SouthCoast_Currarong_FootstepstotheSea_SupercallaPrivateProperties_14-c2877688.jpg",
@@ -22373,7 +22567,9 @@
     "page": "/package-search/shoalhaven/country-farm-coastal-charm",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/country-farm-coastal-charm.jpg",
+  "hero_for": "country-farm-coastal-charm"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635659299805-7X9U9JMBBB0N9O1G7797/Mayfield-NSW_Country-Farm-Coastal-Charm_Something-Wild-Creative-19.jpg": {
   "path": "gallery/Mayfield-NSW_Country-Farm-Coastal-Charm_Something-Wild-Creative-19-ebf37aa3.jpg",
@@ -22733,7 +22929,9 @@
     "page": "/package-search/noosa/resort-relaxation",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/resort-relaxation.jpg",
+  "hero_for": "resort-relaxation"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635486482948-BCQFWIB10HLMA9XSSNKJ/Noosa_Noosa-Boathouse%283%29.jpg": {
   "path": "gallery/Noosa_Noosa-Boathouse-3--cf65ea9f.jpg",
@@ -22981,7 +23179,9 @@
     "page": "/package-search/noosa/spritzers-and-cocktail-mixers",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/spritzers-and-cocktail-mixers.jpg",
+  "hero_for": "spritzers-and-cocktail-mixers"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635485601107-0VOVAR27K4E9CSTR1HWP/Noosa_Platter_Gather%281%29.jpg": {
   "path": "gallery/Noosa_Platter_Gather-1--a02d29f1.jpg",
@@ -23293,7 +23493,9 @@
     "page": "/package-search/noosa/noosa-nights",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/noosa-nights.jpg",
+  "hero_for": "noosa-nights"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635485293635-PVWQCVU4GM43PGLN64PB/Noosa_Peppers-Resort%282%29.jpg": {
   "path": "gallery/Noosa_Peppers-Resort-2--40e268c7.jpg",
@@ -23581,7 +23783,9 @@
     "page": "/package-search/noosa/ocean-views-and-sunset-hues",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/ocean-views-and-sunset-hues.jpg",
+  "hero_for": "ocean-views-and-sunset-hues"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635484996818-A22VTVJ0YANQJCDO46DE/Noosa_Bistro-C%281%29.jpg": {
   "path": "gallery/Noosa_Bistro-C-1--af2f6a7a.jpg",
@@ -23833,7 +24037,9 @@
     "page": "/package-search/mornington-peninsula/peninsula-party",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/peninsula-party.jpg",
+  "hero_for": "peninsula-party"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635476067042-PV7AO5IS7I43GRAINGWV/South-Coast_Peninsula-Pamper_Moonah-Ridge%282%29.jpg": {
   "path": "gallery/South-Coast_Peninsula-Pamper_Moonah-Ridge-2--4dcfc992.jpg",
@@ -24133,7 +24339,9 @@
     "page": "/package-search/blue-mountains/relaxation-retreat",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/relaxation-retreat.jpg",
+  "hero_for": "relaxation-retreat"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635404147526-J4797ZVOL3CKQRXT5S7M/Blue-Mountains_Girls-Weekend-%40Hannahandjai.jpg": {
   "path": "gallery/Blue-Mountains_Girls-Weekend--Hannahandjai-be0c4efd.jpg",
@@ -24385,7 +24593,9 @@
     "page": "/package-search/mollymook/rise-and-wine",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/rise-and-wine.jpg",
+  "hero_for": "rise-and-wine"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1633406633343-PRM5QZXPHVXAZBW49A9E/Mollymook_Rise-and-Wine_Cupitts-Estate%282%29.jpg": {
   "path": "gallery/Mollymook_Rise-and-Wine_Cupitts-Estate-2--44016636.jpg",
@@ -24673,7 +24883,9 @@
     "page": "/package-search/mollymook/sunsets-and-sweet-treats",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/sunsets-and-sweet-treats.jpg",
+  "hero_for": "sunsets-and-sweet-treats"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1633397386908-PZHM496CCH9CWEKKPK92/Mollymook_Sunsets-Sweet-Treats_Beachwood-House%284%29.jpg": {
   "path": "gallery/Mollymook_Sunsets-Sweet-Treats_Beachwood-House-4--b39d7723.jpg",
@@ -24901,7 +25113,9 @@
     "page": "/package-search/milton/misty-mornings",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/misty-mornings.jpg",
+  "hero_for": "misty-mornings"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635402263591-T5J40AYMP00J5GEJ5H8H/Milton_Misty-Mornings_Woodstock-Homestead%281%29.jpg": {
   "path": "gallery/Milton_Misty-Mornings_Woodstock-Homestead-1--d73e6054.jpg",
@@ -25169,7 +25383,9 @@
     "page": "/package-search/gerringong/ladies-in-luxury",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/ladies-in-luxury.jpg",
+  "hero_for": "ladies-in-luxury"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1633393152505-MSWU7J2LLMJ3X2MUVCJU/Gerringong_Ladies-in-Luxury_Sundara-Beach-House%286%29.jpg": {
   "path": "gallery/Gerringong_Ladies-in-Luxury_Sundara-Beach-House-6--72cd3802.jpg",
@@ -25433,7 +25649,9 @@
     "page": "/package-search/gerringong/glamour-glow-and-gourmet",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/glamour-glow-and-gourmet.jpg",
+  "hero_for": "glamour-glow-and-gourmet"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1633390857560-VLJYIEWII23C72SLE6CI/Gerringong_Glamour-Glow-Gourmet_Sundara-Beach-House%2810%29.jpg": {
   "path": "gallery/Gerringong_Glamour-Glow-Gourmet_Sundara-Beach-House-10--d6d85065.jpg",
@@ -25721,7 +25939,9 @@
     "page": "/package-search/gerringong/shorelines-and-grapevines",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/shorelines-and-grapevines.jpg",
+  "hero_for": "shorelines-and-grapevines"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1632470069556-UX8VDXMROFHB9RFDK6GW/Gerringong_Shorelines-and-Grapevines_The-Shore-at-Gerringong%286%29.jpg": {
   "path": "gallery/Gerringong_Shorelines-and-Grapevines_The-Shore-at-Gerringong-6--0d1dcac7.jpg",
@@ -25937,7 +26157,9 @@
     "page": "/package-search/kiama/sunrays-and-sea-haze",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/sunrays-and-sea-haze.png",
+  "hero_for": "sunrays-and-sea-haze"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1632384374217-5PNVQIRM4JAGOTHUY46M/Kiama_Sunrays-Sea-Haze_The-Palm-Co%286%29.jpg": {
   "path": "gallery/Kiama_Sunrays-Sea-Haze_The-Palm-Co-6--d7b2fbf1.jpg",
@@ -26133,7 +26355,9 @@
     "page": "/package-search/nsw-south-coast/cool-calm-coastal-culburra",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/cool-calm-coastal-culburra.jpg",
+  "hero_for": "cool-calm-coastal-culburra"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1631953412557-CGHD0T3S4L3V25M8VYNK/NSW-South-Coast_Cool-Calm-Coastal-Culburra_Teegan-Tag%281%29.jpg": {
   "path": "gallery/NSW-South-Coast_Cool-Calm-Coastal-Culburra_Teegan-Tag-1--b698a7cc.jpg",
@@ -26401,7 +26625,9 @@
     "page": "/package-search/jervis-bay/bayside-bliss",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/bayside-bliss.jpg",
+  "hero_for": "bayside-bliss"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1633497738044-5Q3DRQLX3PP06P36PWN3/Jervis-Bay_Bayside-Bliss_The-Palm-Co.jpg": {
   "path": "gallery/Jervis-Bay_Bayside-Bliss_The-Palm-Co-f31e86a9.jpg",
@@ -26641,7 +26867,9 @@
     "page": "/package-search/culburra/bush-and-beach-retreat",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/bush-and-beach-retreat.jpg",
+  "hero_for": "bush-and-beach-retreat"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1631527918196-DM16X22SLVP61DVM6IB6/Culburra_Bush-and-Beach-Retreat_Farm-and-Sea-Studio%287%29.jpg": {
   "path": "gallery/Culburra_Bush-and-Beach-Retreat_Farm-and-Sea-Studio-7--e48ce0d3.jpg",
@@ -26821,7 +27049,9 @@
     "page": "/package-search/canberra/capital-indulgence",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/capital-indulgence.jpg",
+  "hero_for": "capital-indulgence"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1631525373418-GYD4N0CIVF45RRVJHV3L/Beach+Breaks.png": {
   "path": "gallery/Beach-Breaks-5f282b8d.png",
@@ -27005,7 +27235,9 @@
     "page": "/package-search/canberra/city-slicking-and-wine-sipping",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/city-slicking-and-wine-sipping.jpg",
+  "hero_for": "city-slicking-and-wine-sipping"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1631511065753-Z537QI1SA29JG0WLIA7S/Canberra_CitySlickingWineSipping_Luxury+Apartment+at+Burbury_DOMA+Hotels.jpg": {
   "path": "gallery/Canberra_CitySlickingWineSipping_Luxury-Apartment-at-Burbury_DOMA-Hotels-712cfc84.jpg",
@@ -27213,7 +27445,9 @@
     "page": "/package-search/canberra/capital-catch-ups",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/capital-catch-ups.jpg",
+  "hero_for": "capital-catch-ups"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1681878582967-4N3RR96FM58DXHSX5K92/2023-04-10.jpg": {
   "path": "gallery/2023-04-10-18f7a063.jpg",
@@ -27357,7 +27591,9 @@
     "page": "/package-search/nsw-south-coast/jervis-bay/barefoot-in-the-bay",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/barefoot-in-the-bay.jpg",
+  "hero_for": "barefoot-in-the-bay"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1631510323844-615SRKMKZM2W0P1UYGT2/Canberra_CapitalCatchups_luxuryapartmentbathroomatBurbury_DOMA+Hotels.jpg": {
   "path": "gallery/Canberra_CapitalCatchups_luxuryapartmentbathroomatBurbury_DOMA-Hotels-594339f3.jpg",
@@ -27653,7 +27889,9 @@
     "page": "/package-search/nsw-south-coast/jervis-bay/vincentia-views",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/vincentia-views.jpg",
+  "hero_for": "vincentia-views"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1631521611494-DRFW4USXAEPY4JIK58WA/Jervis-Bay_Vincentia-Views_Supercalla-Properties%285%29.jpg": {
   "path": "gallery/Jervis-Bay_Vincentia-Views_Supercalla-Properties-5--e7bd5bf5.jpg",
@@ -27849,7 +28087,9 @@
     "page": "/package-search/canberra/classy-in-canberra",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/classy-in-canberra.jpg",
+  "hero_for": "classy-in-canberra"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635467108069-K74CXWD78E14M0M9RDIO/South-Coast_Hyams-Beach-Jervis-Bay_Destination-NSW.jpg": {
   "path": "gallery/South-Coast_Hyams-Beach-Jervis-Bay_Destination-NSW-a454067d.jpg",
@@ -28065,7 +28305,9 @@
     "page": "/package-search/nsw-south-coast/jewel-in-jervis-bay",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/jewel-in-jervis-bay.jpg",
+  "hero_for": "jewel-in-jervis-bay"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1635659055349-ISBQ86J7LUX2B1P1QRLP/Jervis-Bay_Jewel-in-Jervis-Bay_Atra-beach-house_Something-Wild-Creative-10.jpg": {
   "path": "gallery/Jervis-Bay_Jewel-in-Jervis-Bay_Atra-beach-house_Something-Wild-Creative-10-60770d03.jpg",
@@ -28413,7 +28655,9 @@
     "page": "/package-search/hunter-valley/chardonnay-in-the-chateau",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/chardonnay-in-the-chateau.jpg",
+  "hero_for": "chardonnay-in-the-chateau"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1630057166268-1X0I96U02RQVKT5G355I/Hunter-Valley_Chardonnay-in-the-Chateau_Chateau-Elan%284%29.jpg": {
   "path": "gallery/Hunter-Valley_Chardonnay-in-the-Chateau_Chateau-Elan-4--222b4b34.jpg",
@@ -28509,7 +28753,9 @@
     "page": "/package-search/paint-the-town-orange-nsw",
     "type": "package page"
    }
-  ]
+  ],
+  "hero_path": "packages/paint-the-town-orange-nsw.jpg",
+  "hero_for": "paint-the-town-orange-nsw"
  },
  "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259/1629866541615-16IGUV50SH3AJR0HLWRL/Orange_PaintTheTownOrange_QuestOrange.jpg": {
   "path": "gallery/Orange_PaintTheTownOrange_QuestOrange-1f085482.jpg",
