@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Shell } from "@/components/admin/Shell";
 import { PackageEditor } from "@/components/admin/PackageEditor";
 import { getPackages } from "@/lib/admin-data";
-import { destinations, STYLES } from "@/content/site";
+import { allStyles, destinations, getCatalogue } from "@/lib/catalogue";
 
 export const revalidate = 0;
 
@@ -36,7 +36,7 @@ export default async function EditPackage({ params }: { params: Promise<{ slug: 
         image={image}
         readOnly={source !== "database"}
         destinations={destinations.map((d) => ({ slug: d.slug, name: d.name }))}
-        styles={[...STYLES]}
+        styles={allStyles(await getCatalogue()).map((s) => s.name)}
       />
     </Shell>
   );

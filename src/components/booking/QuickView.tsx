@@ -57,29 +57,33 @@ function Drawer({ p, onClose }: { p: Package; onClose: () => void }) {
   async function submit() {
     setSending(true);
     setError("");
-    const key = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
-    if (!key) {
-      // Preview build: no form endpoint yet, so say so instead of pretending.
-      setDemo(true);
-      setSending(false);
-      setStep(4);
-      return;
-    }
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      // Straight into her portal inbox, with the package slug so the enquiry
+      // names the right getaway even after she renames it.
+      const res = await fetch("/api/enquire/", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        headers: { "content-type": "application/json" },
         body: JSON.stringify({
-          access_key: key,
-          subject: `Booking request — ${p.title}`,
-          from_name: "Girls Getaways website",
-          package: `${p.title}${p.venue ? ` (${p.venue})` : ""} — ${placeLine(p)}`,
-          dates: `${fmtRange(start, end)} (${nights} nights)`,
-          girls: guests,
-          payment: pay === "split" ? "Individual payments" : "One payment",
-          ...form,
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          groupSize: guests,
+          preferredOn: start ? start.toISOString().slice(0, 10) : undefined,
+          item: p.slug,
+          message: [
+            form.occasion,
+            start && end ? `Dates: ${fmtRange(start, end)} (${nights} nights)` : null,
+            `Payment: ${pay === "split" ? "individual payments" : "one payment"}`,
+            form.notes.trim() || null,
+          ].filter(Boolean).join("\n"),
         }),
       });
+      // 503 is "no inbox wired up yet" — say that rather than claiming it sent.
+      if (res.status === 503) {
+        setDemo(true);
+        setStep(4);
+        return;
+      }
       if (!res.ok) throw new Error();
       setStep(4);
     } catch {

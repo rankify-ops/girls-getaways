@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Shell } from "@/components/admin/Shell";
 import { IBox, IExternal, IPin, IPlus, ISparkle } from "@/components/admin/AdminIcons";
 import { getPackages, placeLabel, priceLabel } from "@/lib/admin-data";
-import { STYLES } from "@/content/site";
 
 export const metadata = { title: "Dashboard" };
 export const revalidate = 0;
@@ -12,13 +11,14 @@ export default async function AdminDashboard() {
   const published = packages.filter((p) => p.status === "published");
   const drafts = packages.filter((p) => p.status === "draft");
   const destinations = new Set(packages.map((p) => p.destination).filter(Boolean));
+  const styles = new Set(packages.flatMap((p) => p.styles));
   const recent = packages.slice(0, 6);
 
   const tiles = [
     { label: "Published packages", value: published.length, href: "/admin/packages" },
     { label: "Drafts", value: drafts.length, href: "/admin/packages?status=draft" },
     { label: "Destinations", value: destinations.size, href: "/admin/destinations" },
-    { label: "Getaway styles", value: STYLES.length, href: "/admin/content" },
+    { label: "Getaway styles", value: styles.size, href: "/admin/content" },
   ];
 
   return (
@@ -31,12 +31,13 @@ export default async function AdminDashboard() {
         </Link>
       }
     >
-      {source === "captured" && (
+      {source !== "database" && (
         <div className="adm-banner mb-5">
           <ISparkle size={18} />
           <span className="min-w-0">
-            <b>Read-only preview.</b> All {packages.length} packages from the live website, exactly as the site
-            renders them. Editing and publishing live in the Rankify portal, which owns the logins and keeps a
+            <b>Read-only preview.</b> All {packages.length} packages,{" "}
+            {source === "portal" ? "read live from the Rankify portal" : "exactly as the website renders them"}.
+            Editing and publishing happen in the portal at app.rankify.com.au, which owns the logins and keeps a
             record of every change — this is here so you can see the shape of it first.
           </span>
         </div>

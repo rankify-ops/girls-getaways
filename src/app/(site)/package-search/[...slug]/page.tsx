@@ -7,6 +7,7 @@ import {
 import { IconArrow, IconCheck, IconMoon, IconUsers } from "@/components/ui/Icons";
 import { Gallery } from "@/components/catalogue/Gallery";
 import { EnquiryPanel } from "@/components/catalogue/EnquiryPanel";
+import { EnquiryForm } from "@/components/catalogue/EnquiryForm";
 
 export const revalidate = 60;
 
@@ -144,6 +145,24 @@ export default async function PackagePage({ params }: { params: Promise<{ slug: 
             guests={guestsText(p)}
             nights={p.nights}
           />
+        </div>
+      </section>
+
+      {/* The enquiry panel's button points here, so this section has to exist
+          on every one of the 123 package pages. It posts to her portal inbox. */}
+      <section id="enquire" className="sec bg-blush">
+        <div className="ctr grid gap-10 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:items-start">
+          <div>
+            <p className="eyebrow">Enquire</p>
+            <h2 className="h2 mt-4 max-w-[18ch]">
+              Let&apos;s get your girls <em className="italic text-clay-deep">away</em>
+            </h2>
+            <p className="lede mt-4 max-w-[36ch]">
+              Tell us the dates and how many of you there are. We&apos;ll check availability for{" "}
+              {p.title} and send a quote priced for your group.
+            </p>
+          </div>
+          <EnquiryForm slug={p.slug} title={p.title} guestsMin={p.guestsMin} guestsMax={p.guestsMax} />
         </div>
       </section>
 

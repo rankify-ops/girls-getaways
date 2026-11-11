@@ -22,7 +22,7 @@ export default async function PackagesPage() {
   return (
     <Shell
       title="Packages"
-      subtitle={`${data.length} getaways${source === "captured" ? " · live catalogue, editing in the portal" : ""}`}
+      subtitle={`${data.length} getaways${source === "database" ? "" : " · live catalogue, editing in the portal"}`}
       actions={
         <Link href="/admin/packages/new" className="adm-btn adm-btn-rose">
           <IPlus size={16} /> New package

@@ -49,7 +49,9 @@ export function PackageEditor({ pkg, image, readOnly, destinations, styles }: Pr
           <div className="adm-banner">
             <ISparkle size={18} />
             <span>
-              <b>Preview only.</b> Connect the database and this form saves straight to the website.
+              <b>Preview only.</b> This is the live content, read from the portal. Edit and publish it at{" "}
+              <a href="https://app.rankify.com.au" className="underline underline-offset-2">app.rankify.com.au</a>,
+              which holds the logins and the record of every change.
             </span>
           </div>
         )}
