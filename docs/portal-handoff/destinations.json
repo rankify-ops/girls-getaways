@@ -1,35 +1,38 @@
 [
   {
-    "slug": "sydney",
+    "slug": "nsw-south-coast",
     "status": "published",
     "position": 0,
     "data": {
-      "name": "Sydney",
+      "name": "NSW South Coast",
       "state": "NSW",
       "blurb": null,
-      "image": null
+      "image": null,
+      "package_count": 11
     }
   },
   {
-    "slug": "sydney-surrounds",
+    "slug": "mudgee",
     "status": "published",
     "position": 1,
     "data": {
-      "name": "Sydney Surrounds",
+      "name": "Mudgee",
       "state": "NSW",
       "blurb": null,
-      "image": null
+      "image": null,
+      "package_count": 8
     }
   },
   {
-    "slug": "blue-mountains",
+    "slug": "gold-coast",
     "status": "published",
     "position": 2,
     "data": {
-      "name": "Blue Mountains",
-      "state": "NSW",
+      "name": "Gold Coast",
+      "state": "QLD",
       "blurb": null,
-      "image": null
+      "image": null,
+      "package_count": 7
     }
   },
   {
@@ -40,205 +43,404 @@
       "name": "Hunter Valley",
       "state": "NSW",
       "blurb": null,
-      "image": null
+      "image": null,
+      "package_count": 7
     }
   },
   {
-    "slug": "central-coast",
+    "slug": "noosa",
     "status": "published",
     "position": 4,
     "data": {
-      "name": "Central Coast",
-      "state": "NSW",
+      "name": "Noosa",
+      "state": "QLD",
       "blurb": null,
-      "image": null
-    }
-  },
-  {
-    "slug": "newcastle",
-    "status": "published",
-    "position": 5,
-    "data": {
-      "name": "Newcastle",
-      "state": "NSW",
-      "blurb": null,
-      "image": null
-    }
-  },
-  {
-    "slug": "port-stephens",
-    "status": "published",
-    "position": 6,
-    "data": {
-      "name": "Port Stephens",
-      "state": "NSW",
-      "blurb": null,
-      "image": null
+      "image": null,
+      "package_count": 7
     }
   },
   {
     "slug": "byron-bay",
     "status": "published",
-    "position": 7,
+    "position": 5,
     "data": {
       "name": "Byron Bay",
       "state": "NSW",
       "blurb": null,
-      "image": null
+      "image": null,
+      "package_count": 6
     }
   },
   {
-    "slug": "north-coast",
+    "slug": "newcastle",
     "status": "published",
-    "position": 8,
+    "position": 6,
     "data": {
-      "name": "North Coast",
+      "name": "Newcastle",
       "state": "NSW",
       "blurb": null,
-      "image": null
+      "image": null,
+      "package_count": 6
     }
   },
   {
-    "slug": "mudgee",
+    "slug": "port-stephens",
     "status": "published",
-    "position": 9,
+    "position": 7,
     "data": {
-      "name": "Mudgee",
+      "name": "Port Stephens",
       "state": "NSW",
       "blurb": null,
-      "image": null
-    }
-  },
-  {
-    "slug": "orange",
-    "status": "published",
-    "position": 10,
-    "data": {
-      "name": "Orange",
-      "state": "NSW",
-      "blurb": null,
-      "image": null
-    }
-  },
-  {
-    "slug": "southern-highlands",
-    "status": "published",
-    "position": 11,
-    "data": {
-      "name": "Southern Highlands",
-      "state": "NSW",
-      "blurb": null,
-      "image": null
-    }
-  },
-  {
-    "slug": "south-coast",
-    "status": "published",
-    "position": 12,
-    "data": {
-      "name": "South Coast",
-      "state": "NSW",
-      "blurb": null,
-      "image": null
-    }
-  },
-  {
-    "slug": "snowy-mountains",
-    "status": "published",
-    "position": 13,
-    "data": {
-      "name": "Snowy Mountains",
-      "state": "NSW",
-      "blurb": null,
-      "image": null
+      "image": null,
+      "package_count": 6
     }
   },
   {
     "slug": "brisbane",
     "status": "published",
-    "position": 14,
+    "position": 8,
     "data": {
       "name": "Brisbane",
       "state": "QLD",
       "blurb": null,
-      "image": null
-    }
-  },
-  {
-    "slug": "gold-coast",
-    "status": "published",
-    "position": 15,
-    "data": {
-      "name": "Gold Coast",
-      "state": "QLD",
-      "blurb": null,
-      "image": null
-    }
-  },
-  {
-    "slug": "sunshine-coast",
-    "status": "published",
-    "position": 16,
-    "data": {
-      "name": "Sunshine Coast",
-      "state": "QLD",
-      "blurb": null,
-      "image": null
-    }
-  },
-  {
-    "slug": "melbourne",
-    "status": "published",
-    "position": 17,
-    "data": {
-      "name": "Melbourne",
-      "state": "VIC",
-      "blurb": null,
-      "image": null
-    }
-  },
-  {
-    "slug": "mornington-peninsula",
-    "status": "published",
-    "position": 18,
-    "data": {
-      "name": "Mornington Peninsula",
-      "state": "VIC",
-      "blurb": null,
-      "image": null
-    }
-  },
-  {
-    "slug": "great-ocean-road",
-    "status": "published",
-    "position": 19,
-    "data": {
-      "name": "Great Ocean Road",
-      "state": "VIC",
-      "blurb": null,
-      "image": null
+      "image": null,
+      "package_count": 5
     }
   },
   {
     "slug": "canberra",
     "status": "published",
-    "position": 20,
+    "position": 9,
     "data": {
       "name": "Canberra",
       "state": "ACT",
       "blurb": null,
-      "image": null
+      "image": null,
+      "package_count": 4
     }
   },
   {
-    "slug": "adelaide-hills",
+    "slug": "melbourne",
+    "status": "published",
+    "position": 10,
+    "data": {
+      "name": "Melbourne",
+      "state": "VIC",
+      "blurb": null,
+      "image": null,
+      "package_count": 4
+    }
+  },
+  {
+    "slug": "mollymook",
+    "status": "published",
+    "position": 11,
+    "data": {
+      "name": "Mollymook",
+      "state": null,
+      "blurb": null,
+      "image": null,
+      "package_count": 4
+    }
+  },
+  {
+    "slug": "sunshine-coast",
+    "status": "published",
+    "position": 12,
+    "data": {
+      "name": "Sunshine Coast",
+      "state": "QLD",
+      "blurb": null,
+      "image": null,
+      "package_count": 4
+    }
+  },
+  {
+    "slug": "sydney",
+    "status": "published",
+    "position": 13,
+    "data": {
+      "name": "Sydney",
+      "state": "NSW",
+      "blurb": null,
+      "image": null,
+      "package_count": 4
+    }
+  },
+  {
+    "slug": "gerringong",
+    "status": "published",
+    "position": 14,
+    "data": {
+      "name": "Gerringong",
+      "state": "NSW",
+      "blurb": null,
+      "image": null,
+      "package_count": 3
+    }
+  },
+  {
+    "slug": "great-ocean-road",
+    "status": "published",
+    "position": 15,
+    "data": {
+      "name": "Great Ocean Road",
+      "state": "VIC",
+      "blurb": null,
+      "image": null,
+      "package_count": 3
+    }
+  },
+  {
+    "slug": "bali",
+    "status": "published",
+    "position": 16,
+    "data": {
+      "name": "Bali",
+      "state": "Bali",
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "berry-nsw",
+    "status": "published",
+    "position": 17,
+    "data": {
+      "name": "Berry NSW",
+      "state": null,
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "blue-mountains",
+    "status": "published",
+    "position": 18,
+    "data": {
+      "name": "Blue Mountains",
+      "state": "NSW",
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "central-coast",
+    "status": "published",
+    "position": 19,
+    "data": {
+      "name": "Central Coast",
+      "state": "NSW",
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "gerroa",
+    "status": "published",
+    "position": 20,
+    "data": {
+      "name": "Gerroa",
+      "state": null,
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "jervis-bay",
     "status": "published",
     "position": 21,
     "data": {
-      "name": "Adelaide Hills",
-      "state": "SA",
+      "name": "Jervis Bay",
+      "state": "NSW",
       "blurb": null,
-      "image": null
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "kangaroo-valley",
+    "status": "published",
+    "position": 22,
+    "data": {
+      "name": "Kangaroo Valley",
+      "state": "NSW",
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "kiama",
+    "status": "published",
+    "position": 23,
+    "data": {
+      "name": "Kiama",
+      "state": null,
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "mornington-peninsula",
+    "status": "published",
+    "position": 24,
+    "data": {
+      "name": "Mornington Peninsula",
+      "state": "VIC",
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "orange",
+    "status": "published",
+    "position": 25,
+    "data": {
+      "name": "Orange",
+      "state": "NSW",
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "sydney-surrounds",
+    "status": "published",
+    "position": 26,
+    "data": {
+      "name": "Sydney Surrounds",
+      "state": "NSW",
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "victoria-daylesford",
+    "status": "published",
+    "position": 27,
+    "data": {
+      "name": "Victoria Daylesford",
+      "state": null,
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "western-australia",
+    "status": "published",
+    "position": 28,
+    "data": {
+      "name": "Western Australia",
+      "state": null,
+      "blurb": null,
+      "image": null,
+      "package_count": 2
+    }
+  },
+  {
+    "slug": "culburra",
+    "status": "published",
+    "position": 29,
+    "data": {
+      "name": "Culburra",
+      "state": "NSW",
+      "blurb": null,
+      "image": null,
+      "package_count": 1
+    }
+  },
+  {
+    "slug": "currarong",
+    "status": "published",
+    "position": 30,
+    "data": {
+      "name": "Currarong",
+      "state": null,
+      "blurb": null,
+      "image": null,
+      "package_count": 1
+    }
+  },
+  {
+    "slug": "glenelg",
+    "status": "published",
+    "position": 31,
+    "data": {
+      "name": "Glenelg",
+      "state": null,
+      "blurb": null,
+      "image": null,
+      "package_count": 1
+    }
+  },
+  {
+    "slug": "milton",
+    "status": "published",
+    "position": 32,
+    "data": {
+      "name": "Milton",
+      "state": null,
+      "blurb": null,
+      "image": null,
+      "package_count": 1
+    }
+  },
+  {
+    "slug": "shoalhaven",
+    "status": "published",
+    "position": 33,
+    "data": {
+      "name": "Shoalhaven",
+      "state": "NSW",
+      "blurb": null,
+      "image": null,
+      "package_count": 1
+    }
+  },
+  {
+    "slug": "snowy-mountains",
+    "status": "published",
+    "position": 34,
+    "data": {
+      "name": "Snowy Mountains",
+      "state": "NSW",
+      "blurb": null,
+      "image": null,
+      "package_count": 1
+    }
+  },
+  {
+    "slug": "south-australia",
+    "status": "published",
+    "position": 35,
+    "data": {
+      "name": "South Australia",
+      "state": null,
+      "blurb": null,
+      "image": null,
+      "package_count": 1
+    }
+  },
+  {
+    "slug": "terrigal",
+    "status": "published",
+    "position": 36,
+    "data": {
+      "name": "Terrigal",
+      "state": null,
+      "blurb": null,
+      "image": null,
+      "package_count": 1
     }
   }
 ]
