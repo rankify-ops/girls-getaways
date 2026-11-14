@@ -1,24 +1,27 @@
 import { asset } from "@/lib/basePath";
 import { IconFacebook, IconInstagram } from "@/components/ui/Icons";
-import { hub, live, site, states, STYLES } from "@/content/site";
+import { hub, site, states, STYLES } from "@/content/site";
 
-// The live site's state landing pages.
-const statePath: Record<string, string> = {
-  nsw: "/nsw", qld: "/qld", vic: "/victoria", act: "/act", sa: "/south-australia", wa: "/western-australia", bali: "/bali",
+// Her old site had a page per state. Here a state is the catalogue, narrowed (lib/filters.ts).
+const stateHref = (code: string) => `/package-search/?state=${code === "bali" ? "Bali" : code.toUpperCase()}`;
+// The style names her packages actually carry, for the ones the footer lists.
+const styleHref: Record<string, string> = {
+  Hens: "hens", Classic: "classic", Luxury: "luxury", "Winter Wines": "winter+wines", "Girl's Day": "girl%27s+day",
 };
 
 export function Footer() {
   const cols = [
-    { title: "Getaways", links: states.map((s) => ({ label: s.name, href: live(statePath[s.code]) })) },
-    { title: "Styles", links: STYLES.map((s) => ({ label: s, href: "#getaways" })) },
+    { title: "Getaways", links: states.map((s) => ({ label: s.name, href: stateHref(s.code) })) },
+    { title: "Styles", links: STYLES.map((s) => ({ label: s, href: `/package-search/?style=${styleHref[s] ?? ""}` })) },
     { title: "The GG Hub", links: hub.map((h) => ({ label: h.name, href: h.href })) },
     {
       title: "Help",
       links: [
-        { label: "How it works", href: "#how" },
-        { label: "Contact us", href: live("/contact-us") },
-        { label: "Gift cards", href: live("/gift-cards") },
-        { label: "Booking terms", href: live("/booking-terms-and-conditions") },
+        { label: "How it works", href: "/how-it-works" },
+        { label: "FAQs", href: "/frequently-asked-questions" },
+        { label: "Contact us", href: "/contact-us" },
+        { label: "Gift cards", href: "/gift-cards" },
+        { label: "Booking terms", href: "/booking-terms-and-conditions" },
       ],
     },
   ];
@@ -65,7 +68,7 @@ export function Footer() {
         <div className="ctr flex flex-col gap-2 py-6 text-[12.5px] sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} Girls Getaways</p>
           <p className="flex gap-4">
-            <a href={live("/booking-terms-and-conditions")} className="link-u hover:text-white">
+            <a href={"/booking-terms-and-conditions"} className="link-u hover:text-white">
               Booking Terms &amp; Conditions
             </a>
             <span>Privacy Policy</span>

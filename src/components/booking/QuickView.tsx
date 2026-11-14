@@ -6,7 +6,7 @@ import { Photo } from "@/components/ui/Photo";
 import {
   IconArrow, IconBack, IconCheck, IconClose, IconHeart, IconMinus, IconMoon, IconPlus, IconUsers,
 } from "@/components/ui/Icons";
-import { guestsLabel, live, placeLine, type Package } from "@/content/site";
+import { guestsLabel, placeLine, type Package } from "@/content/site";
 import { Calendar } from "./Calendar";
 
 const STEPS = ["Your trip", "Your details", "Payment"];
@@ -156,7 +156,7 @@ function Drawer({ p, onClose }: { p: Package; onClose: () => void }) {
                     ))}
                   </ul>
                 </div>
-                <a href={live(p.path)} className="link-u mt-6 inline-flex items-center gap-2 text-[13.5px] text-ink" target="_blank" rel="noreferrer">
+                <a href={p.path} className="link-u mt-6 inline-flex items-center gap-2 text-[13.5px] text-ink" target="_blank" rel="noreferrer">
                   Full itinerary on girlsgetaways.com.au <IconArrow size={14} />
                 </a>
               </div>

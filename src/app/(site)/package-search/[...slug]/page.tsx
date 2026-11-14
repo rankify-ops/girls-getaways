@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import Link from "next/link";
 import {
   getCatalogue, getPackage, guestsText, packageHref, placeText, pretty, priceFromOf,
@@ -10,6 +10,7 @@ import { PackageJsonLd } from "@/components/catalogue/PackageJsonLd";
 import { Gallery } from "@/components/catalogue/Gallery";
 import { EnquiryPanel } from "@/components/catalogue/EnquiryPanel";
 import { EnquiryForm } from "@/components/catalogue/EnquiryForm";
+import { archiveTarget } from "@/lib/redirects";
 
 export const revalidate = 60;
 
@@ -43,6 +44,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function PackagePage({ params }: { params: Promise<{ slug: string[] }> }) {
   const { slug } = await params;
+
+  // Her old tag and category archives lived under this address too. They go to the
+  // catalogue narrowed to what they listed; one that was never hers goes to all of it.
+  if ((slug[0] === "tag" || slug[0] === "category") && slug.length > 1) {
+    permanentRedirect(archiveTarget(`package-search/${slug[0]}`, slug.slice(1).join("/")) ?? "/package-search/");
+  }
+
   const p = await find(slug);
   if (!p) notFound();
 

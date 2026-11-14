@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { useBooking } from "@/lib/booking";
 import { asset } from "@/lib/basePath";
@@ -7,7 +8,7 @@ import { Photo } from "@/components/ui/Photo";
 import { IconArrow, IconHeart, IconNext, IconSparkle } from "@/components/ui/Icons";
 import { styleIcon } from "@/components/booking/SearchParts";
 import {
-  destBySlug, destinations, experiences, hub, live, packages, packagesIn, placeLine, priceLabel, stateByCode, states, STYLES,
+  destBySlug, destinations, experiences, hub, packages, packagesIn, placeLine, priceLabel, stateByCode, states, STYLES,
   type StateCode,
 } from "@/content/site";
 
@@ -53,10 +54,10 @@ export function GetawaysMega({ onDone }: { onDone: () => void }) {
           <button type="button" onClick={() => go("")} className="link-u block whitespace-nowrap text-left text-ink">
             Search all getaways
           </button>
-          <a href="#specials" onClick={onDone} className="link-u block text-ink">
+          <Link href="/#specials" onClick={onDone} className="link-u block text-ink">
             Secret specials
-          </a>
-          <a href="#how" onClick={onDone} className="link-u block text-ink">
+          </Link>
+          <a href="/how-it-works" onClick={onDone} className="link-u block text-ink">
             How it works
           </a>
         </div>
@@ -152,7 +153,7 @@ export function GetawaysMega({ onDone }: { onDone: () => void }) {
             <p className="mt-2 max-w-[40ch] text-[14px] text-ink-2">
               Tell us who, when and the vibe — the GG team will design and price a trip around your girls.
             </p>
-            <a href={live("/contact-us")} className="btn btn-ink btn-sm mt-5 self-start">
+            <a href={"/contact-us"} className="btn btn-ink btn-sm mt-5 self-start">
               Enquire
             </a>
           </div>
@@ -247,7 +248,7 @@ export function HubMega({ onDone }: { onDone: () => void }) {
           </a>
         ))}
       </div>
-      <a href="#sisterhood" onClick={onDone} className="flex flex-col justify-between rounded-[22px] bg-blush p-7">
+      <Link href="/#sisterhood" onClick={onDone} className="flex flex-col justify-between rounded-[22px] bg-blush p-7">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={asset("/img/mark-ink.png")} alt="" className="size-14" />
         <span>
@@ -255,7 +256,7 @@ export function HubMega({ onDone }: { onDone: () => void }) {
           <span className="mt-2 block text-[14px] text-ink-2">Exclusive deals, birthday offers &amp; free bubbly.</span>
           <span className="btn btn-ink btn-sm mt-5">Join now</span>
         </span>
-      </a>
+      </Link>
     </div>
   );
 }

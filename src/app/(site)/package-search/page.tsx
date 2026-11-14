@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getCatalogue, allStyles, allDestinations } from "@/lib/catalogue";
+import { getCatalogue, allStyles, allDestinations, stateOf } from "@/lib/catalogue";
 import { CatalogueBrowser } from "@/components/catalogue/CatalogueBrowser";
 
 export const metadata: Metadata = {
@@ -36,6 +36,9 @@ export default async function PackageSearch() {
           title: p.title,
           venue: p.venue,
           destination: p.destination,
+          area: p.area,
+          placeTags: p.placeTags,
+          state: stateOf(p),
           styles: p.styles,
           heroImage: p.heroImage,
           guestsMin: p.guestsMin,

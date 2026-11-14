@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { asset } from "@/lib/basePath";
 import { IconArrow, IconCheck } from "@/components/ui/Icons";
-import { live } from "@/content/site";
 
 export function Sisterhood() {
   const [done, setDone] = useState(false);
@@ -46,7 +45,7 @@ export function Sisterhood() {
 
         <p className="mt-8 text-[14px] text-ink-2">
           Have a question for the GG Team?{" "}
-          <a href={live("/contact-us")} className="text-ink underline underline-offset-4">
+          <a href={"/contact-us"} className="text-ink underline underline-offset-4">
             Get in touch
           </a>
         </p>

@@ -6,7 +6,7 @@ import { asset } from "@/lib/basePath";
 import { Photo } from "@/components/ui/Photo";
 import { IconArrow, IconBack, IconClose, IconFacebook, IconInstagram, IconNext } from "@/components/ui/Icons";
 import {
-  destBySlug, destinations, experiences, hub, live, packagesIn, priceLabel, site, stateByCode, states, STYLES,
+  destBySlug, destinations, experiences, hub, packagesIn, priceLabel, site, stateByCode, states, STYLES,
   type StateCode,
 } from "@/content/site";
 
@@ -46,9 +46,9 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
       <>
         <Row label="Getaways" sub="By region, state & destination" drill onClick={() => push("getaways")} />
         <Row label="Experiences" sub="Hens, wine weekends, spa retreats…" drill onClick={() => push("experiences")} />
-        <Row label="How it works" href="#how" />
+        <Row label="How it works" href="/how-it-works" />
         <Row label="The GG Hub" sub="Sisterhood, specials & the Diaries" drill onClick={() => push("hub")} />
-        <Row label="Gift cards" href="#gift" />
+        <Row label="Gift cards" href="/gift-cards" />
       </>
     );
   } else if (root === "getaways" && !a) {
@@ -208,7 +208,7 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
         </a>
       </div>
       <span className="sr-only">
-        <a href={live("/contact-us")}>Contact us</a>
+        <a href={"/contact-us"}>Contact us</a>
       </span>
     </div>
   );

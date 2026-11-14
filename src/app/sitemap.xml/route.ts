@@ -1,5 +1,6 @@
 import { getCatalogue, packageHref } from "@/lib/catalogue";
 import { requestSite } from "@/lib/host";
+import { diaries } from "@/lib/pages";
 
 /*
  * The sitemap, built from the live catalogue so a package added in the portal
@@ -22,6 +23,11 @@ export async function GET() {
     { loc: "/", priority: "1.0", freq: "weekly" },
     { loc: "/package-search", priority: "0.9", freq: "daily" },
     ...packages.map((p) => ({ loc: packageHref(p), priority: "0.8", freq: "weekly" })),
+    // The standing pages and the blog, on the addresses they have always had.
+    ...["/how-it-works", "/gg-team", "/gift-cards", "/contact-us", "/frequently-asked-questions", "/couples-getaways", "/booking-terms-and-conditions"]
+      .map((loc) => ({ loc, priority: "0.5", freq: "monthly" })),
+    { loc: "/the-gg-diaries", priority: "0.6", freq: "weekly" },
+    ...diaries.map((d) => ({ loc: `/the-gg-diaries/${d.slug}`, priority: "0.5", freq: "monthly" })),
   ];
 
   const body =

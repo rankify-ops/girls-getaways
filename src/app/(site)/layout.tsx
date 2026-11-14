@@ -5,6 +5,7 @@ import { MobileBar } from "@/components/layout/MobileBar";
 import { MobileSearchSheet } from "@/components/booking/MobileSearchSheet";
 import { QuickView } from "@/components/booking/QuickView";
 import { ViewBeacon } from "@/components/analytics/ViewBeacon";
+import { Tracking } from "@/components/analytics/Tracking";
 
 /*
  * Chrome for the public website only.
@@ -22,6 +23,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
       <MobileSearchSheet />
       <QuickView />
       <ViewBeacon />
+      <Tracking />
     </BookingProvider>
   );
 }

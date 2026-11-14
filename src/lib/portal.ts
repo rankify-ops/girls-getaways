@@ -39,6 +39,8 @@ export type PortalPackage = {
   gallery: string[];
   inclusions: { text: string; included: boolean }[];
   styles: string[];
+  /** Towns and regions she tagged it with, beyond its one destination. */
+  placeTags: string[];
   position: number;
 };
 
@@ -109,6 +111,7 @@ export function mapItem(item: ApiItem, index = 0): PortalPackage {
       .map((r) => ({ text: String(r.text ?? "").trim(), included: r.included !== false }))
       .filter((r) => r.text),
     styles: Array.isArray(d.styles) ? (d.styles as unknown[]).map(String) : [],
+    placeTags: Array.isArray(d.place_tags) ? (d.place_tags as unknown[]).map(String) : [],
     position: item.position ?? index,
   };
 }

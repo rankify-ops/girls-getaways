@@ -1,0 +1,2746 @@
+[
+ {
+  "from": "/act",
+  "type": "page",
+  "rule": "R2-state",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?state=ACT",
+  "why": "state: ACT"
+ },
+ {
+  "from": "/bali",
+  "type": "page",
+  "rule": "R2-state",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?state=Bali",
+  "why": "state: Bali"
+ },
+ {
+  "from": "/berry",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=berry",
+  "why": "place: berry"
+ },
+ {
+  "from": "/blue-mountains",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=blue-mountains",
+  "why": "place: blue-mountains"
+ },
+ {
+  "from": "/booking-request-luxury-spas-resort-bars",
+  "type": "page",
+  "rule": "R8-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "no equivalent on the new site"
+ },
+ {
+  "from": "/brisbane",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=brisbane",
+  "why": "place: brisbane"
+ },
+ {
+  "from": "/broadbeach",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=broadbeach",
+  "why": "place: broadbeach"
+ },
+ {
+  "from": "/burleigh-heads",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=burleigh-heads",
+  "why": "place: burleigh-heads"
+ },
+ {
+  "from": "/byron-bay",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=byron-bay",
+  "why": "place: byron-bay"
+ },
+ {
+  "from": "/central-coast",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=central-coast",
+  "why": "place: central-coast"
+ },
+ {
+  "from": "/coming-soon",
+  "type": "page",
+  "rule": "R8-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "no equivalent on the new site"
+ },
+ {
+  "from": "/contact-us",
+  "type": "page",
+  "rule": "R8-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "no equivalent on the new site"
+ },
+ {
+  "from": "/coolangatta",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=coolangatta",
+  "why": "place: coolangatta"
+ },
+ {
+  "from": "/couples-getaways",
+  "type": "page",
+  "rule": "R8-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "no equivalent on the new site"
+ },
+ {
+  "from": "/culburra-currarong",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=culburra",
+  "why": "place: culburra"
+ },
+ {
+  "from": "/daylesford-getaways",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=daylesford",
+  "why": "place: daylesford"
+ },
+ {
+  "from": "/explore",
+  "type": "page",
+  "rule": "R5-home-section",
+  "to_simple": "/#getaways",
+  "to_filtered": "/#getaways",
+  "why": "section on the new home page"
+ },
+ {
+  "from": "/gerringong",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=gerringong",
+  "why": "place: gerringong"
+ },
+ {
+  "from": "/gerroa",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=gerroa",
+  "why": "place: gerroa"
+ },
+ {
+  "from": "/gg-sisterhood",
+  "type": "page",
+  "rule": "R5-home-section",
+  "to_simple": "/#sisterhood",
+  "to_filtered": "/#sisterhood",
+  "why": "section on the new home page"
+ },
+ {
+  "from": "/gg-team",
+  "type": "page",
+  "rule": "R8-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "no equivalent on the new site"
+ },
+ {
+  "from": "/gift-cards",
+  "type": "page",
+  "rule": "R5-home-section",
+  "to_simple": "/#gift",
+  "to_filtered": "/#gift",
+  "why": "section on the new home page"
+ },
+ {
+  "from": "/gold-coast",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=gold-coast",
+  "why": "place: gold-coast"
+ },
+ {
+  "from": "/gold-coast-queensland",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=gold-coast",
+  "why": "place: gold-coast"
+ },
+ {
+  "from": "/great-ocean-road",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=great-ocean-road",
+  "why": "place: great-ocean-road"
+ },
+ {
+  "from": "/home",
+  "type": "page",
+  "rule": "R8-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "no equivalent on the new site"
+ },
+ {
+  "from": "/home-1",
+  "type": "page",
+  "rule": "R8-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "no equivalent on the new site"
+ },
+ {
+  "from": "/how-it-works",
+  "type": "page",
+  "rule": "R5-home-section",
+  "to_simple": "/#how",
+  "to_filtered": "/#how",
+  "why": "section on the new home page"
+ },
+ {
+  "from": "/hunter-valley",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=hunter-valley",
+  "why": "place: hunter-valley"
+ },
+ {
+  "from": "/jervis-bay",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=jervis-bay",
+  "why": "place: jervis-bay"
+ },
+ {
+  "from": "/join-the-gg-sisterhood",
+  "type": "page",
+  "rule": "R5-home-section",
+  "to_simple": "/#sisterhood",
+  "to_filtered": "/#sisterhood",
+  "why": "section on the new home page"
+ },
+ {
+  "from": "/kangaroo-valley-getaways",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=kangaroo-valley",
+  "why": "place: kangaroo-valley"
+ },
+ {
+  "from": "/kiama",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=kiama",
+  "why": "place: kiama"
+ },
+ {
+  "from": "/melbourne",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=melbourne",
+  "why": "place: melbourne"
+ },
+ {
+  "from": "/mollymook",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=mollymook",
+  "why": "place: mollymook"
+ },
+ {
+  "from": "/mooloolaba",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=mooloolaba",
+  "why": "place: mooloolaba"
+ },
+ {
+  "from": "/mornington-peninsula",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=mornington-peninsula",
+  "why": "place: mornington-peninsula"
+ },
+ {
+  "from": "/mudgee",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=mudgee",
+  "why": "place: mudgee"
+ },
+ {
+  "from": "/newcastle",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=newcastle",
+  "why": "place: newcastle"
+ },
+ {
+  "from": "/noosa",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=noosa",
+  "why": "place: noosa"
+ },
+ {
+  "from": "/north-coast",
+  "type": "page",
+  "rule": "R7-catalogue",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/",
+  "why": "nothing in the catalogue matches"
+ },
+ {
+  "from": "/nsw",
+  "type": "page",
+  "rule": "R2-state",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?state=NSW",
+  "why": "state: NSW"
+ },
+ {
+  "from": "/orange",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=orange",
+  "why": "place: orange"
+ },
+ {
+  "from": "/package-search",
+  "type": "package-listing",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/bali/bali-bliss",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/bali/bali-bliss-8pbl2",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/berry-nsw/feel-at-home",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/berry-nsw/livin-lakeside",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/blue-mountains/mystic-mountains",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/blue-mountains/relaxation-retreat",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/brisbane/escape-to-escape",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/brisbane/retro-and-relax",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/brisbane/riverviews-and-seafoods",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/brisbane/rooftop-spas-beauty-bars",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/brisbane/soaks-in-the-city",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/byron-bay/around-the-world-in-byron-bay",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/byron-bay/beyond-the-dunes",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/byron-bay/gal-tribes-and-byron-vibes",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/byron-bay/home-in-the-hinterland",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/byron-bay/penthouses-pools-and-pina-coladas",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/byron-bay/sip-soak-and-sunbathe",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/canberra/capital-catch-ups",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/canberra/capital-indulgence",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/canberra/city-slicking-and-wine-sipping",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/canberra/classy-in-canberra",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/category/Bali",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=bali",
+  "why": "place: bali"
+ },
+ {
+  "from": "/package-search/category/Italy",
+  "type": "package-category-archive",
+  "rule": "R7-catalogue",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/",
+  "why": "nothing in the catalogue matches"
+ },
+ {
+  "from": "/package-search/category/NSW+north+coast",
+  "type": "package-category-archive",
+  "rule": "R7-catalogue",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/",
+  "why": "nothing in the catalogue matches"
+ },
+ {
+  "from": "/package-search/category/Newcastle",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=newcastle",
+  "why": "place: newcastle"
+ },
+ {
+  "from": "/package-search/category/adelaide+hills",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=adelaide-hills",
+  "why": "place: adelaide-hills"
+ },
+ {
+  "from": "/package-search/category/alexandra+headland",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sunshine-coast",
+  "why": "place: sunshine-coast"
+ },
+ {
+  "from": "/package-search/category/blue+mountains",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=blue-mountains",
+  "why": "place: blue-mountains"
+ },
+ {
+  "from": "/package-search/category/brisbane",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=brisbane",
+  "why": "place: brisbane"
+ },
+ {
+  "from": "/package-search/category/broadbeach",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=broadbeach",
+  "why": "place: broadbeach"
+ },
+ {
+  "from": "/package-search/category/burleigh+heads",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=burleigh-heads",
+  "why": "place: burleigh-heads"
+ },
+ {
+  "from": "/package-search/category/byron+bay",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=byron-bay",
+  "why": "place: byron-bay"
+ },
+ {
+  "from": "/package-search/category/canberra",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=canberra",
+  "why": "place: canberra"
+ },
+ {
+  "from": "/package-search/category/central+coast",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=central-coast",
+  "why": "place: central-coast"
+ },
+ {
+  "from": "/package-search/category/coolangatta",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=coolangatta",
+  "why": "place: coolangatta"
+ },
+ {
+  "from": "/package-search/category/daylesford",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=daylesford",
+  "why": "place: daylesford"
+ },
+ {
+  "from": "/package-search/category/ettalong",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=ettalong",
+  "why": "place: ettalong"
+ },
+ {
+  "from": "/package-search/category/gold+coast",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=gold-coast",
+  "why": "place: gold-coast"
+ },
+ {
+  "from": "/package-search/category/great+ocean+road",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=great-ocean-road",
+  "why": "place: great-ocean-road"
+ },
+ {
+  "from": "/package-search/category/holidays+for+hope",
+  "type": "package-category-archive",
+  "rule": "R7-catalogue",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/",
+  "why": "nothing in the catalogue matches"
+ },
+ {
+  "from": "/package-search/category/hunter+valley",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=hunter-valley",
+  "why": "place: hunter-valley"
+ },
+ {
+  "from": "/package-search/category/kangaroo+valley",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=kangaroo-valley",
+  "why": "place: kangaroo-valley"
+ },
+ {
+  "from": "/package-search/category/melbourne",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=melbourne",
+  "why": "place: melbourne"
+ },
+ {
+  "from": "/package-search/category/mornington+peninsula",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=mornington-peninsula",
+  "why": "place: mornington-peninsula"
+ },
+ {
+  "from": "/package-search/category/mudgee",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=mudgee",
+  "why": "place: mudgee"
+ },
+ {
+  "from": "/package-search/category/newcastle",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=newcastle",
+  "why": "place: newcastle"
+ },
+ {
+  "from": "/package-search/category/noosa",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=noosa",
+  "why": "place: noosa"
+ },
+ {
+  "from": "/package-search/category/north+coast",
+  "type": "package-category-archive",
+  "rule": "R7-catalogue",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/",
+  "why": "nothing in the catalogue matches"
+ },
+ {
+  "from": "/package-search/category/orange",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=orange",
+  "why": "place: orange"
+ },
+ {
+  "from": "/package-search/category/polkobin",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=polkobin",
+  "why": "place: polkobin"
+ },
+ {
+  "from": "/package-search/category/port+stephens",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=port-stephens",
+  "why": "place: port-stephens"
+ },
+ {
+  "from": "/package-search/category/snowy+mountains",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=snowy-mountains",
+  "why": "place: snowy-mountains"
+ },
+ {
+  "from": "/package-search/category/south+australia",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=south-australia",
+  "why": "place: south-australia"
+ },
+ {
+  "from": "/package-search/category/south+coast",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=south-coast",
+  "why": "place: south-coast"
+ },
+ {
+  "from": "/package-search/category/southern+highlands",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=southern-highlands",
+  "why": "place: southern-highlands"
+ },
+ {
+  "from": "/package-search/category/st+kilda",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=melbourne",
+  "why": "place: melbourne"
+ },
+ {
+  "from": "/package-search/category/sunshine+coast",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sunshine-coast",
+  "why": "place: sunshine-coast"
+ },
+ {
+  "from": "/package-search/category/sydney",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sydney",
+  "why": "place: sydney"
+ },
+ {
+  "from": "/package-search/category/sydney+beaches",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sydney",
+  "why": "place: sydney"
+ },
+ {
+  "from": "/package-search/category/sydney+cbd",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sydney-cbd",
+  "why": "place: sydney-cbd"
+ },
+ {
+  "from": "/package-search/category/sydney+surrounds",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sydney-surrounds",
+  "why": "place: sydney-surrounds"
+ },
+ {
+  "from": "/package-search/category/victoria",
+  "type": "package-category-archive",
+  "rule": "R2-state",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?state=VIC",
+  "why": "state: VIC"
+ },
+ {
+  "from": "/package-search/category/wallaringa",
+  "type": "package-category-archive",
+  "rule": "R7-catalogue",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/",
+  "why": "nothing in the catalogue matches"
+ },
+ {
+  "from": "/package-search/category/western+australia",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=western-australia",
+  "why": "place: western-australia"
+ },
+ {
+  "from": "/package-search/category/wollombi",
+  "type": "package-category-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=hunter-valley",
+  "why": "place: hunter-valley"
+ },
+ {
+  "from": "/package-search/central-coast/gourmet-gals-and-gin-pals",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/central-coast/hacienda-haven",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/cooma-nestled-in-the-snowy-mountains",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/culburra/bush-and-beach-retreat",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/currarong/footsteps-to-the-sea",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gerringong/glamour-glow-and-gourmet",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gerringong/ladies-in-luxury",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gerringong/shorelines-and-grapevines",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gerroa/good-times-in-gerroa",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gerroa/the-palm-oasis",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/glenelg/sunsets-by-the-pier",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gold-coast/broadbeach/bellinis-in-broadbeach",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gold-coast/broadbeach/coastal-champagne",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gold-coast/broadbeach/sunset-sand",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gold-coast/burleigh-heads/brunch-bubbles-besties",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gold-coast/burleigh-heads/decadent-detox",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gold-coast/coolangatta/stay-golden",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/gold-coast/gals-on-vacay",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/great-ocean-road/girls-on-the-great-ocean-road",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/great-ocean-road/lets-wine-down",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/great-ocean-road/slice-of-the-surf-coast",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/hunter-valley/chardonnay-in-the-chateau",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/hunter-valley/chateaus-and-estates",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/hunter-valley/country-air-and-gourmet-fare",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/hunter-valley/grazing-lazing-hunter-valley",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/hunter-valley/hamptons-in-the-hunter",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/hunter-valley/luxury-spas-resort-bars",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/hunter-valley/wines-in-the-vines",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/jervis-bay/bayside-bliss",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/jervis-bay/waterfront-wow-factor",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/kangaroo-valley/saddle-ridge-retreat",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/kangaroo-valley/visionary-in-the-valley",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/kiama/sanctuary-for-the-soul",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/kiama/sunrays-and-sea-haze",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/melbourne/beauties-bars-and-bubbles",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/melbourne/cocktails-and-hidden-bar-trails",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/melbourne/grace-and-glamour",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/melbourne/wine-dine-and-unwind",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/milton/misty-mornings",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mollymook/mediterranean-retreat",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mollymook/rise-and-wine",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mollymook/sunsets-and-sweet-treats",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mollymook/waves-and-wine",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mornington-peninsula/blairgowrie-bliss",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mornington-peninsula/peninsula-party",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mudgee/glamour-girls-go-gourmet",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mudgee/grape-escape2",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mudgee/lakeside-luxury",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mudgee/moonlighting-in-mudgee",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mudgee/mudgee-memories",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mudgee/pools-and-pinots",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mudgee/secluded-country-charm",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/mudgee/zin-and-zen",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/newcastle/coastal-escape",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/newcastle/five-star-sensation",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/newcastle/fun-nights-city-lights",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/newcastle/go-with-the-flow",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/newcastle/next-level-newcastle",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/newcastle/nourishing-night-in",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/noosa/namaste-noosa",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/noosa/noosa-nights",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/noosa/ocean-views-and-sunset-hues",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/noosa/resort-relaxation",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/noosa/riverside-riviera-noosa",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/noosa/spirit-of-noosa",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/noosa/spritzers-and-cocktail-mixers",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/nsw-south-coast/cool-calm-coastal-culburra",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/nsw-south-coast/gerringong/beauty-and-the-beach",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/nsw-south-coast/gerringong/seaside-serenity",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/nsw-south-coast/jervis-bay/barefoot-in-the-bay",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/nsw-south-coast/jervis-bay/vincentia-views",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/nsw-south-coast/jewel-in-jervis-bay",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/nsw-south-coast/kiama/bikinis-and-martinis",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/nsw-south-coast/milton/milton-magic",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/nsw-south-coast/milton/sips-and-scenery",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/nsw-south-coast/mollymook/south-coast-treasure",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/nsw-south-coast/ulladulla/holiday-in-the-hamptons",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/paint-the-town-orange-nsw",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/port-stephens/babes-in-the-bay",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/port-stephens/massages-and-mimosas-2",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/port-stephens/sparkling-seas-cocktail-high-teas",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/port-stephens/tea-by-the-sea",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/port-stephens/views-to-views",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/port-stephens/whispers-and-secrets",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/shoalhaven/country-farm-coastal-charm",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/something-in-the-orange",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/south-australia/vines-vistas",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/sunshine-coast/mooloolaba/beaches-bars-bubbles-mooloolaba",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/sunshine-coast/mooloolaba/me-time-mooloolaba",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/sunshine-coast/mooloolaba/oasis-to-ocean-mooloolaba",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/sunshine-coast/mooloolaba/pamper-in-paradise",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/sydney-surrounds/all-is-calm",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/sydney-surrounds/serenity-soak-sips",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/sydney/a-night-of-indulgence",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/sydney/cocktail-sippin-and-city-livin",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/sydney/our-little-secret",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/sydney/vivid-views",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/tag/12%2B+girls",
+  "type": "package-tag-archive",
+  "rule": "R4-group-size",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?girls=12",
+  "why": "group size: 12-girls"
+ },
+ {
+  "from": "/package-search/tag/13+or+more",
+  "type": "package-tag-archive",
+  "rule": "R4-group-size",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?girls=13",
+  "why": "group size: 13-or-more"
+ },
+ {
+  "from": "/package-search/tag/2-3+girls",
+  "type": "package-tag-archive",
+  "rule": "R4-group-size",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?girls=2",
+  "why": "group size: 2-3-girls"
+ },
+ {
+  "from": "/package-search/tag/4-12+girls",
+  "type": "package-tag-archive",
+  "rule": "R4-group-size",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?girls=4",
+  "why": "group size: 4-12-girls"
+ },
+ {
+  "from": "/package-search/tag/6-9+girls",
+  "type": "package-tag-archive",
+  "rule": "R4-group-size",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?girls=6",
+  "why": "group size: 6-9-girls"
+ },
+ {
+  "from": "/package-search/tag/Bali",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=bali",
+  "why": "place: bali"
+ },
+ {
+  "from": "/package-search/tag/adelaide+hills",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=adelaide-hills",
+  "why": "place: adelaide-hills"
+ },
+ {
+  "from": "/package-search/tag/beach+break",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=beach+break",
+  "why": "style: beach break"
+ },
+ {
+  "from": "/package-search/tag/beachside",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=beachside",
+  "why": "style: beachside"
+ },
+ {
+  "from": "/package-search/tag/berry",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=berry",
+  "why": "place: berry"
+ },
+ {
+  "from": "/package-search/tag/birthday",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=birthday",
+  "why": "style: birthday"
+ },
+ {
+  "from": "/package-search/tag/blue+mountains",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=blue-mountains",
+  "why": "place: blue-mountains"
+ },
+ {
+  "from": "/package-search/tag/brisbane",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=brisbane",
+  "why": "place: brisbane"
+ },
+ {
+  "from": "/package-search/tag/broadbeach",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=broadbeach",
+  "why": "place: broadbeach"
+ },
+ {
+  "from": "/package-search/tag/burleigh+heads",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=burleigh-heads",
+  "why": "place: burleigh-heads"
+ },
+ {
+  "from": "/package-search/tag/byron+bay",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=byron-bay",
+  "why": "place: byron-bay"
+ },
+ {
+  "from": "/package-search/tag/canberra",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=canberra",
+  "why": "place: canberra"
+ },
+ {
+  "from": "/package-search/tag/central+coast",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=central-coast",
+  "why": "place: central-coast"
+ },
+ {
+  "from": "/package-search/tag/city+escape",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=city+escape",
+  "why": "style: city escape"
+ },
+ {
+  "from": "/package-search/tag/classic",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=classic",
+  "why": "style: classic"
+ },
+ {
+  "from": "/package-search/tag/coolangatta",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=coolangatta",
+  "why": "place: coolangatta"
+ },
+ {
+  "from": "/package-search/tag/country+escape",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=country+escape",
+  "why": "style: country escape"
+ },
+ {
+  "from": "/package-search/tag/country+retreat",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=country+retreat",
+  "why": "style: country retreat"
+ },
+ {
+  "from": "/package-search/tag/culburra",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=culburra",
+  "why": "place: culburra"
+ },
+ {
+  "from": "/package-search/tag/currarong",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=currarong",
+  "why": "place: currarong"
+ },
+ {
+  "from": "/package-search/tag/fan+faves",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=fan+faves",
+  "why": "style: fan faves"
+ },
+ {
+  "from": "/package-search/tag/foodie+feast",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=foodie+feast",
+  "why": "style: foodie feast"
+ },
+ {
+  "from": "/package-search/tag/fremantle%2Frottnest+island",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=fremantle-rottnest-island",
+  "why": "place: fremantle-rottnest-island"
+ },
+ {
+  "from": "/package-search/tag/gerringong",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=gerringong",
+  "why": "place: gerringong"
+ },
+ {
+  "from": "/package-search/tag/gerroa",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=gerroa",
+  "why": "place: gerroa"
+ },
+ {
+  "from": "/package-search/tag/girl%27s+day",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=girl's+day",
+  "why": "style: girl's day"
+ },
+ {
+  "from": "/package-search/tag/glenelg",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=glenelg",
+  "why": "place: glenelg"
+ },
+ {
+  "from": "/package-search/tag/gold+coast",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=gold-coast",
+  "why": "place: gold-coast"
+ },
+ {
+  "from": "/package-search/tag/great+ocean+road",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=great-ocean-road",
+  "why": "place: great-ocean-road"
+ },
+ {
+  "from": "/package-search/tag/hens",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=hens",
+  "why": "style: hens"
+ },
+ {
+  "from": "/package-search/tag/holidays+for+hope",
+  "type": "package-tag-archive",
+  "rule": "R7-catalogue",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/",
+  "why": "nothing in the catalogue matches"
+ },
+ {
+  "from": "/package-search/tag/hunter+valley",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=hunter-valley",
+  "why": "place: hunter-valley"
+ },
+ {
+  "from": "/package-search/tag/jervis+bay",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=jervis-bay",
+  "why": "place: jervis-bay"
+ },
+ {
+  "from": "/package-search/tag/kiama",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=kiama",
+  "why": "place: kiama"
+ },
+ {
+  "from": "/package-search/tag/luxury",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=luxury",
+  "why": "style: luxury"
+ },
+ {
+  "from": "/package-search/tag/manyana",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=manyana",
+  "why": "place: manyana"
+ },
+ {
+  "from": "/package-search/tag/margaret+river",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=margaret-river",
+  "why": "place: margaret-river"
+ },
+ {
+  "from": "/package-search/tag/melbourne",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=melbourne",
+  "why": "place: melbourne"
+ },
+ {
+  "from": "/package-search/tag/mollymook",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=mollymook",
+  "why": "place: mollymook"
+ },
+ {
+  "from": "/package-search/tag/mooloolaba",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=mooloolaba",
+  "why": "place: mooloolaba"
+ },
+ {
+  "from": "/package-search/tag/mornington+peninsula",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=mornington-peninsula",
+  "why": "place: mornington-peninsula"
+ },
+ {
+  "from": "/package-search/tag/mudgee",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=mudgee",
+  "why": "place: mudgee"
+ },
+ {
+  "from": "/package-search/tag/newcastle",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=newcastle",
+  "why": "place: newcastle"
+ },
+ {
+  "from": "/package-search/tag/noosa",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=noosa",
+  "why": "place: noosa"
+ },
+ {
+  "from": "/package-search/tag/orange",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=orange",
+  "why": "place: orange"
+ },
+ {
+  "from": "/package-search/tag/pamper+day",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=pamper+day",
+  "why": "style: pamper day"
+ },
+ {
+  "from": "/package-search/tag/pokolbin",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=pokolbin",
+  "why": "place: pokolbin"
+ },
+ {
+  "from": "/package-search/tag/port+stephens",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=port-stephens",
+  "why": "place: port-stephens"
+ },
+ {
+  "from": "/package-search/tag/relaxing",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=relaxing",
+  "why": "style: relaxing"
+ },
+ {
+  "from": "/package-search/tag/snowy+mountains",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=snowy-mountains",
+  "why": "place: snowy-mountains"
+ },
+ {
+  "from": "/package-search/tag/south+australia",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=south-australia",
+  "why": "place: south-australia"
+ },
+ {
+  "from": "/package-search/tag/south+coast",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=south-coast",
+  "why": "place: south-coast"
+ },
+ {
+  "from": "/package-search/tag/spa+retreat",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=spa+retreat",
+  "why": "style: spa retreat"
+ },
+ {
+  "from": "/package-search/tag/sunshine+coast",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sunshine-coast",
+  "why": "place: sunshine-coast"
+ },
+ {
+  "from": "/package-search/tag/sydney",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sydney",
+  "why": "place: sydney"
+ },
+ {
+  "from": "/package-search/tag/sydney+surrounds",
+  "type": "package-tag-archive",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sydney-surrounds",
+  "why": "place: sydney-surrounds"
+ },
+ {
+  "from": "/package-search/tag/waterfront",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=waterfront",
+  "why": "style: waterfront"
+ },
+ {
+  "from": "/package-search/tag/wine+weekend",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=wine+weekend",
+  "why": "style: wine weekend"
+ },
+ {
+  "from": "/package-search/tag/winter+wines",
+  "type": "package-tag-archive",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=winter+wines",
+  "why": "style: winter wines"
+ },
+ {
+  "from": "/package-search/terrigal/cocktails-by-the-coastline",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/victoria-daylesford/charming-vinos-views",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/victoria-daylesford/luxury-on-lake-daylesford",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/western-australia/coastal-bliss-and-winery-sips",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/package-search/western-australia/sips-bites-and-island-sights",
+  "type": "package",
+  "rule": "R0-packages",
+  "to_simple": null,
+  "to_filtered": null,
+  "why": "resolves today"
+ },
+ {
+  "from": "/pokolbin",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=pokolbin",
+  "why": "place: pokolbin"
+ },
+ {
+  "from": "/port-stephens",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=port-stephens",
+  "why": "place: port-stephens"
+ },
+ {
+  "from": "/qld",
+  "type": "page",
+  "rule": "R2-state",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?state=QLD",
+  "why": "state: QLD"
+ },
+ {
+  "from": "/secret-specials",
+  "type": "page",
+  "rule": "R5-home-section",
+  "to_simple": "/#specials",
+  "to_filtered": "/#specials",
+  "why": "section on the new home page"
+ },
+ {
+  "from": "/snowy-mountains",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=snowy-mountains",
+  "why": "place: snowy-mountains"
+ },
+ {
+  "from": "/south-australia",
+  "type": "page",
+  "rule": "R2-state",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?state=SA",
+  "why": "state: SA"
+ },
+ {
+  "from": "/south-coast",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=south-coast",
+  "why": "place: south-coast"
+ },
+ {
+  "from": "/sunshine-coast",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sunshine-coast",
+  "why": "place: sunshine-coast"
+ },
+ {
+  "from": "/sydney",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sydney",
+  "why": "place: sydney"
+ },
+ {
+  "from": "/sydney-cbd",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sydney-cbd",
+  "why": "place: sydney-cbd"
+ },
+ {
+  "from": "/sydney-surrounds",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=sydney-surrounds",
+  "why": "place: sydney-surrounds"
+ },
+ {
+  "from": "/thank-you-for-your-enquiry",
+  "type": "page",
+  "rule": "R8-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "no equivalent on the new site"
+ },
+ {
+  "from": "/the-gg-diaries",
+  "type": "blog-index",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "blog index"
+ },
+ {
+  "from": "/the-gg-diaries/category/Beach+Break",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=beach+break",
+  "why": "style: beach break"
+ },
+ {
+  "from": "/the-gg-diaries/category/City+Escape",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=city+escape",
+  "why": "style: city escape"
+ },
+ {
+  "from": "/the-gg-diaries/category/Country+Escape",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=country+escape",
+  "why": "style: country escape"
+ },
+ {
+  "from": "/the-gg-diaries/category/Destination+Guides",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/category/Food",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/category/Foodie+Feast",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=foodie+feast",
+  "why": "style: foodie feast"
+ },
+ {
+  "from": "/the-gg-diaries/category/GG+Goss",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/category/Getaway+Inspiration",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/category/Hens+Party",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=hens",
+  "why": "style: hens"
+ },
+ {
+  "from": "/the-gg-diaries/category/High+Tea",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/category/Luxury+Stay",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=luxury",
+  "why": "style: luxury"
+ },
+ {
+  "from": "/the-gg-diaries/category/Pamper+Day",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=pamper+day",
+  "why": "style: pamper day"
+ },
+ {
+  "from": "/the-gg-diaries/category/Spa+Retreat",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=spa+retreat",
+  "why": "style: spa retreat"
+ },
+ {
+  "from": "/the-gg-diaries/category/Tips+%26+Reccommendations",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/category/Travel",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/category/Travel+Tips",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/category/Wine+Weekend",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=wine+weekend",
+  "why": "style: wine weekend"
+ },
+ {
+  "from": "/the-gg-diaries/category/test",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "no subject"
+ },
+ {
+  "from": "/the-gg-diaries/cool-cations-are-in",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/girls-getaways-on-a-budget-10-affordable-escapes-youll-love-in-2025",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/guide-to-noosa-queensland",
+  "type": "blog-post",
+  "rule": "R6-blog-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=noosa",
+  "why": "place: noosa"
+ },
+ {
+  "from": "/the-gg-diaries/guide-to-noosa-queensland-6an2h",
+  "type": "blog-post",
+  "rule": "R6-blog-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=noosa",
+  "why": "place: noosa"
+ },
+ {
+  "from": "/the-gg-diaries/guide-to-organising-a-girls-weekend",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/how-to-spend-a-weekend-in-newcastle-nsw",
+  "type": "blog-post",
+  "rule": "R6-blog-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=newcastle",
+  "why": "place: newcastle"
+ },
+ {
+  "from": "/the-gg-diaries/ideas-for-your-next-girls-weekend-canberra",
+  "type": "blog-post",
+  "rule": "R6-blog-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=canberra",
+  "why": "place: canberra"
+ },
+ {
+  "from": "/the-gg-diaries/introducing-diana-all-star-accountant",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/introducing-prue-heart-of-ops",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/nsw-south-coast-road-trip-guide",
+  "type": "blog-post",
+  "rule": "R6-blog-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=south-coast",
+  "why": "place: south-coast"
+ },
+ {
+  "from": "/the-gg-diaries/our-best-packages-for-a-mother-daughter-getaway",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/our-best-packages-for-a-mother-daughter-getaway-9k8pl-6t5mf",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/our-top-5-bar-recommendations-when-visiting-melbourne",
+  "type": "blog-post",
+  "rule": "R6-blog-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=melbourne",
+  "why": "place: melbourne"
+ },
+ {
+  "from": "/the-gg-diaries/reasons-to-book-a-country-retreat-for-your-next-girls-weekend",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=country+retreat",
+  "why": "style: country retreat"
+ },
+ {
+  "from": "/the-gg-diaries/rejuvenating-bathhouse-and-spa-packages-for-a-girls-getaway",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=spa+retreat",
+  "why": "style: spa retreat"
+ },
+ {
+  "from": "/the-gg-diaries/spring-into-summer",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/tag/beach+breaks",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=beach+break",
+  "why": "style: beach break"
+ },
+ {
+  "from": "/the-gg-diaries/tag/city+escapes",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=city+escape",
+  "why": "style: city escape"
+ },
+ {
+  "from": "/the-gg-diaries/tag/country+escapes",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=country+escape",
+  "why": "style: country escape"
+ },
+ {
+  "from": "/the-gg-diaries/tag/foodie+feasts",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=foodie+feast",
+  "why": "style: foodie feast"
+ },
+ {
+  "from": "/the-gg-diaries/tag/hens+party",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=hens",
+  "why": "style: hens"
+ },
+ {
+  "from": "/the-gg-diaries/tag/high+tea",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/tag/luxury+stays",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=luxury",
+  "why": "style: luxury"
+ },
+ {
+  "from": "/the-gg-diaries/tag/pamper+day",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=pamper+day",
+  "why": "style: pamper day"
+ },
+ {
+  "from": "/the-gg-diaries/tag/spa+retreats",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=spa+retreat",
+  "why": "style: spa retreat"
+ },
+ {
+  "from": "/the-gg-diaries/tag/wine+weekends",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=wine+weekend",
+  "why": "style: wine weekend"
+ },
+ {
+  "from": "/the-gg-diaries/the-best-getaways-to-celebrate-valentines-and-galentines-day",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/the-best-secluded-stays-girls-weekend",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/the-best-winter-wine-weekend-getaways",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=winter+wines",
+  "why": "style: winter wines"
+ },
+ {
+  "from": "/the-gg-diaries/the-importance-of-a-girls-getaway-and-why-we-all-need-one",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/the-importance-of-a-girls-getaway-and-why-we-all-need-one-4js8x",
+  "type": "blog-post",
+  "rule": "R6-blog-home",
+  "to_simple": "/",
+  "to_filtered": "/",
+  "why": "article, no single subject"
+ },
+ {
+  "from": "/the-gg-diaries/ultimate-hens-party-top-packages-for-a-stress-free-unforgettable-celebration",
+  "type": "blog-post",
+  "rule": "R6-blog-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=hens",
+  "why": "style: hens"
+ },
+ {
+  "from": "/the-gg-diaries/welcome-to-daylseford",
+  "type": "blog-post",
+  "rule": "R6-blog-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=daylesford",
+  "why": "place: daylesford"
+ },
+ {
+  "from": "/victoria",
+  "type": "page",
+  "rule": "R2-state",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?state=VIC",
+  "why": "state: VIC"
+ },
+ {
+  "from": "/western-australia",
+  "type": "page",
+  "rule": "R2-state",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?state=WA",
+  "why": "state: WA"
+ },
+ {
+  "from": "/winter-wines",
+  "type": "page",
+  "rule": "R3-style",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?style=winter+wines",
+  "why": "style: winter wines"
+ },
+ {
+  "from": "/wollombi",
+  "type": "page",
+  "rule": "R1-place",
+  "to_simple": "/package-search/",
+  "to_filtered": "/package-search/?place=hunter-valley",
+  "why": "place: hunter-valley"
+ }
+]

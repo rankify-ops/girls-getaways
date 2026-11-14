@@ -1,10 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { IconSearch, IconUsers, IconMoon, IconClose } from "@/components/ui/Icons";
 import { fromPrice, imageAt, type PriceRow } from "@/lib/portal";
 import { pretty } from "@/lib/catalogue";
+import { matchesGirls, matchesPlace, matchesState, readPreset, slugify } from "@/lib/filters";
 
 /*
  * The catalogue, filtered in the browser.
@@ -20,6 +21,9 @@ type Card = {
   title: string;
   venue: string | null;
   destination: string | null;
+  area: string | null;
+  placeTags: string[];
+  state: string | null;
   styles: string[];
   heroImage: string | null;
   guestsMin: number | null;
@@ -47,16 +51,43 @@ export function CatalogueBrowser({ packages, styles, destinations }: Props) {
   const [girls, setGirls] = useState(0);
   const [sort, setSort] = useState<(typeof SORTS)[number][0]>("featured");
   const [shown, setShown] = useState(24);
+  // A town or a state, when the address asked for one (lib/filters.ts). Not controls of
+  // their own: her old site had a page per town, and those links land here narrowed.
+  const [place, setPlace] = useState("");
+  const [stateCode, setStateCode] = useState("");
+
+  /*
+   * Read once, from the address, after the page has drawn.
+   *
+   * Not useSearchParams: that opts the whole catalogue out of being served as a
+   * ready-made page, to save a single read of a string. The first paint is the
+   * full catalogue either way and narrows a moment later, which is the right
+   * way round for a page whose job is to be there instantly.
+   */
+  useEffect(() => {
+    /* eslint-disable react-hooks/set-state-in-effect -- the address is outside React, and
+       reading it during render instead would draw one thing on the server and another in
+       the browser. One read after mount is the sanctioned way to bring it in. */
+    const want = readPreset(window.location.search);
+    if (want.place) setPlace(want.place);
+    if (want.state) setStateCode(want.state);
+    if (want.girls) setGirls(want.girls);
+    if (want.style) {
+      const hit = styles.find((s) => slugify(s.name) === slugify(want.style));
+      if (hit) setStyle(hit.name);
+    }
+    /* eslint-enable react-hooks/set-state-in-effect */
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- the address is read once
+  }, []);
 
   const results = useMemo(() => {
     const needle = q.trim().toLowerCase();
     const list = packages.filter((p) => {
       if (style && !p.styles.includes(style)) return false;
       if (dest && p.destination !== dest) return false;
-      if (girls) {
-        if (p.guestsMin && girls < p.guestsMin) return false;
-        if (p.guestsMax && girls > p.guestsMax) return false;
-      }
+      if (place && !matchesPlace(p, place)) return false;
+      if (stateCode && !matchesState(p, stateCode)) return false;
+      if (!matchesGirls(p, girls)) return false;
       if (!needle) return true;
       return [p.title, p.venue, p.destination, ...p.styles]
         .filter(Boolean)
@@ -68,10 +99,12 @@ export function CatalogueBrowser({ packages, styles, destinations }: Props) {
     if (sort === "featured") return list;
     const price = (p: Card) => fromPrice(p.priceTable) ?? (sort === "low" ? Infinity : -Infinity);
     return [...list].sort((a, b) => (sort === "low" ? price(a) - price(b) : price(b) - price(a)));
-  }, [packages, q, style, dest, girls, sort]);
+  }, [packages, q, style, dest, girls, sort, place, stateCode]);
 
-  const filtered = Boolean(q || style || dest || girls);
+  const filtered = Boolean(q || style || dest || girls || place || stateCode);
   const clear = () => {
+    setPlace("");
+    setStateCode("");
     setQ("");
     setStyle("");
     setDest("");
@@ -173,6 +206,22 @@ export function CatalogueBrowser({ packages, styles, destinations }: Props) {
             </button>
           ))}
         </div>
+
+        {(place || stateCode) && (
+          <div className="mt-5 flex flex-wrap items-center gap-2 text-[14px] text-ink-2">
+            <span>Showing getaways in</span>
+            {stateCode && (
+              <button type="button" className="chip" aria-pressed onClick={() => setStateCode("")} aria-label={`Stop filtering by ${stateCode}`}>
+                {pretty(stateCode.toLowerCase())} <IconClose size={12} />
+              </button>
+            )}
+            {place && (
+              <button type="button" className="chip" aria-pressed onClick={() => setPlace("")} aria-label={`Stop filtering by ${pretty(place)}`}>
+                {pretty(place)} <IconClose size={12} />
+              </button>
+            )}
+          </div>
+        )}
 
         <div className="mt-6 flex items-center justify-between gap-4 border-t border-rule pt-5">
           <p className="text-[14px] text-ink-2" aria-live="polite">

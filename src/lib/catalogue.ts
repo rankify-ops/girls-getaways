@@ -47,6 +47,7 @@ function fromCapture(item: RawItem, i: number): Package {
     heroImage: https(d.hero_image),
     inclusions: Array.isArray(d.inclusions) ? (d.inclusions as Package["inclusions"]) : [],
     styles: Array.isArray(d.styles) ? (d.styles as string[]) : [],
+    placeTags: Array.isArray(d.place_tags) ? (d.place_tags as unknown[]).map(String) : [],
     position: item.position ?? i,
     gallery: Array.isArray(d.gallery) ? (d.gallery as string[]).map((g) => https(g) ?? g) : [],
   };
@@ -65,6 +66,11 @@ export const destinations: Destination[] = (destinationsJson as RawItem[]).map((
 }));
 
 const destName = new Map(destinations.map((d) => [d.slug, d.name]));
+const destState = new Map(destinations.map((d) => [d.slug, d.state]));
+
+/** NSW / QLD / VIC / ACT / SA / WA / Bali — from the package's destination, or null. */
+export const stateOf = (p: Pick<Package, "destination">): string | null =>
+  (p.destination && destState.get(p.destination)) || null;
 
 /** Every published package. Portal first, captured content as the fallback. */
 export async function getCatalogue(): Promise<Package[]> {

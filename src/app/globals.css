@@ -427,3 +427,22 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 400; }
 }
 
 }
+
+/* Long-form copy brought across from the old site: the diaries, the terms, the FAQs. */
+.prose-gg { color: var(--ink-2); font-size: 16.5px; line-height: 1.75; max-width: 68ch; }
+.prose-gg > * + * { margin-top: 1.05em; }
+.prose-gg h2, .prose-gg h3, .prose-gg h4 { color: var(--ink); font-family: var(--font-serif-display), Georgia, serif; line-height: 1.2; margin-top: 1.9em; }
+.prose-gg h2 { font-size: 28px; }
+.prose-gg h3 { font-size: 22px; }
+.prose-gg h4 { font-size: 18px; }
+.prose-gg > :first-child { margin-top: 0; }
+.prose-gg a { color: var(--clay-ink); text-decoration: underline; text-underline-offset: 3px; }
+.prose-gg a:hover { color: var(--ink); }
+.prose-gg strong { color: var(--ink); font-weight: 600; }
+.prose-gg ul, .prose-gg ol { padding-left: 1.3em; }
+.prose-gg ul { list-style: disc; }
+.prose-gg ol { list-style: decimal; }
+.prose-gg li + li { margin-top: 0.45em; }
+.prose-gg img { width: 100%; height: auto; border-radius: 20px; margin-block: 1.6em; }
+.prose-gg blockquote { border-left: 3px solid var(--clay); padding-left: 1em; color: var(--ink); font-style: italic; }
+.prose-gg .cta a { display: inline-flex; align-items: center; height: 46px; padding-inline: 22px; border-radius: 999px; background: var(--ink); color: #fff; text-decoration: none; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }

@@ -2,7 +2,7 @@
 
 import { fmtRange, guestsText, useBooking, type Sort } from "@/lib/booking";
 import { IconChevron, IconClose } from "@/components/ui/Icons";
-import { live, STYLES, whereLabel } from "@/content/site";
+import { STYLES, whereLabel } from "@/content/site";
 import { PackageCard } from "./PackageCard";
 
 export function Results() {
@@ -95,7 +95,7 @@ export function Results() {
               <button type="button" onClick={b.reset} className="btn btn-line">
                 Clear filters
               </button>
-              <a href={live("/contact-us")} className="btn btn-ink">
+              <a href={"/contact-us"} className="btn btn-ink">
                 Ask the GG team
               </a>
             </div>

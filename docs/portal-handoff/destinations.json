@@ -137,7 +137,7 @@
     "position": 11,
     "data": {
       "name": "Mollymook",
-      "state": null,
+      "state": "NSW",
       "blurb": "With endless ocean views and exceptional regional dining, Mollymook is a charming holiday destination that will delight all of your senses.",
       "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 4
@@ -209,7 +209,7 @@
     "position": 17,
     "data": {
       "name": "Berry NSW",
-      "state": null,
+      "state": "NSW",
       "blurb": null,
       "image": null,
       "package_count": 2
@@ -245,7 +245,7 @@
     "position": 20,
     "data": {
       "name": "Gerroa",
-      "state": null,
+      "state": "NSW",
       "blurb": "The perfect combination of coast and country, an escape to Gerringong is the ideal getaway for ladies who relax best by the sea.",
       "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
@@ -281,7 +281,7 @@
     "position": 23,
     "data": {
       "name": "Kiama",
-      "state": null,
+      "state": "NSW",
       "blurb": "For pure coastal bliss escape to the seaside town of Kiama, where days are spent hanging by the ocean and exploring local treasures.",
       "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
@@ -329,7 +329,7 @@
     "position": 27,
     "data": {
       "name": "Victoria Daylesford",
-      "state": null,
+      "state": "VIC",
       "blurb": null,
       "image": null,
       "package_count": 2
@@ -341,7 +341,7 @@
     "position": 28,
     "data": {
       "name": "Western Australia",
-      "state": null,
+      "state": "WA",
       "blurb": "Choose from some of the popular WA destinations, the coastal city of Fremantle & the unique Rottnest Island. Discover the Dunsborough & Margaret River Wine country, famous for beautiful wines and scenery.",
       "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 2
@@ -365,7 +365,7 @@
     "position": 30,
     "data": {
       "name": "Currarong",
-      "state": null,
+      "state": "NSW",
       "blurb": null,
       "image": null,
       "package_count": 1
@@ -377,7 +377,7 @@
     "position": 31,
     "data": {
       "name": "Glenelg",
-      "state": null,
+      "state": "SA",
       "blurb": null,
       "image": null,
       "package_count": 1
@@ -389,7 +389,7 @@
     "position": 32,
     "data": {
       "name": "Milton",
-      "state": null,
+      "state": "NSW",
       "blurb": null,
       "image": null,
       "package_count": 1
@@ -425,7 +425,7 @@
     "position": 35,
     "data": {
       "name": "South Australia",
-      "state": null,
+      "state": "SA",
       "blurb": "From blue-water beaches to rolling vineyard hills, enjoy everything from wildlife to wine on a girls getaway in South Australia. Discover our range of getaways from the city to Adelaide Hills, Barossa, the beaches and beyond.",
       "image": "https://static1.squarespace.com/static/60e11aa53e6d353c238d7259/t/617f9046e72f1c0cb53d2b20/1635749978132/EDM%2BHeader5.jpg",
       "package_count": 1
@@ -437,7 +437,7 @@
     "position": 36,
     "data": {
       "name": "Terrigal",
-      "state": null,
+      "state": "NSW",
       "blurb": null,
       "image": null,
       "package_count": 1

@@ -301,11 +301,11 @@ export const experiences = [
 ];
 
 export const hub = [
-  { name: "GG Team", desc: "Meet the girls behind every getaway", href: live("/gg-team") },
-  { name: "GG Sisterhood", desc: "Members-only deals & free bubbly", href: "#sisterhood" },
-  { name: "Secret Specials", desc: "Limited offers for the Sisterhood", href: "#specials" },
-  { name: "The GG Diaries", desc: "Guides, stories & getaway inspo", href: live("/the-gg-diaries") },
-  { name: "Couples Getaways", desc: "Bring your plus-one this time", href: live("/couples-getaways") },
+  { name: "GG Team", desc: "Meet the girls behind every getaway", href: "/gg-team" },
+  { name: "GG Sisterhood", desc: "Members-only deals & free bubbly", href: "/#sisterhood" },
+  { name: "Secret Specials", desc: "Limited offers for the Sisterhood", href: "/#specials" },
+  { name: "The GG Diaries", desc: "Guides, stories & getaway inspo", href: "/the-gg-diaries" },
+  { name: "Couples Getaways", desc: "Bring your plus-one this time", href: "/couples-getaways" },
 ];
 
 /* ── lookups ────────────────────────────────────────────────────────── */

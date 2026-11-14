@@ -1,8 +1,8 @@
+import Link from "next/link";
 import { asset } from "@/lib/basePath";
 import { Photo } from "@/components/ui/Photo";
 import { Reveal } from "@/components/ui/Reveal";
 import { IconArrow } from "@/components/ui/Icons";
-import { live } from "@/content/site";
 
 export function Specials() {
   return (
@@ -27,7 +27,7 @@ export function Specials() {
             <p className="mt-3 max-w-[38ch] text-[15px] leading-relaxed text-white/70">
               For the birthday girl, the bride-to-be, or the bestie who deserves a break.
             </p>
-            <a href={live("/gift-cards")} className="btn btn-white mt-7 self-start">
+            <a href={"/gift-cards"} className="btn btn-white mt-7 self-start">
               Shop gift cards <IconArrow size={16} />
             </a>
           </div>
@@ -45,9 +45,9 @@ export function Specials() {
               <p className="mt-3 max-w-[38ch] text-[15px] leading-relaxed text-white/80">
                 Exclusive deals on selected getaways, released to GG Sisterhood members.
               </p>
-              <a href="#sisterhood" className="btn btn-white mt-7">
+              <Link href="/#sisterhood" className="btn btn-white mt-7">
                 Unlock specials <IconArrow size={16} />
-              </a>
+              </Link>
             </div>
           </div>
         </Reveal>

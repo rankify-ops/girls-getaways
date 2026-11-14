@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { fmtRange, guestsText, useBooking, useEscape } from "@/lib/booking";
 import { asset } from "@/lib/basePath";
@@ -37,7 +39,16 @@ export function Header() {
   };
   const done = () => setMenu(null);
 
-  const solid = scrolled || !!menu || mobile;
+  /*
+   * White on clear only where there is a photograph underneath: the home page
+   * and a package page, which both open on a dark, full-width picture. Every
+   * other page opens on pale blush, where white lettering cannot be read. That
+   * was already true of the catalogue; with a dozen more pages it is most of
+   * the site.
+   */
+  const pathname = usePathname() ?? "/";
+  const overPhoto = pathname === "/" || /^\/package-search\/.+/.test(pathname.replace(/\/+$/, ""));
+  const solid = scrolled || !!menu || mobile || !overPhoto;
 
   const openSearch = () => {
     setMenu(null);
@@ -69,15 +80,15 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50" onMouseLeave={leave} onMouseEnter={() => window.clearTimeout(closeT.current)}>
       {/* Announcement */}
       <div className={`overflow-hidden bg-ink text-white transition-[height] duration-500 ${scrolled ? "h-0" : "h-9"}`}>
-        <a
-          href="#sisterhood"
+        <Link
+          href="/#sisterhood"
           className="ctr flex h-9 items-center justify-center gap-2 text-[10.5px] font-medium uppercase tracking-[0.16em] sm:text-[11px]"
         >
           <IconSparkle size={13} className="flex-none text-clay" />
           <span className="whitespace-nowrap sm:hidden">Join the Sisterhood · free bubbly</span>
           <span className="hidden whitespace-nowrap sm:inline">Join the GG Sisterhood — exclusive deals, birthday offers &amp; free bubbly</span>
           <span className="hidden flex-none underline underline-offset-4 md:inline">Join now</span>
-        </a>
+        </Link>
       </div>
 
       <div
@@ -86,20 +97,20 @@ export function Header() {
         }`}
       >
         <div className="ctr flex h-16 items-center gap-3 lg:h-[76px]">
-          <a href="#top" className="flex flex-none items-center gap-3" aria-label="Girls Getaways — home">
+          <Link href="/" className="flex flex-none items-center gap-3" aria-label="Girls Getaways — home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={asset(solid ? "/img/mark-ink.png" : "/img/mark-light.png")} alt="" className="size-10 lg:size-11" />
             <span className="serif text-[22px] leading-none tracking-[-0.01em] lg:text-[25px]">Girls Getaways</span>
-          </a>
+          </Link>
 
           <nav className="mx-auto hidden items-center gap-0.5 lg:flex" aria-label="Main">
             {trigger("getaways", "Getaways")}
             {trigger("experiences", "Experiences")}
-            <a href="#how" className={navBtn} onMouseEnter={leave}>
+            <a href="/how-it-works" className={navBtn} onMouseEnter={leave}>
               How it works
             </a>
             {trigger("hub", "GG Hub")}
-            <a href="#gift" className={`${navBtn} hidden xl:inline-flex`} onMouseEnter={leave}>
+            <a href="/gift-cards" className={`${navBtn} hidden xl:inline-flex`} onMouseEnter={leave}>
               Gift cards
             </a>
           </nav>
