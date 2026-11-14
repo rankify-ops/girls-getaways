@@ -9,26 +9,25 @@ export const metadata: Metadata = {
   alternates: { canonical: "/gg-team" },
 };
 
-const CDN = "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259";
 
-// Her team page, in her words. Photography is still served from the old site's image CDN.
+// Her team page, in her words. The photographs are saved in the site (scripts/save_page_images.mjs).
 const team = [
   {
     name: "Kathryn",
     role: "Global Gal",
-    img: `${CDN}/91c49061-e698-47ab-b2ad-a583dbcf6cef/IMG_2914.jpg`,
+    img: "/img/pages/team-kathryn.webp",
     bio: "Kathryn has been travelling the globe since her early twenties and has resided in six countries, collecting girlfriends along the way. She locks all girls into their weekends and makes escaping as smooth as possible.",
   },
   {
     name: "Prue",
     role: "Heart of Ops",
-    img: `${CDN}/06b945f4-1145-4c31-a026-e34a5b1d7bb2/Prue+1.jpg`,
+    img: "/img/pages/team-prue.webp",
     bio: "Prue brings a wealth of expertise & a touch of sparkle to every occasion. Her passion for creating unforgettable experiences shines through in everything she does, whether she's orchestrating a grand event or planning a chic getaway - events are her passion and operations has her heart.",
   },
   {
     name: "Diana",
     role: "All Star Accountant",
-    img: `${CDN}/58a58560-4798-49b5-ae2f-2bc0177baf29/Diana+Y..jpg`,
+    img: "/img/pages/team-diana.webp",
     bio: "Diana is our queen of accounts! With years of experience in the field, Diana is all over it when it comes to numbers and will be overseeing all things accounting and bookkeeping, making sure that everything is kept in check, and that your getaway runs smoothly within our operations team!",
   },
 ];
@@ -40,7 +39,7 @@ export default function Team() {
         eyebrow="The GG Team"
         title={<>The girls behind <em className="italic text-clay-deep">every getaway</em></>}
         lede="We are a travel-inspired group of women who believe that quality girl time, escape from routine and a little indulgence is good for the soul."
-        image={`${CDN}/1645661054376-8PFU3J35F6J0SFCDV676/Champe%CC%80reShoot_JenAnson-19+%281%29.jpg`}
+        image="/img/pages/team-hero.webp"
         alt="Jen, founder of Girls Getaways"
       />
 
@@ -48,7 +47,7 @@ export default function Team() {
         <div className="ctr grid items-center gap-12 lg:grid-cols-[minmax(0,380px)_1fr] lg:gap-20">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={`${CDN}/3e54f0a8-917b-4cad-8ae1-42a3b87852cc/Jen+Headshot+cropped+%281%29.jpeg?format=750w`}
+            src="/img/pages/team-jen.webp"
             alt="Jen"
             loading="lazy"
             className="aspect-[4/5] w-full rounded-[28px] object-cover"
@@ -84,7 +83,7 @@ export default function Team() {
             {team.map((m) => (
               <article key={m.name} className="overflow-hidden rounded-[26px] bg-white shadow-[var(--shadow-s)]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`${m.img}?format=750w`} alt={m.name} loading="lazy" className="aspect-[4/5] w-full object-cover" />
+                <img src={m.img} alt={m.name} loading="lazy" className="aspect-[4/5] w-full object-cover" />
                 <div className="p-7">
                   <h3 className="serif text-[26px] leading-none text-ink">{m.name}</h3>
                   <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-clay-ink">{m.role}</p>

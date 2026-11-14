@@ -1,8 +1,9 @@
 """Bring her standing pages across from Squarespace, word for word.
 
-The menu and footer of the new site link to seven pages it did not have:
+The menu and footer of the new site linked to seven pages it did not have:
 contact, the team, gift cards, booking terms, how it works, the FAQs and
-Couples Getaways. Each was an absolute link to the live domain, which works
+Couples Getaways. Five were rebuilt by hand; this brings across the two that
+are pure text, the booking terms and the FAQs. Each was an absolute link to the live domain, which works
 only while that domain is still Squarespace. The day DNS moves they are 404s,
 on every page of the site.
 
@@ -37,16 +38,12 @@ VOID = {"br", "img"}
 # slug -> what to leave out. Each rule names the text it keys on, so a change
 # to her page shows up as a rule that no longer matches rather than as silence.
 PAGES = {
-    "contact-us": {},
-    "gg-team": {"cut_at": ["THE LATEST FROM THE GG DIARIES"]},
-    "gift-cards": {},
+    # Only the two pages that are shown exactly as captured. The others (contact, team,
+    # gift cards, how it works, couples) were rebuilt by hand in the site's design, with
+    # her copy, and are not read from here.
     # The page's own heading is drawn by the site; the copy starts at its first sentence.
     "booking-terms-and-conditions": {"start_at": "Girls Getaways is a travel service offered by"},
-    # The booking process is on the page twice, once laid out for desktop with
-    # arrows between the steps and once for phones. One is enough.
-    "how-it-works": {"cut_at": ["LOVELY WORDS"], "drop_headings": ["⟶", "⟵"]},
     "frequently-asked-questions": {"start_at": "BEFORE YOU BOOK"},
-    "couples-getaways": {},
 }
 
 

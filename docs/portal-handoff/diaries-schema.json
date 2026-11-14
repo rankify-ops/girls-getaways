@@ -1,0 +1,42 @@
+[
+  {
+    "key": "title",
+    "label": "Title",
+    "type": "text",
+    "required": true,
+    "maxLength": 160
+  },
+  {
+    "key": "published",
+    "label": "Date published",
+    "type": "text",
+    "required": true,
+    "maxLength": 10,
+    "help": "Year-month-day, like 2026-09-29. Posts are listed newest first."
+  },
+  {
+    "key": "image",
+    "label": "Main picture",
+    "type": "image",
+    "help": "Shown at the top of the list of posts and when the post is shared."
+  },
+  {
+    "key": "excerpt",
+    "label": "One or two lines about it",
+    "type": "textarea",
+    "maxLength": 300,
+    "help": "Shown under the title in the list of posts, and in Google."
+  },
+  {
+    "key": "body",
+    "label": "The post",
+    "type": "richtext",
+    "maxLength": 40000,
+    "help": "Leave a blank line between paragraphs. Start a line with ## for a heading, or - for a list. **Two stars** make bold, and [words](https://address) make a link."
+  },
+  {
+    "key": "tags",
+    "label": "Tags",
+    "type": "tags"
+  }
+]

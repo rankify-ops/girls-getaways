@@ -26,8 +26,8 @@ export function PageHero({ eyebrow, title, lede, image, alt = "", children }: {
           {children && <div className="mt-7 flex flex-wrap gap-3">{children}</div>}
         </div>
         {image && (
-          // eslint-disable-next-line @next/next/no-img-element -- her photography is still on Squarespace's CDN until the photo migration finishes
-          <img src={`${image}?format=1000w`} alt={alt} className="aspect-[4/3] w-full rounded-[28px] object-cover shadow-[var(--shadow)]" />
+          // eslint-disable-next-line @next/next/no-img-element -- one fixed, already-compressed file from public/img/pages
+          <img src={image} alt={alt} className="aspect-[4/3] w-full rounded-[28px] object-cover shadow-[var(--shadow)]" />
         )}
       </div>
     </section>

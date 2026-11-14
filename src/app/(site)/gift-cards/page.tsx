@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/gift-cards" },
 };
 
-const CDN = "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259";
 const EMAIL = "takemeaway@girlsgetaways.com.au";
 
 // Her words. The headings on the last two are ours: on the old site these four sat in an
@@ -61,7 +60,7 @@ export default function GiftCards() {
         eyebrow="GG Gift Cards"
         title={<>Give the gift of a <em className="italic text-clay-deep">getaway</em></>}
         lede="We may be a little biased but we truly believe there’s no better gal-to-gal present than the promise of a future getaway!"
-        image={`${CDN}/eef6a75a-6d26-4e10-93a8-7e04cab0f808/GiftCard_BurleighPavillion_Gourmet%26Gourmand.jpg`}
+        image="/img/pages/gift-cards.webp"
       >
         <a href="#amounts" className="btn btn-ink">Choose an amount</a>
         <Link href="/package-search" className="btn btn-line">See what it could cover</Link>

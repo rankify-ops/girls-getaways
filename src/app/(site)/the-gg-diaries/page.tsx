@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/ui/PageHero";
-import { diaries, longDate, minutes } from "@/lib/pages";
+import { getDiaries, longDate, minutes } from "@/lib/pages";
 
 export const metadata: Metadata = {
   title: "The GG Diaries",
@@ -9,9 +9,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/the-gg-diaries" },
 };
 
-// Her blog, every post on the address it has always had (scripts/capture_diaries.py).
-export default function Diaries() {
-  const [lead, ...rest] = diaries;
+// The portal's cache window: a post she publishes is here within the minute.
+export const revalidate = 60;
+
+// Her blog, read from her portal, every post on the address it has always had.
+export default async function Diaries() {
+  const [lead, ...rest] = await getDiaries();
   return (
     <>
       <PageHero
@@ -26,10 +29,10 @@ export default function Diaries() {
             <Link href={`/the-gg-diaries/${lead.slug}`} className="group grid items-center gap-8 lg:grid-cols-2 lg:gap-14">
               {lead.image && (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={`${lead.image}?format=1000w`} alt="" className="aspect-[16/10] w-full rounded-[28px] object-cover" />
+                <img src={lead.image} alt="" className="aspect-[16/10] w-full rounded-[28px] object-cover" />
               )}
               <div>
-                <p className="eyebrow">Latest · {longDate(lead.published)}</p>
+                <p className="eyebrow">{["Latest", longDate(lead.published)].filter(Boolean).join(" · ")}</p>
                 <h2 className="h2 mt-3 group-hover:underline group-hover:decoration-clay group-hover:underline-offset-8">{lead.title}</h2>
                 <p className="lede mt-4 max-w-[52ch]">{lead.excerpt}</p>
                 <span className="btn btn-ink btn-sm mt-6">Read it</span>
@@ -42,9 +45,9 @@ export default function Diaries() {
               <Link key={d.slug} href={`/the-gg-diaries/${d.slug}`} className="group block">
                 {d.image && (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={`${d.image}?format=750w`} alt="" loading="lazy" className="aspect-[4/3] w-full rounded-[22px] object-cover" />
+                  <img src={d.image} alt="" loading="lazy" className="aspect-[4/3] w-full rounded-[22px] object-cover" />
                 )}
-                <p className="mt-4 text-[12px] text-ink-3">{longDate(d.published)} · {minutes(d.words)} min read</p>
+                <p className="mt-4 text-[12px] text-ink-3">{[longDate(d.published), `${minutes(d.words)} min read`].filter(Boolean).join(" · ")}</p>
                 <h3 className="serif mt-2 text-[24px] leading-tight text-ink group-hover:underline group-hover:decoration-clay group-hover:underline-offset-4">{d.title}</h3>
                 <p className="mt-2 text-[14.5px] leading-relaxed text-ink-2">{d.excerpt}</p>
               </Link>

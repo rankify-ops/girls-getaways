@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/how-it-works" },
 };
 
-const CDN = "https://images.squarespace-cdn.com/content/v1/60e11aa53e6d353c238d7259";
 
 // Her booking process, in her words and her order. On the old site the six steps ran along
 // one row and back along the next; read in order, this is the sequence.
@@ -29,7 +28,7 @@ export default function HowItWorksPage() {
         eyebrow="How it works"
         title={<>You bring the girls. <em className="italic text-clay-deep">We do the rest.</em></>}
         lede="From researching where to go, to booking activities and gathering payments, we’re set on taking the stress out of planning girls weekends."
-        image={`${CDN}/1629637160261-Z9R8H5M9SYHBLCG65ZQJ/HowItWorks_ByronBay.jpg`}
+        image="/img/pages/how-it-works.webp"
       >
         <Link href="/package-search" className="btn btn-ink">Choose a getaway</Link>
         <Link href="/frequently-asked-questions" className="btn btn-line">Read the FAQs</Link>

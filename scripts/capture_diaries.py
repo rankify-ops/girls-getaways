@@ -14,7 +14,8 @@ Pictures still load from Squarespace's image CDN, the same as the package
 photography. They move when the photo migration finishes; nothing here
 depends on which host they are on.
 
-Writes src/content/diaries.json. Run it again to pick up new posts:
+Writes docs/portal-handoff/diaries-captured.json, which scripts/build_diary_rows.py turns
+into what the portal holds. Run it again to pick up new posts:
 
     python -I scripts/capture_diaries.py
 """
@@ -28,7 +29,7 @@ import urllib.request
 from html.parser import HTMLParser
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(os.path.dirname(HERE), "src", "content", "diaries.json")
+OUT = os.path.join(os.path.dirname(HERE), "docs", "portal-handoff", "diaries-captured.json")
 SITE = "https://www.girlsgetaways.com.au"
 COLLECTION = "/the-gg-diaries"
 

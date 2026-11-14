@@ -44,7 +44,7 @@ def slugify(v):
 
 def main():
     rules = json.load(open(RULES, encoding="utf-8"))
-    posts = {"/the-gg-diaries/" + d["slug"] for d in json.load(open(os.path.join(REPO, "src", "content", "diaries.json"), encoding="utf-8"))}
+    posts = {"/the-gg-diaries/" + d["slug"] for d in json.load(open(os.path.join(REPO, "docs", "portal-handoff", "diaries.json"), encoding="utf-8"))}
     paths, archives, skipped = {}, {a.strip("/"): {} for a in ARCHIVES}, 0
 
     for r in rules:

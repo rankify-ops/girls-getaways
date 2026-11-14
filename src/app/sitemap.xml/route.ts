@@ -1,6 +1,6 @@
 import { getCatalogue, packageHref } from "@/lib/catalogue";
 import { requestSite } from "@/lib/host";
-import { diaries } from "@/lib/pages";
+import { getDiaries } from "@/lib/pages";
 
 /*
  * The sitemap, built from the live catalogue so a package added in the portal
@@ -17,7 +17,7 @@ const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 
 export async function GET() {
   const { origin } = await requestSite();
-  const packages = await getCatalogue();
+  const [packages, diaries] = await Promise.all([getCatalogue(), getDiaries()]);
 
   const urls = [
     { loc: "/", priority: "1.0", freq: "weekly" },

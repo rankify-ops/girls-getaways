@@ -164,3 +164,26 @@ export function imageAt(url: string | null | undefined, width: number): string |
   if (!url) return null;
   return /(\/\/|\.)squarespace(-cdn)?\.com\//.test(url) ? `${url}?format=${width}w` : url;
 }
+
+/**
+ * Any other published collection on her site, as the portal stores it.
+ *
+ * The same rules as packages, for the same reasons: null when the portal is
+ * not configured, unreachable, answers with something that is not JSON, or
+ * answers with nothing at all, so the caller falls back to what was captured
+ * rather than drawing an empty page.
+ */
+export async function fetchCollection(key: string): Promise<{ slug: string; position?: number; data: Record<string, unknown> }[] | null> {
+  if (!portalConfigured) return null;
+  try {
+    const res = await fetch(`${BASE}/sites/${SITE_ID}/collections/${key}`, {
+      next: { revalidate: 60 },
+      headers: { accept: "application/json" },
+    });
+    if (!res.ok || !res.headers.get("content-type")?.includes("application/json")) return null;
+    const body = (await res.json()) as { items?: ApiItem[] };
+    return Array.isArray(body.items) && body.items.length ? body.items : null;
+  } catch {
+    return null;
+  }
+}
