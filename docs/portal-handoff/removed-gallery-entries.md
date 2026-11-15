@@ -20,8 +20,10 @@ were left.
 **What counted as a duplicate:** a later entry in the same gallery with the
 same byte size, width and height as an earlier one.
 
-The importer rule that keeps them out from now on is in
-`scripts/attach_galleries.py` (`is_style_tile`).
+The rule that keeps them out of any re-import is in the portal's repository:
+`rankify-editor/scripts/style-tile.mjs`, used by `scripts/import-galleries.mjs`
+and tested in `tests/gallery-style-tiles.test.ts`. By name alone it picks out
+exactly the same 89 files.
 
 ## The record, to put any of it back
 
