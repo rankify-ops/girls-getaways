@@ -16,13 +16,36 @@ import { readPreset, type Preset } from "@/lib/filters";
  * ready-made page wait on the request, to learn something only two small
  * parts of it use. Empty on the server and until the browser answers.
  */
-const never = () => () => {};
+const listeners = new Set<() => void>();
+const subscribe = (f: () => void) => {
+  listeners.add(f);
+  return () => {
+    listeners.delete(f);
+  };
+};
 
 export function useSearchContext(): Preset {
   const search = useSyncExternalStore(
-    never,
+    subscribe,
     () => window.location.search,
     () => "",
   );
   return useMemo(() => readPreset(search), [search]);
+}
+
+/*
+ * Change the group size from the page itself.
+ *
+ * The price panel has a "how many girls" picker. Choosing there writes the
+ * size to the address and tells every reader of the search, so the headline
+ * price and the enquiry form follow in the same moment, and a link copied
+ * afterwards carries the size the organiser was looking at.
+ */
+export function setSearchGirls(girls: number) {
+  const q = new URLSearchParams(window.location.search);
+  if (girls > 0) q.set("girls", String(girls));
+  else q.delete("girls");
+  const s = q.toString();
+  window.history.replaceState(null, "", `${window.location.pathname}${s ? `?${s}` : ""}`);
+  listeners.forEach((f) => f());
 }
