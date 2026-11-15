@@ -74,7 +74,7 @@ function noteLabel(note: string): string | null {
  * page, where the section after it is sand and two sand bands in a row read as
  * one section with a search box lost in the middle of it.
  */
-export function Concierge({ tone = "sand" }: { tone?: "sand" | "blush" }) {
+export function Concierge({ tone = "sand", heading = "Describe it in your own words" }: { tone?: "sand" | "blush"; heading?: string }) {
   const [what, setWhat] = useState("");
   const [state, setState] = useState<"idle" | "busy" | "done" | "error">("idle");
   const [answer, setAnswer] = useState<Answer | null>(null);
@@ -137,7 +137,7 @@ export function Concierge({ tone = "sand" }: { tone?: "sand" | "blush" }) {
           <IconSparkle size={15} /> Concierge · Tell us about your trip
         </p>
         <h2 className="serif mt-3 max-w-[22ch] text-[30px] leading-[1.08] text-ink md:text-[36px]">
-          Describe it in your own words
+          {heading}
         </h2>
 
         <form

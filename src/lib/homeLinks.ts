@@ -15,7 +15,7 @@
  * offers through the real filter and prove none of them lands on nothing.
  */
 
-export type Choice = { where?: string; guests?: number; style?: string };
+export type Choice = { where?: string; guests?: number; style?: string; start?: Date | null; end?: Date | null };
 
 /** The home page's five style names, as the styles her packages actually carry. */
 export const STYLE_PARAM: Record<string, string> = {
@@ -53,6 +53,11 @@ export const EXPERIENCE_STYLE: Record<string, string> = {
   "Country Escapes": "country escape",
 };
 
+// A local calendar day as YYYY-MM-DD (lib/filters.ts has the same; this file imports nothing,
+// so the check script can load it as it is). Not toISOString: that is UTC.
+const dayOf = (d?: Date | null): string =>
+  d ? `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}` : "";
+
 const stateParam = (code: string) => (code.toLowerCase() === "bali" ? "Bali" : code.toUpperCase());
 
 /*
@@ -77,5 +82,11 @@ export function catalogueHref(choice: Choice = {}): string {
   if (choice.guests && choice.guests > 0) q.push(`girls=${Math.round(choice.guests)}`);
   const style = choice.style ? STYLE_PARAM[choice.style] ?? choice.style : "";
   if (style) q.push(`style=${encodeURIComponent(style)}`);
+  // The dates they chose. They filter nothing (availability is her suppliers'), but they
+  // are said back on the results page and arrive in the enquiry form already filled in.
+  const from = dayOf(choice.start);
+  const to = dayOf(choice.end);
+  if (from) q.push(`from=${from}`);
+  if (from && to) q.push(`to=${to}`);
   return `/package-search/${q.length ? `?${q.join("&")}` : ""}`;
 }

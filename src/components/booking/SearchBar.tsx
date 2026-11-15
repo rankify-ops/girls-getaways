@@ -27,10 +27,19 @@ export function SearchBar({ dir = "down" }: { dir?: "up" | "down" }) {
   }, [b]);
   useEscape(!!b.seg, () => b.setSeg(null));
 
-  const toggle = (s: Seg) => b.setSeg(b.seg === s ? null : s);
+  /*
+   * Opening upward needs the room above the bar that the top of the page has.
+   * Scrolled even a little, the calendar opened under the fixed header with
+   * its month names and weekdays hidden. So the page goes back to the top
+   * first, and the popover is never taller than the space the header leaves.
+   */
+  const toggle = (s: Seg) => {
+    if (dir === "up" && b.seg !== s && window.scrollY > 0) window.scrollTo({ top: 0, behavior: "smooth" });
+    b.setSeg(b.seg === s ? null : s);
+  };
   const nights = nightsBetween(b.start, b.end);
   const place = dir === "up" ? "bottom-full mb-3" : "top-full mt-3";
-  const popCls = `pop absolute ${place} z-30 max-h-[min(520px,62vh)] overflow-y-auto overscroll-contain rounded-[28px] bg-white p-6 shadow-l`;
+  const popCls = `pop absolute ${place} z-30 ${dir === "up" ? "max-h-[min(520px,calc(100svh-370px))]" : "max-h-[min(520px,62vh)]"} overflow-y-auto overscroll-contain rounded-[28px] bg-white p-6 shadow-l`;
 
   const segs: { key: Exclude<Seg, null>; label: string; value: string; empty: string; grow: string }[] = [
     { key: "where", label: "Where", value: whereLabel(b.where), empty: "Search destinations", grow: "flex-[1.35]" },

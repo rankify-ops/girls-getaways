@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { IconArrow, IconCheck } from "@/components/ui/Icons";
+import { useSearchContext } from "@/lib/searchContext";
+import { datesLabel } from "@/lib/filters";
 
 /*
  * The enquiry form on a package page.
@@ -12,6 +14,12 @@ import { IconArrow, IconCheck } from "@/components/ui/Icons";
  *
  * Either an email or a phone number is enough — plenty of her enquiries come
  * from people who would rather be called, and demanding both loses them.
+ *
+ * It opens with what they searched for. Somebody who chose seven girls and a
+ * weekend in December on the way here has already answered two of these
+ * questions, and a form that asks again reads as a site that was not
+ * listening. Group size and date are null until typed in, and until then show
+ * the search's (lib/searchContext.ts); once typed, theirs wins.
  */
 
 type Props = { slug: string; title: string; guestsMin: number | null; guestsMax: number | null };
@@ -23,8 +31,8 @@ export function EnquiryForm({ slug, title, guestsMin, guestsMax }: Props) {
     name: "",
     email: "",
     phone: "",
-    groupSize: guestsMin ? String(guestsMin) : "",
-    preferredOn: "",
+    groupSize: null as string | null,
+    preferredOn: null as string | null,
     message: "",
     website: "", // honeypot — a person never sees this
   });
@@ -32,6 +40,12 @@ export function EnquiryForm({ slug, title, guestsMin, guestsMax }: Props) {
 
   const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setForm({ ...form, [k]: e.target.value });
+
+  const searched = useSearchContext();
+  const groupSize = form.groupSize ?? (searched.girls ? String(searched.girls) : guestsMin ? String(guestsMin) : "");
+  const preferredOn = form.preferredOn ?? searched.from;
+  // The whole weekend they searched for, when the date is still the one they arrived with.
+  const range = searched.to && preferredOn === searched.from ? datesLabel(searched.from, searched.to) : "";
 
   const emailOk = /^\S+@\S+\.\S+$/.test(form.email);
   const ready = form.name.trim().length > 1 && (emailOk || form.phone.trim().length >= 6);
@@ -44,7 +58,13 @@ export function EnquiryForm({ slug, title, guestsMin, guestsMax }: Props) {
       const res = await fetch("/api/enquire/", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ ...form, item: slug }),
+        body: JSON.stringify({
+          ...form,
+          groupSize,
+          preferredOn,
+          message: [range ? `Dates searched: ${range}` : "", form.message].filter(Boolean).join("\n\n"),
+          item: slug,
+        }),
       });
       // 503 means the inbox isn't wired up — tell the visitor to phone rather
       // than letting them think the message landed somewhere.
@@ -91,13 +111,14 @@ export function EnquiryForm({ slug, title, guestsMin, guestsMax }: Props) {
         <div>
           <label className="mb-2 block text-[13px] text-ink-2" htmlFor="eq-girls">How many girls</label>
           <input
-            id="eq-girls" className="field" inputMode="numeric" value={form.groupSize} onChange={set("groupSize")}
+            id="eq-girls" className="field" inputMode="numeric" value={groupSize} onChange={set("groupSize")}
             placeholder={guestsMin && guestsMax ? `${guestsMin}–${guestsMax}` : "6"}
           />
         </div>
         <div>
           <label className="mb-2 block text-[13px] text-ink-2" htmlFor="eq-when">Preferred dates</label>
-          <input id="eq-when" className="field" type="date" min={today()} value={form.preferredOn} onChange={set("preferredOn")} />
+          <input id="eq-when" className="field" type="date" min={today()} value={preferredOn} onChange={set("preferredOn")} />
+          {range && <p className="mt-1.5 text-[12.5px] text-ink-3">You searched {range}. We&apos;ll check the whole stay.</p>}
         </div>
         <div className="sm:col-span-2">
           <label className="mb-2 block text-[13px] text-ink-2" htmlFor="eq-msg">Anything else?</label>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { fmtRange, guestsText, useBooking, useEscape } from "@/lib/booking";
 import { asset } from "@/lib/basePath";
@@ -47,12 +47,26 @@ export function Header() {
    * the site.
    */
   const pathname = usePathname() ?? "/";
+  const router = useRouter();
   const overPhoto = pathname === "/" || /^\/package-search\/.+/.test(pathname.replace(/\/+$/, ""));
   const solid = scrolled || !!menu || mobile || !overPhoto;
 
+  /*
+   * The magnifying glass, wherever it is pressed.
+   *
+   * The search bar it opens lives in the home page's hero, so on every other
+   * page it opened nothing: the button did not respond at all. Away from the
+   * home page it now goes to the search itself, which is the results page; and
+   * on the results page, to its search box.
+   */
   const openSearch = () => {
     setMenu(null);
-    if (b.heroVisible) b.setSeg("where");
+    const at = pathname.replace(/\/+$/, "");
+    if (at === "/package-search") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      document.getElementById("catalogue-q")?.focus({ preventScroll: true });
+    } else if (at !== "") router.push("/package-search/");
+    else if (b.heroVisible) b.setSeg("where");
     else {
       window.scrollTo({ top: 0, behavior: "smooth" });
       window.setTimeout(() => b.setSeg("where"), 550);

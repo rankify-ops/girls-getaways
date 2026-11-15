@@ -133,7 +133,9 @@ export function BookingProvider({ children, catalogue }: { children: ReactNode; 
    * readable yet, so going on state alone would go to the catalogue without the
    * choice. The choice is written here as well, and that is what "go" reads.
    */
-  const chosen = useRef<{ where: string; guests: number; style: Style | "" }>({ where: "", guests: 0, style: "" });
+  const chosen = useRef<{ where: string; guests: number; style: Style | ""; start: Date | null; end: Date | null }>({
+    where: "", guests: 0, style: "", start: null, end: null,
+  });
   const setWhere = useCallback((w: string) => {
     chosen.current.where = w;
     setWhereState(w);
@@ -161,18 +163,20 @@ export function BookingProvider({ children, catalogue }: { children: ReactNode; 
   }, []);
 
   const setDates = useCallback((s: Date | null, e: Date | null) => {
+    // The dates go with the search: said back on the results page, and waiting in the enquiry form.
+    chosen.current.start = s;
+    chosen.current.end = e;
     setStart(s);
     setEnd(e);
   }, []);
 
   const reset = useCallback(() => {
     setWhere("");
-    setStart(null);
-    setEnd(null);
+    setDates(null, null);
     setGuests(0);
     setStyle("");
     setSort("rec");
-  }, [setWhere, setGuests, setStyle]);
+  }, [setWhere, setDates, setGuests, setStyle]);
 
   const results = useMemo(() => {
     const list = packages.filter((p) => {
@@ -223,7 +227,7 @@ export function BookingProvider({ children, catalogue }: { children: ReactNode; 
   const value: Booking = {
     where, setWhere, start, end, setDates, guests, setGuests, style, setStyle, sort, setSort, reset, results,
     seg, setSeg, sheet, setSheet, heroVisible, setHeroVisible,
-    wish, toggleWish, catalogue, inPlace, openPackage, goToResults, resultsHref: catalogueHref({ where, guests, style }),
+    wish, toggleWish, catalogue, inPlace, openPackage, goToResults, resultsHref: catalogueHref({ where, guests, style, start, end }),
   };
 
   return <BookingContext.Provider value={value}>{children}</BookingContext.Provider>;
