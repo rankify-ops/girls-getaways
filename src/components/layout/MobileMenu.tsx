@@ -5,7 +5,7 @@ import Link from "next/link";
 import { fromLabel, useBooking, useEscape, useLockScroll, type MenuPackage } from "@/lib/booking";
 import { catalogueHref, EXPERIENCE_STYLE } from "@/lib/homeLinks";
 import { asset } from "@/lib/basePath";
-import { IconArrow, IconBack, IconClose, IconFacebook, IconInstagram, IconNext } from "@/components/ui/Icons";
+import { IconArrow, IconBack, IconClose, IconFacebook, IconInstagram, IconNext, IconSparkle } from "@/components/ui/Icons";
 import {
   destBySlug, destinations, experiences, hub, site, stateByCode, states, STYLES,
   type StateCode,
@@ -168,16 +168,10 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
       </div>
 
       <div className="flex flex-none items-center gap-3 border-t border-rule px-5 py-4 pb-[max(16px,env(safe-area-inset-bottom))]">
-        <button
-          type="button"
-          onClick={() => {
-            onClose();
-            b.setSheet(true);
-          }}
-          className="btn btn-ink flex-1"
-        >
-          Plan my getaway
-        </button>
+        {/* The concierge on the home page. Search is the magnifying glass in the header. */}
+        <Link href="/#plan" onClick={onClose} className="btn btn-ink flex-1 gap-2">
+          <IconSparkle size={16} /> Concierge
+        </Link>
         <a href={site.instagram} className="stepper size-12" aria-label="Instagram">
           <IconInstagram size={18} />
         </a>

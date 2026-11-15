@@ -6,6 +6,7 @@ import { Experiences } from "@/components/sections/Experiences";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Specials } from "@/components/sections/Specials";
 import { Sisterhood } from "@/components/sections/Sisterhood";
+import { Concierge } from "@/components/catalogue/Concierge";
 import { getCatalogue } from "@/lib/catalogue";
 
 // The portal's cache window, so the count on this page follows her catalogue.
@@ -18,6 +19,14 @@ export default async function Home() {
     <>
       <Hero />
       <Trust />
+      {/*
+        * "Tell us about your trip", straight under the hero. It was only on the
+        * catalogue page, which is where somebody goes after they have already
+        * decided to browse. The visitor it is for is the one who arrives with a
+        * sentence ("12 of us, hens, Gold Coast") and no idea which of 123
+        * packages that is.
+        */}
+      <Concierge tone="blush" />
       <Regions />
       <Results total={total} />
       <Experiences />

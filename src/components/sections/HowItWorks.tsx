@@ -53,7 +53,8 @@ export function HowItWorks() {
 
         <Reveal>
           <div className="relative">
-            <div aria-hidden className="absolute -inset-6 -z-10 rounded-[40px] bg-blush" />
+            {/* 16px out on a phone, not 24: the page's gutter there is 20, and 24 made the whole page scroll sideways by 4. */}
+            <div aria-hidden className="absolute -inset-4 -z-10 rounded-[40px] bg-blush md:-inset-6" />
             <div className="rounded-[28px] bg-white p-6 shadow-l md:p-8">
               <div className="flex items-center justify-between">
                 <p className="eyebrow">Individual payments</p>

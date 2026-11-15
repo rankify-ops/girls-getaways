@@ -69,7 +69,12 @@ function noteLabel(note: string): string | null {
   return pretty(note.replace(/\s+/g, "-"));
 }
 
-export function Concierge() {
+/*
+ * `tone` is the band it sits on. Sand on the catalogue page; blush on the home
+ * page, where the section after it is sand and two sand bands in a row read as
+ * one section with a search box lost in the middle of it.
+ */
+export function Concierge({ tone = "sand" }: { tone?: "sand" | "blush" }) {
   const [what, setWhat] = useState("");
   const [state, setState] = useState<"idle" | "busy" | "done" | "error">("idle");
   const [answer, setAnswer] = useState<Answer | null>(null);
@@ -126,10 +131,10 @@ export function Concierge() {
   ].filter(Boolean) as string[];
 
   return (
-    <section className="sec bg-sand pb-12 pt-12">
+    <section id="plan" className={`sec scroll-mt-24 pb-12 pt-12 ${tone === "blush" ? "bg-blush" : "bg-sand"}`}>
       <div className="ctr">
         <p className="eyebrow flex items-center gap-2">
-          <IconSparkle size={15} /> Tell us about your trip
+          <IconSparkle size={15} /> Concierge · Tell us about your trip
         </p>
         <h2 className="serif mt-3 max-w-[22ch] text-[30px] leading-[1.08] text-ink md:text-[36px]">
           Describe it in your own words

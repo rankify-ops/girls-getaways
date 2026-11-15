@@ -75,6 +75,7 @@ export function Header() {
   );
 
   const summary = [whereLabel(b.where) || "Anywhere", fmtRange(b.start, b.end) || "Any week", guestsText(b.guests) || "Add girls"].join(" · ");
+  const summaryShort = [whereLabel(b.where) || "Anywhere", guestsText(b.guests) || "Add girls"].join(" · ");
 
   return (
     <header className="fixed inset-x-0 top-0 z-50" onMouseLeave={leave} onMouseEnter={() => window.clearTimeout(closeT.current)}>
@@ -110,7 +111,13 @@ export function Header() {
               How it works
             </a>
             {trigger("hub", "GG Hub")}
-            <a href="/gift-cards" className={`${navBtn} hidden xl:inline-flex`} onMouseEnter={leave}>
+            {/*
+              * Once the page has scrolled, the search pill joins the header and
+              * something has to give on a laptop. This link is the one that
+              * does: it is in the footer and the phone menu too, and the
+              * concierge is not anywhere else.
+              */}
+            <a href="/gift-cards" className={`${navBtn} hidden ${b.heroVisible ? "xl:inline-flex" : "2xl:inline-flex"}`} onMouseEnter={leave}>
               Gift cards
             </a>
           </nav>
@@ -126,7 +133,9 @@ export function Header() {
               aria-label="Edit search"
               tabIndex={b.heroVisible ? -1 : 0}
             >
-              <span className="max-w-[260px] truncate text-[13px]">{summary}</span>
+              {/* Where and who on a laptop, where the Concierge button needs the room; the dates join them on a wide screen. */}
+              <span className="max-w-[200px] truncate text-[13px] 2xl:hidden">{summaryShort}</span>
+              <span className="hidden max-w-[260px] truncate text-[13px] 2xl:inline">{summary}</span>
               <span className="grid size-8 flex-none place-items-center rounded-full bg-ink text-white">
                 <IconSearch size={15} />
               </span>
@@ -161,13 +170,21 @@ export function Header() {
               )}
             </div>
 
-            <button
-              type="button"
-              onClick={openSearch}
-              className={`btn btn-sm ml-2 hidden hover:bg-clay-deep ${solid ? "bg-ink text-white" : "bg-white text-ink hover:text-white"} ${b.heroVisible ? "xl:inline-flex" : ""}`}
+            {/*
+              * The concierge, from every page. This button said "Plan my getaway"
+              * and opened the search, which the magnifying glass beside it
+              * already does. The one thing the header had no way to reach was
+              * "tell us about your trip", and Tom could not find it on the site
+              * at all. It goes to that box on the home page, and unlike the button
+              * it replaced it stays once the page has scrolled past the hero.
+              */}
+            <Link
+              href="/#plan"
+              onClick={done}
+              className={`btn btn-sm ml-2 hidden flex-none gap-2 hover:bg-clay-deep ${solid ? "bg-ink text-white" : "bg-white text-ink hover:text-white"} xl:inline-flex`}
             >
-              Plan my getaway
-            </button>
+              <IconSparkle size={15} /> Concierge
+            </Link>
 
             <button type="button" onClick={() => setMobile(true)} className={`${navBtn} px-3 lg:hidden`} aria-label="Open menu">
               <IconMenu size={22} />
