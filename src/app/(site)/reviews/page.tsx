@@ -3,6 +3,10 @@ import Link from "next/link";
 import { PageHero } from "@/components/ui/PageHero";
 import { ReviewWall } from "@/components/sections/Reviews";
 import { proof, tripsLine } from "@/content/reviews";
+import { getReviews } from "@/lib/reviews";
+
+// The portal's cache window, so a review she publishes shows within the minute.
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "Reviews",
@@ -17,7 +21,8 @@ export const metadata: Metadata = {
  * where the rest are, and where "Read the reviews" goes. The numbers at the
  * top come from content/reviews.ts, the one place they are written.
  */
-export default function Reviews() {
+export default async function Reviews() {
+  const reviews = await getReviews();
   return (
     <>
       <PageHero
@@ -41,7 +46,7 @@ export default function Reviews() {
 
       <section className="sec bg-paper">
         <div className="ctr">
-          <ReviewWall />
+          <ReviewWall reviews={reviews} />
         </div>
       </section>
     </>

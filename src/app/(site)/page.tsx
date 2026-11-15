@@ -9,13 +9,14 @@ import { Sisterhood } from "@/components/sections/Sisterhood";
 import { Concierge } from "@/components/catalogue/Concierge";
 import { FeaturedReview, ReviewTrio } from "@/components/sections/Reviews";
 import { getCatalogue } from "@/lib/catalogue";
+import { getReviews } from "@/lib/reviews";
 
 // The portal's cache window, so the count on this page follows her catalogue.
 export const revalidate = 60;
 
 export default async function Home() {
   // How many getaways there really are, for the links that lead to all of them.
-  const total = (await getCatalogue()).length;
+  const [total, reviews] = await Promise.all([getCatalogue().then((c) => c.length), getReviews()]);
   return (
     <>
       <Hero />
@@ -31,12 +32,12 @@ export default async function Home() {
       <Regions />
       <Results total={total} />
       {/* A review with a section to itself, twice, and three more before the sign-up (sections/Reviews.tsx). */}
-      <FeaturedReview index={0} />
+      <FeaturedReview reviews={reviews} index={0} />
       <Experiences />
-      <FeaturedReview index={1} />
+      <FeaturedReview reviews={reviews} index={1} />
       <HowItWorks />
       <Specials />
-      <ReviewTrio />
+      <ReviewTrio reviews={reviews} />
       <Sisterhood />
     </>
   );

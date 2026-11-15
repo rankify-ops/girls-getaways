@@ -16,10 +16,10 @@
  * site must not show a visitor a sentence nobody wrote about a trip nobody
  * took, and "we will remember to swap them" is not a safeguard.
  *
- * To put the real ones in: replace an entry with her words exactly as she
- * wrote them, her first name, and the trip, and delete `placeholder: true`.
- * The first two with `featured: true` get a section of their own on the home
- * page; every real review appears on /reviews.
+ * The real ones are not put in here. They are added in her dashboard, under
+ * Reviews (lib/reviews.ts reads them), and the first one published replaces
+ * every stand-in below. The first two she marks as featured get a section of
+ * their own on the home page; every one appears on /reviews.
  */
 
 export const proof = {
@@ -39,6 +39,8 @@ export type Review = {
   /** The stars she gave, when known. */
   stars?: number;
   featured?: boolean;
+  /** A photo from the trip, when she gave one. */
+  photo?: string;
   placeholder?: boolean;
 };
 

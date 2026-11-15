@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { proof, ratedLine, reviews, tripsLine, type Review } from "@/content/reviews";
+import { proof, ratedLine, tripsLine, type Review } from "@/content/reviews";
 import { usePreview } from "@/lib/preview";
 import { IconArrow } from "@/components/ui/Icons";
 
@@ -19,7 +19,7 @@ import { IconArrow } from "@/components/ui/Icons";
  */
 
 /** The ones this visitor may see: real ones always, stand-ins on the preview. */
-function useReviews(): Review[] {
+function useReviews(reviews: Review[]): Review[] {
   const preview = usePreview();
   return reviews.filter((r) => !r.placeholder || preview);
 }
@@ -54,8 +54,8 @@ const who = (r: Review) => [r.name, r.trip].filter(Boolean).join(" · ");
  * `index` is which of the featured ones: 0 for the first on the page, 1 for
  * the next. A page can place two and they will not repeat.
  */
-export function FeaturedReview({ index = 0 }: { index?: number }) {
-  const r = useReviews().filter((x) => x.featured)[index];
+export function FeaturedReview({ reviews, index = 0 }: { reviews: Review[]; index?: number }) {
+  const r = useReviews(reviews).filter((x) => x.featured)[index];
   if (!r) return null;
   return (
     <section className="sec bg-sand">
@@ -81,7 +81,12 @@ export function FeaturedReview({ index = 0 }: { index?: number }) {
 
 function Card({ r }: { r: Review }) {
   return (
-    <figure className="flex h-full flex-col rounded-[28px] border border-rule bg-white p-7 md:p-8">
+    <figure className="flex h-full flex-col overflow-hidden rounded-[28px] border border-rule bg-white p-7 md:p-8">
+      {r.photo && (
+        // Hers, from the portal's media store.
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={r.photo} alt="" loading="lazy" decoding="async" className="-mx-7 -mt-7 mb-6 aspect-[3/2] w-[calc(100%+3.5rem)] max-w-none object-cover md:-mx-8 md:-mt-8 md:w-[calc(100%+4rem)]" />
+      )}
       <div className="flex items-center justify-between gap-3">
         <Stars n={r.stars} />
         <Sample r={r} />
@@ -96,8 +101,11 @@ function Card({ r }: { r: Review }) {
 }
 
 /** Three in a row, after the featured ones, with the way to the rest. */
-export function ReviewTrio() {
-  const rest = useReviews().filter((r) => !r.featured).slice(0, 3);
+export function ReviewTrio({ reviews }: { reviews: Review[] }) {
+  // The ones that do not already have a section of their own on this page.
+  const all = useReviews(reviews);
+  const own = all.filter((r) => r.featured).slice(0, 2);
+  const rest = all.filter((r) => !own.includes(r)).slice(0, 3);
   if (!rest.length) return null;
   return (
     <section className="sec bg-sand">
@@ -133,8 +141,8 @@ export function ReviewTrio() {
 }
 
 /** Every review, on /reviews. */
-export function ReviewWall() {
-  const all = useReviews();
+export function ReviewWall({ reviews }: { reviews: Review[] }) {
+  const all = useReviews(reviews);
   if (!all.length) {
     return (
       <p className="lede max-w-[52ch]">
