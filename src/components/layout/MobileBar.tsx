@@ -7,7 +7,7 @@ import { whereLabel } from "@/content/site";
 /** Phones: a floating search pill once the hero search has scrolled away. */
 export function MobileBar() {
   const b = useBooking();
-  const show = !b.heroVisible && !b.quick && !b.sheet;
+  const show = !b.heroVisible && !b.sheet;
   const summary = [whereLabel(b.where) || "Anywhere", fmtRange(b.start, b.end) || "Any week", guestsText(b.guests) || "Add girls"].join(" · ");
 
   return (

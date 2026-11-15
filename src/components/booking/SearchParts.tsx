@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useBooking } from "@/lib/booking";
 import { asset } from "@/lib/basePath";
 import { IconMinus, IconPlus, IconSearch, IconSparkle } from "@/components/ui/Icons";
-import { destinations, packagesIn, states, STYLES, type Style } from "@/content/site";
+import { destinations, states, STYLES, type Style } from "@/content/site";
 
 /*
  * The panels behind each search segment. Shared by the desktop bar's popovers
@@ -20,7 +20,7 @@ export const styleIcon: Record<Style, string> = {
 };
 
 export function WhereList({ onPick }: { onPick?: () => void }) {
-  const { where, setWhere } = useBooking();
+  const { where, setWhere, inPlace } = useBooking();
   const [q, setQ] = useState("");
   const needle = q.trim().toLowerCase();
 
@@ -72,11 +72,11 @@ export function WhereList({ onPick }: { onPick?: () => void }) {
               }`}
             >
               {s.name}
-              <span className="text-[10px] tracking-[0.12em] text-ink-3">All</span>
+              <span className="text-[10px] tracking-[0.12em] text-ink-3">All {inPlace(`state:${s.code}`).length || ""}</span>
             </button>
             <ul className="mt-1">
               {ds.map((d) => {
-                const n = packagesIn(d.slug).length;
+                const n = inPlace(d.slug).length;
                 return (
                   <li key={d.slug}>
                     <button
@@ -92,7 +92,7 @@ export function WhereList({ onPick }: { onPick?: () => void }) {
                   </li>
                 );
               })}
-              {!ds.length && !needle && (
+              {!ds.length && !needle && inPlace(`state:${s.code}`).length === 0 && (
                 <li className="px-2 py-1 text-[13px] text-ink-3">Tailor-made on request</li>
               )}
             </ul>

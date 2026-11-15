@@ -6,14 +6,20 @@ import { Experiences } from "@/components/sections/Experiences";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Specials } from "@/components/sections/Specials";
 import { Sisterhood } from "@/components/sections/Sisterhood";
+import { getCatalogue } from "@/lib/catalogue";
 
-export default function Home() {
+// The portal's cache window, so the count on this page follows her catalogue.
+export const revalidate = 60;
+
+export default async function Home() {
+  // How many getaways there really are, for the links that lead to all of them.
+  const total = (await getCatalogue()).length;
   return (
     <>
       <Hero />
       <Trust />
       <Regions />
-      <Results />
+      <Results total={total} />
       <Experiences />
       <HowItWorks />
       <Specials />

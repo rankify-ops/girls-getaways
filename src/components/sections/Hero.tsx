@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { fmtRange, guestsText, useBooking } from "@/lib/booking";
 import { Photo } from "@/components/ui/Photo";
@@ -74,9 +75,8 @@ export function Hero() {
         </div>
 
         <div className="mt-6 flex items-center justify-between gap-6 md:mt-8">
-          <button
-            type="button"
-            onClick={() => b.openQuick(slide.slug)}
+          <Link
+            href={slide.path}
             className="glass-dark group flex min-w-0 items-center gap-3 rounded-full py-1.5 pl-4 pr-1.5 text-left text-white"
           >
             <span className="min-w-0 truncate text-[12.5px]">
@@ -87,7 +87,7 @@ export function Hero() {
             <span className="grid size-8 flex-none place-items-center rounded-full bg-white text-ink transition-transform group-hover:translate-x-0.5">
               <IconArrow size={14} />
             </span>
-          </button>
+          </Link>
 
           <div className="hidden items-center gap-1.5 md:flex" role="tablist" aria-label="Featured getaways">
             {slides.map((s, n) => (

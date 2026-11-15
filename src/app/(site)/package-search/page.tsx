@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getCatalogue, allStyles, allDestinations, stateOf } from "@/lib/catalogue";
 import { CatalogueBrowser } from "@/components/catalogue/CatalogueBrowser";
+import { Concierge } from "@/components/catalogue/Concierge";
 
 export const metadata: Metadata = {
   title: "All getaways",
@@ -29,6 +30,8 @@ export default async function PackageSearch() {
           </p>
         </div>
       </section>
+
+      <Concierge />
 
       <CatalogueBrowser
         packages={packages.map((p) => ({

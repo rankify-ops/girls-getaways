@@ -46,7 +46,8 @@ export const states: State[] = [
 
 export type Destination = { slug: string; name: string; state: StateCode };
 
-// The Destination filter on the live site, grouped by state.
+// The Destination filter on the live site, grouped by state. North Coast was on it and is
+// not here: no package is filed there, and a menu entry should lead to something.
 export const destinations: Destination[] = [
   { slug: "sydney", name: "Sydney", state: "nsw" },
   { slug: "sydney-surrounds", name: "Sydney Surrounds", state: "nsw" },
@@ -56,7 +57,6 @@ export const destinations: Destination[] = [
   { slug: "newcastle", name: "Newcastle", state: "nsw" },
   { slug: "port-stephens", name: "Port Stephens", state: "nsw" },
   { slug: "byron-bay", name: "Byron Bay", state: "nsw" },
-  { slug: "north-coast", name: "North Coast", state: "nsw" },
   { slug: "mudgee", name: "Mudgee", state: "nsw" },
   { slug: "orange", name: "Orange", state: "nsw" },
   { slug: "southern-highlands", name: "Southern Highlands", state: "nsw" },
@@ -88,7 +88,7 @@ export type Package = {
   guests?: [number, number];
   nights?: number;
   blurb?: string;
-  /** Path on the live site. */
+  /** The package's own page on this site. */
   path: string;
   tag?: "Trending" | "Featured" | "New";
 };
@@ -174,25 +174,6 @@ export const packages: Package[] = [
     tag: "Trending",
   },
   {
-    slug: "inner-city-oasis",
-    title: "Inner City Oasis",
-    venue: "The Calile Hotel",
-    dest: "brisbane",
-    img: "pk-calile",
-    styles: ["Luxury"],
-    path: "/package-search/brisbane/inner-city-oasis",
-  },
-  {
-    slug: "poolside-palm-oasis",
-    title: "Poolside Palm Oasis",
-    venue: "La Belle Vallée",
-    dest: "south-coast",
-    area: "Kangaroo Valley",
-    img: "pk-bellevallee",
-    styles: ["Luxury", "Hens"],
-    path: "/package-search/kangaroo-valley/poolside-palm-oasis",
-  },
-  {
     slug: "decadent-detox",
     title: "Decadent Detox",
     venue: "Greenhouse the Bathhouse",
@@ -272,10 +253,14 @@ export const packages: Package[] = [
   },
 ];
 
-/** The hero slideshow — the live site's home-page carousel, in its order. */
+/**
+ * The hero slideshow — the live site's home-page carousel, in its order.
+ *
+ * Two slides it opens with (Inner City Oasis and Poolside Palm Oasis) are not here: neither
+ * is in her catalogue any more, and both are 404s on her live site today. A slide leads to
+ * its package, so a slide for one she no longer sells leads nowhere.
+ */
 export const heroSlides = [
-  "inner-city-oasis",
-  "poolside-palm-oasis",
   "decadent-detox",
   "beauties-bars-and-bubbles",
   "shorelines-and-grapevines",

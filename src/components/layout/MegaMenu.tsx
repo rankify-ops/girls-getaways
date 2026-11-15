@@ -2,21 +2,23 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { useBooking } from "@/lib/booking";
+import { fromLabel, useBooking } from "@/lib/booking";
+import { catalogueHref, EXPERIENCE_STYLE } from "@/lib/homeLinks";
 import { asset } from "@/lib/basePath";
 import { Photo } from "@/components/ui/Photo";
 import { IconArrow, IconHeart, IconNext, IconSparkle } from "@/components/ui/Icons";
 import { styleIcon } from "@/components/booking/SearchParts";
 import {
-  destBySlug, destinations, experiences, hub, packages, packagesIn, placeLine, priceLabel, stateByCode, states, STYLES,
+  destBySlug, destinations, experiences, hub, packages, placeLine, priceLabel, stateByCode, states, STYLES,
   type StateCode,
 } from "@/content/site";
 
 /*
  * GETAWAYS — the Wicked Hens drill-down, four columns deep:
  *   Region (Australia / International) → State → Destination → its packages.
- * Hover walks the tree; click commits: a state or destination filters the
- * results grid, a package opens its quick view.
+ * Hover walks the tree; click commits: a state or destination opens the
+ * catalogue narrowed to it, a package opens its own page. The counts and the
+ * packages are her real catalogue (the store's inPlace), not the home page's few.
  */
 export function GetawaysMega({ onDone }: { onDone: () => void }) {
   const b = useBooking();
@@ -25,7 +27,7 @@ export function GetawaysMega({ onDone }: { onDone: () => void }) {
   const [dest, setDest] = useState<string | null>(null);
 
   const scope = dest ?? `state:${st}`;
-  const list = packagesIn(scope);
+  const list = b.inPlace(scope);
   const state = stateByCode[st];
   const scopeName = dest ? destBySlug[dest].name : state.name;
 
@@ -68,7 +70,7 @@ export function GetawaysMega({ onDone }: { onDone: () => void }) {
         {states
           .filter((s) => s.group === group)
           .map((s) => {
-            const n = packagesIn(`state:${s.code}`).length;
+            const n = b.inPlace(`state:${s.code}`).length;
             return (
               <button
                 key={s.code}
@@ -100,7 +102,7 @@ export function GetawaysMega({ onDone }: { onDone: () => void }) {
         {destinations
           .filter((d) => d.state === st)
           .map((d) => {
-            const n = packagesIn(d.slug).length;
+            const n = b.inPlace(d.slug).length;
             return (
               <button key={d.slug} type="button" className="drill" data-active={dest === d.slug} onMouseEnter={() => setDest(d.slug)} onClick={() => go(d.slug)}>
                 <span>
@@ -126,23 +128,22 @@ export function GetawaysMega({ onDone }: { onDone: () => void }) {
           <ul className="mt-4 grid gap-1 xl:grid-cols-2 xl:gap-x-4">
             {list.slice(0, 4).map((p) => (
               <li key={p.slug}>
-                <button
-                  type="button"
-                  onClick={() => {
-                    b.openQuick(p.slug);
-                    onDone();
-                  }}
+                <Link
+                  href={p.path}
+                  onClick={onDone}
                   className="group flex w-full items-center gap-3.5 rounded-2xl p-2 text-left transition-colors hover:bg-sand"
                 >
                   <span className="plate plate-zoom block aspect-[4/3] w-24 flex-none rounded-xl">
-                    <Photo name={p.img} alt="" sizes="96px" />
+                    {/* Served by the portal's own media store. */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    {p.image && <img src={p.image} alt="" loading="lazy" decoding="async" />}
                   </span>
                   <span className="min-w-0">
                     <span className="serif block text-[20px] leading-[1.1] text-ink">{p.title}</span>
-                    <span className="mt-1 block truncate text-[12.5px] text-ink-3">{p.venue ?? placeLine(p)}</span>
-                    <span className="block text-[12.5px] text-ink">{priceLabel(p)}</span>
+                    <span className="mt-1 block truncate text-[12.5px] text-ink-3">{p.venue ?? p.place}</span>
+                    <span className="block text-[12.5px] text-ink">{fromLabel(p)}</span>
                   </span>
-                </button>
+                </Link>
               </li>
             ))}
           </ul>
@@ -193,13 +194,10 @@ export function ExperiencesMega({ onDone }: { onDone: () => void }) {
         <p className="eyebrow pb-4">What we do</p>
         <div className="grid grid-cols-5 gap-x-3 gap-y-5">
           {experiences.map((e) => (
-            <button
+            <Link
               key={e.name}
-              type="button"
-              onClick={() => {
-                onDone();
-                b.goToResults();
-              }}
+              href={catalogueHref({ style: EXPERIENCE_STYLE[e.name] })}
+              onClick={onDone}
               className="group flex flex-col items-center gap-2.5 text-center"
             >
               <span className="size-16 overflow-hidden rounded-full bg-clay transition-transform duration-500 group-hover:-translate-y-1">
@@ -207,14 +205,14 @@ export function ExperiencesMega({ onDone }: { onDone: () => void }) {
                 <img src={asset(`/img/${e.icon}.png`)} alt="" className="size-full" />
               </span>
               <span className="text-[13px] leading-tight text-ink">{e.name}</span>
-            </button>
+            </Link>
           ))}
         </div>
       </div>
       <button
         type="button"
         onClick={() => {
-          b.openQuick(trending.slug);
+          b.openPackage(trending.slug);
           onDone();
         }}
         className="group plate plate-zoom relative block h-full min-h-[260px] rounded-[22px] text-left"
@@ -264,7 +262,7 @@ export function HubMega({ onDone }: { onDone: () => void }) {
 /* Saved getaways — the header heart. */
 export function WishMenu({ onDone }: { onDone: () => void }) {
   const b = useBooking();
-  const saved = packages.filter((p) => b.wish.includes(p.slug));
+  const saved = b.catalogue.filter((p) => b.wish.includes(p.slug));
   return (
     <div className="w-[380px] rounded-[24px] border border-rule bg-paper p-5 text-ink shadow-l">
       <p className="eyebrow">Saved getaways</p>
@@ -275,17 +273,18 @@ export function WishMenu({ onDone }: { onDone: () => void }) {
               <button
                 type="button"
                 onClick={() => {
-                  b.openQuick(p.slug);
+                  b.openPackage(p.slug);
                   onDone();
                 }}
                 className="flex min-w-0 flex-1 items-center gap-3 text-left"
               >
                 <span className="plate block h-12 w-16 flex-none rounded-xl">
-                  <Photo name={p.img} alt="" sizes="64px" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  {p.image && <img src={p.image} alt="" loading="lazy" decoding="async" />}
                 </span>
                 <span className="min-w-0">
                   <span className="block truncate text-[14px]">{p.title}</span>
-                  <span className="block truncate text-[12px] text-ink-3">{placeLine(p)}</span>
+                  <span className="block truncate text-[12px] text-ink-3">{p.place}</span>
                 </span>
               </button>
               <button type="button" className="stepper size-8 border-0 text-clay-deep" aria-label={`Remove ${p.title}`} onClick={() => b.toggleWish(p.slug)}>

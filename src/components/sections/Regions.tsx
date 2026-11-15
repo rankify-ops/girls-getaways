@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { useBooking } from "@/lib/booking";
 import { Photo } from "@/components/ui/Photo";
 import { IconArrow, IconNext, IconPrev } from "@/components/ui/Icons";
-import { packagesIn, states } from "@/content/site";
+import { states } from "@/content/site";
 
 export function Regions() {
   const b = useBooking();
@@ -41,7 +41,7 @@ export function Regions() {
         style={{ paddingInline: "max(20px, calc((100vw - 1280px) / 2 + 32px))", scrollPaddingInline: "max(20px, calc((100vw - 1280px) / 2 + 32px))" }}
       >
         {states.map((s) => {
-          const n = packagesIn(`state:${s.code}`).length;
+          const n = b.inPlace(`state:${s.code}`).length;
           return (
             <button key={s.code} type="button" onClick={() => go(s.code)} className="group w-[68vw] max-w-[290px] text-left sm:w-[270px]">
               <span className="plate plate-zoom relative block aspect-[3/4] rounded-[var(--r)]">

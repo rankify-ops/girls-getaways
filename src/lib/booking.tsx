@@ -1,8 +1,11 @@
 "use client";
 
 import {
-  createContext, useCallback, useContext, useEffect, useMemo, useState, useSyncExternalStore, type ReactNode,
+  createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode,
 } from "react";
+import { useRouter } from "next/navigation";
+import { catalogueHref, whereFilter } from "@/lib/homeLinks";
+import { matchesPlace, matchesState, type Filterable } from "@/lib/filters";
 import { packages, stateOf, type Package, type Style } from "@/content/site";
 
 /*
@@ -11,6 +14,27 @@ import { packages, stateOf, type Package, type Style } from "@/content/site";
  * all read and write the same selection, so picking "Gold Coast" in the menu
  * shows up in the search bar and filters the grid in one move.
  */
+
+/*
+ * A package as the menus need it: enough to count it, name it and link to it.
+ *
+ * The whole catalogue comes down in this shape with every page (the layout
+ * reads it from the portal), so the menus count and list her real packages.
+ * They used to count the handful featured on the home page, which is how
+ * Queensland said "5 getaways" over a link to 23.
+ */
+export type MenuPackage = Filterable & {
+  slug: string;
+  title: string;
+  venue: string | null;
+  path: string;
+  image: string | null;
+  place: string;
+  from: number | null;
+};
+
+export const fromLabel = (p: MenuPackage) =>
+  p.from === null ? "Price on request" : `From $${p.from.toLocaleString("en-AU")}`;
 
 export type Seg = "where" | "when" | "who" | "style" | null;
 export type Sort = "rec" | "low" | "high";
@@ -43,10 +67,18 @@ type Booking = {
   wish: string[];
   toggleWish: (slug: string) => void;
 
-  quick: Package | null;
-  openQuick: (slug: string | null) => void;
+  /** Every package she sells, light. */
+  catalogue: MenuPackage[];
+  /** Her packages in a state ("state:nsw") or a place ("byron-bay"); all of them for "". */
+  inPlace: (where: string) => MenuPackage[];
 
+  /** Go to a package's own page. */
+  openPackage: (slug: string) => void;
+
+  /** Go to the catalogue, narrowed to what has been chosen. */
   goToResults: () => void;
+  /** The address goToResults would go to, for a real link. */
+  resultsHref: string;
 };
 
 const BookingContext = createContext<Booking | null>(null);
@@ -86,17 +118,38 @@ function parseWish(raw: string): string[] {
   }
 }
 
-export function BookingProvider({ children }: { children: ReactNode }) {
-  const [where, setWhere] = useState("");
+export function BookingProvider({ children, catalogue }: { children: ReactNode; catalogue: MenuPackage[] }) {
+  const router = useRouter();
+  const [where, setWhereState] = useState("");
   const [start, setStart] = useState<Date | null>(null);
   const [end, setEnd] = useState<Date | null>(null);
-  const [guests, setGuests] = useState(0);
-  const [style, setStyle] = useState<Style | "">("");
+  const [guests, setGuestsState] = useState(0);
+  const [style, setStyleState] = useState<Style | "">("");
+
+  /*
+   * The latest choice, readable in the same tick it was made.
+   *
+   * The menus do "choose NSW, then go" in one click. State set a moment ago is not
+   * readable yet, so going on state alone would go to the catalogue without the
+   * choice. The choice is written here as well, and that is what "go" reads.
+   */
+  const chosen = useRef<{ where: string; guests: number; style: Style | "" }>({ where: "", guests: 0, style: "" });
+  const setWhere = useCallback((w: string) => {
+    chosen.current.where = w;
+    setWhereState(w);
+  }, []);
+  const setGuests = useCallback((n: number) => {
+    chosen.current.guests = n;
+    setGuestsState(n);
+  }, []);
+  const setStyle = useCallback((v: Style | "") => {
+    chosen.current.style = v;
+    setStyleState(v);
+  }, []);
   const [sort, setSort] = useState<Sort>("rec");
   const [seg, setSeg] = useState<Seg>(null);
   const [sheet, setSheet] = useState(false);
   const [heroVisible, setHeroVisible] = useState(true);
-  const [quickSlug, setQuickSlug] = useState<string | null>(null);
 
   // The server renders an empty wishlist; the browser's saved one takes over on hydration.
   const wishRaw = useSyncExternalStore(subscribeWish, readWish, () => "[]");
@@ -119,7 +172,7 @@ export function BookingProvider({ children }: { children: ReactNode }) {
     setGuests(0);
     setStyle("");
     setSort("rec");
-  }, []);
+  }, [setWhere, setGuests, setStyle]);
 
   const results = useMemo(() => {
     const list = packages.filter((p) => {
@@ -136,18 +189,41 @@ export function BookingProvider({ children }: { children: ReactNode }) {
     return [...list].sort((a, b) => (sort === "low" ? price(a) - price(b) : price(b) - price(a)));
   }, [where, style, guests, sort]);
 
+  /*
+   * "Search" goes to the catalogue, not down the page.
+   *
+   * It used to scroll to the sixteen featured packages on the home page, which is
+   * how a visitor could search NSW and be shown four getaways out of sixty. The
+   * catalogue has all of them and reads the same choice (lib/homeLinks.ts).
+   */
   const goToResults = useCallback(() => {
     setSeg(null);
     setSheet(false);
-    requestAnimationFrame(() => document.getElementById("getaways")?.scrollIntoView({ behavior: "smooth" }));
-  }, []);
+    router.push(catalogueHref(chosen.current));
+  }, [router]);
 
-  const quick = useMemo(() => packages.find((p) => p.slug === quickSlug) ?? null, [quickSlug]);
+  // A package has a page of its own. Choosing one goes there.
+  const openPackage = useCallback(
+    (slug: string) => {
+      const path = catalogue.find((x) => x.slug === slug)?.path ?? packages.find((x) => x.slug === slug)?.path;
+      if (path) router.push(path);
+    },
+    [router, catalogue],
+  );
+
+  // The same reading of "where" the links use, so a count and its link agree.
+  const inPlace = useCallback(
+    (w: string) => {
+      const f = whereFilter(w);
+      return catalogue.filter((x) => matchesState(x, f.state) && matchesPlace(x, f.place));
+    },
+    [catalogue],
+  );
 
   const value: Booking = {
     where, setWhere, start, end, setDates, guests, setGuests, style, setStyle, sort, setSort, reset, results,
     seg, setSeg, sheet, setSheet, heroVisible, setHeroVisible,
-    wish, toggleWish, quick, openQuick: setQuickSlug, goToResults,
+    wish, toggleWish, catalogue, inPlace, openPackage, goToResults, resultsHref: catalogueHref({ where, guests, style }),
   };
 
   return <BookingContext.Provider value={value}>{children}</BookingContext.Provider>;

@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { useBooking, useEscape, useLockScroll } from "@/lib/booking";
+import Link from "next/link";
+import { fromLabel, useBooking, useEscape, useLockScroll, type MenuPackage } from "@/lib/booking";
+import { catalogueHref, EXPERIENCE_STYLE } from "@/lib/homeLinks";
 import { asset } from "@/lib/basePath";
-import { Photo } from "@/components/ui/Photo";
 import { IconArrow, IconBack, IconClose, IconFacebook, IconInstagram, IconNext } from "@/components/ui/Icons";
 import {
-  destBySlug, destinations, experiences, hub, packagesIn, priceLabel, site, stateByCode, states, STYLES,
+  destBySlug, destinations, experiences, hub, site, stateByCode, states, STYLES,
   type StateCode,
 } from "@/content/site";
 
@@ -65,60 +66,41 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
     body = states
       .filter((s) => s.group === a)
       .map((s) => {
-        const n = packagesIn(`state:${s.code}`).length;
+        const n = b.inPlace(`state:${s.code}`).length;
         return <Row key={s.code} label={s.name} sub={n ? `${n} getaway${n > 1 ? "s" : ""}` : "Tailor-made on request"} drill onClick={() => push(s.code)} />;
       });
   } else if (root === "getaways" && c && !d) {
     const s = stateByCode[c as StateCode];
+    const places = destinations.filter((x) => x.state === s.code);
     title = s.name;
     body = (
       <>
         <Row label={`All ${s.short} getaways`} onClick={() => go(`state:${s.code}`)} />
+        {/* A state with no places listed under it shows its packages straight away. */}
+        {!places.length && <PackageRows list={b.inPlace(`state:${s.code}`)} />}
         {destinations
           .filter((x) => x.state === s.code)
           .map((x) => {
-            const n = packagesIn(x.slug).length;
+            const n = b.inPlace(x.slug).length;
             return <Row key={x.slug} label={x.name} sub={n ? `${n} getaway${n > 1 ? "s" : ""}` : undefined} drill onClick={() => push(x.slug)} />;
           })}
       </>
     );
   } else if (root === "getaways" && d) {
     const dest = destBySlug[d];
-    const list = packagesIn(d);
+    const list = b.inPlace(d);
     title = dest.name;
     body = (
       <>
         {list.length ? (
-          <div className="space-y-3 pt-4">
-            {list.map((p) => (
-              <button
-                key={p.slug}
-                type="button"
-                onClick={() => {
-                  b.openQuick(p.slug);
-                  onClose();
-                }}
-                className="flex w-full items-center gap-4 text-left"
-              >
-                <span className="plate block h-16 w-24 flex-none rounded-xl">
-                  <Photo name={p.img} alt="" sizes="96px" />
-                </span>
-                <span className="min-w-0">
-                  <span className="serif block text-[21px] leading-tight text-ink">{p.title}</span>
-                  <span className="block truncate text-[12.5px] text-ink-3">
-                    {p.venue ?? dest.name} · {priceLabel(p)}
-                  </span>
-                </span>
-              </button>
-            ))}
-          </div>
+          <PackageRows list={list} />
         ) : (
           <p className="pt-5 text-[15px] text-ink-2">
             No set packages here yet — the GG team can tailor-make a {dest.name} getaway for your group.
           </p>
         )}
         <button type="button" onClick={() => go(d)} className="btn btn-line mt-6 w-full">
-          View all {dest.name} getaways
+          View all {list.length > 1 ? `${list.length} ` : ""}{dest.name} getaways
         </button>
       </>
     );
@@ -141,13 +123,9 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
         <p className="eyebrow pt-8">What we do</p>
         <div className="mt-4 grid grid-cols-3 gap-x-3 gap-y-5">
           {experiences.map((e) => (
-            <button
+            <Link
               key={e.name}
-              type="button"
-              onClick={() => {
-                onClose();
-                b.goToResults();
-              }}
+              href={catalogueHref({ style: EXPERIENCE_STYLE[e.name] })}
               className="flex flex-col items-center gap-2 text-center"
             >
               <span className="size-16 overflow-hidden rounded-full bg-clay">
@@ -155,7 +133,7 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
                 <img src={asset(`/img/${e.icon}.png`)} alt="" className="size-full" />
               </span>
               <span className="text-[12.5px] leading-tight text-ink">{e.name}</span>
-            </button>
+            </Link>
           ))}
         </div>
       </>
@@ -210,6 +188,32 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
       <span className="sr-only">
         <a href={"/contact-us"}>Contact us</a>
       </span>
+    </div>
+  );
+}
+
+/*
+ * Her packages in a place, each a link to its own page. Six at most: the button
+ * under them goes to the catalogue for the rest. (A link inside the menu closes
+ * it; see the click handler on the scroll area.)
+ */
+function PackageRows({ list }: { list: MenuPackage[] }) {
+  return (
+    <div className="space-y-3 pt-4">
+      {list.slice(0, 6).map((p) => (
+        <Link key={p.slug} href={p.path} className="flex w-full items-center gap-4 text-left">
+          <span className="plate block h-16 w-24 flex-none rounded-xl">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            {p.image && <img src={p.image} alt="" loading="lazy" decoding="async" />}
+          </span>
+          <span className="min-w-0">
+            <span className="serif block text-[21px] leading-tight text-ink">{p.title}</span>
+            <span className="block truncate text-[12.5px] text-ink-3">
+              {p.venue ?? p.place} · {fromLabel(p)}
+            </span>
+          </span>
+        </Link>
+      ))}
     </div>
   );
 }

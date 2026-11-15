@@ -1,11 +1,20 @@
 "use client";
 
+import Link from "next/link";
 import { fmtRange, guestsText, useBooking, type Sort } from "@/lib/booking";
 import { IconChevron, IconClose } from "@/components/ui/Icons";
 import { STYLES, whereLabel } from "@/content/site";
 import { PackageCard } from "./PackageCard";
 
-export function Results() {
+/*
+ * The home page's featured getaways.
+ *
+ * A hand-picked few, with the home page's own quick filters over them. It used
+ * to be headed "Find your getaway" and count its results, which read as the
+ * whole catalogue: choose NSW and it said "4 getaways". It now says what it
+ * is, and every route out of it goes to the catalogue, which has all of them.
+ */
+export function Results({ total }: { total: number }) {
   const b = useBooking();
 
   const active = [
@@ -22,16 +31,15 @@ export function Results() {
       <div className="ctr">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="eyebrow">Book your getaway</p>
+            <p className="eyebrow">Featured getaways</p>
             <h2 className="h2 mt-3">
-              Find your <em className="italic text-clay-deep">getaway</em>
+              A few of our <em className="italic text-clay-deep">favourites</em>
             </h2>
           </div>
           <div className="flex items-center gap-4">
-            <p className="text-[13.5px] text-ink-2" aria-live="polite">
-              <span className="font-medium text-ink">{b.results.length}</span> getaway{b.results.length === 1 ? "" : "s"}
-              {b.where && ` in ${whereLabel(b.where)}`}
-            </p>
+            <Link href={b.resultsHref} className="link-u text-[13.5px] text-ink">
+              See all {total} getaways{b.where ? ` · ${whereLabel(b.where)}` : ""}
+            </Link>
             <label className="relative">
               <span className="sr-only">Sort by</span>
               <select
@@ -92,13 +100,19 @@ export function Results() {
               We create boutique trips all over Australia. Tell the GG team where, when and who — we’ll build and price it for you.
             </p>
             <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
-              <button type="button" onClick={b.reset} className="btn btn-line">
-                Clear filters
-              </button>
+              <Link href={b.resultsHref} className="btn btn-line">
+                Search all {total} getaways
+              </Link>
               <a href={"/contact-us"} className="btn btn-ink">
                 Ask the GG team
               </a>
             </div>
+          </div>
+        )}
+        {b.results.length > 0 && (
+          <div className="mt-14 flex flex-col items-center gap-3 text-center">
+            <p className="lede max-w-[52ch]">These are a handful. Every package we design, with prices for your group size, is in the catalogue.</p>
+            <Link href={b.resultsHref} className="btn btn-ink">See all {total} getaways</Link>
           </div>
         )}
       </div>
