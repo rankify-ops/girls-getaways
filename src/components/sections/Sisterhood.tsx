@@ -19,10 +19,9 @@ export function Sisterhood() {
    * nowhere: it set a flag and showed the tick. Every sign-up since the page
    * was built was thanked and lost.
    *
-   * Her list is not connected to this site yet (which tool it lives in is a
-   * question for Shaun), so until it is, a sign-up goes to the same inbox as an
-   * enquiry, named for what it is, and the team adds her to the list from
-   * there. It only says welcome once that has been stored.
+   * A sign-up goes to her dashboard, where Sign-ups is a list of its own: who
+   * joined and when, with a download for whatever sends her emails. It only
+   * says welcome once that has been stored.
    */
   async function join(e: React.FormEvent) {
     e.preventDefault();
@@ -36,8 +35,8 @@ export function Sisterhood() {
           name: name.trim() || "Sisterhood sign-up",
           email,
           website,
-          item: "GG Sisterhood sign-up",
-          message: "Asked to join the GG Sisterhood from the website. Please add this address to the list.",
+          kind: "signup",
+          item: "GG Sisterhood",
         }),
       });
       if (!res.ok) return setState("error");

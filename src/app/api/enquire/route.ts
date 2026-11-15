@@ -42,6 +42,10 @@ export async function POST(req: Request) {
   if (!name) return NextResponse.json({ error: "name-required" }, { status: 400 });
   if (!email && !phone) return NextResponse.json({ error: "contact-required" }, { status: 400 });
 
+  // Somebody joining her list, not asking something. The portal keeps it on its own
+  // list in her dashboard and nobody is emailed about it.
+  const signup = input.kind === "signup";
+
   const size = Number(input.groupSize);
   const on = text(input.preferredOn, 10);
 
@@ -58,6 +62,7 @@ export async function POST(req: Request) {
       message: text(input.message, 4000),
       item: text(input.item, 200),
       website: text(input.website, 200),
+      kind: signup ? "signup" : undefined,
     }),
     cache: "no-store",
   });
@@ -74,7 +79,7 @@ export async function POST(req: Request) {
   //
   // The email is a courtesy on top. If it fails the enquiry is already safe,
   // so this never changes what the visitor is told — it is logged and dropped.
-  await notify({ name, email, phone, size, on, message: text(input.message, 4000), item: text(input.item, 200) });
+  if (!signup) await notify({ name, email, phone, size, on, message: text(input.message, 4000), item: text(input.item, 200) });
 
   return new NextResponse(null, { status: 204 });
 }
