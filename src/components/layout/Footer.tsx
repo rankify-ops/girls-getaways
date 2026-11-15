@@ -1,6 +1,6 @@
 import { asset } from "@/lib/basePath";
 import { IconFacebook, IconInstagram } from "@/components/ui/Icons";
-import { hub, site, states, STYLES } from "@/content/site";
+import { hub, site, states, STYLES, telHref } from "@/content/site";
 
 // Her old site had a page per state. Here a state is the catalogue, narrowed (lib/filters.ts).
 const stateHref = (code: string) => `/package-search/?state=${code === "bali" ? "Bali" : code.toUpperCase()}`;
@@ -42,6 +42,16 @@ export function Footer() {
               <IconFacebook size={18} />
             </a>
           </div>
+          {/* The number and the address, on every page. They were on the Contact page only. */}
+          <p className="mt-6 text-[14px] leading-relaxed">
+            <a href={telHref} className="link-u text-white">
+              {site.phone}
+            </a>
+            <br />
+            <a href={`mailto:${site.email}`} className="link-u hover:text-white">
+              {site.email}
+            </a>
+          </p>
         </div>
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-4 lg:col-span-4">
           {cols.map((c) => (
@@ -72,8 +82,12 @@ export function Footer() {
             <a href={"/booking-terms-and-conditions"} className="link-u hover:text-white">
               Booking Terms &amp; Conditions
             </a>
-            <span>Privacy Policy</span>
-            <span>Website Terms</span>
+            <a href={"/privacy-policy"} className="link-u hover:text-white">
+              Privacy Policy
+            </a>
+            <a href={"/website-terms-of-use"} className="link-u hover:text-white">
+              Website Terms
+            </a>
           </p>
         </div>
       </div>

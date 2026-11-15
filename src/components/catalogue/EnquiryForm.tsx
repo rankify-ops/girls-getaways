@@ -4,6 +4,8 @@ import { useState } from "react";
 import { IconArrow, IconCheck } from "@/components/ui/Icons";
 import { useSearchContext } from "@/lib/searchContext";
 import { datesLabel } from "@/lib/filters";
+import { trackLead } from "@/lib/track";
+import { site, telHref } from "@/content/site";
 
 /*
  * The enquiry form on a package page.
@@ -69,7 +71,10 @@ export function EnquiryForm({ slug, title, guestsMin, guestsMax }: Props) {
       // 503 means the inbox isn't wired up — tell the visitor to phone rather
       // than letting them think the message landed somewhere.
       if (res.status === 503) setState("offline");
-      else if (res.ok) setState("sent");
+      else if (res.ok) {
+        setState("sent");
+        trackLead("enquiry", { item: title, girls: Number(groupSize) || undefined });
+      }
       else setState("error");
     } catch {
       setState("error");
@@ -136,7 +141,11 @@ export function EnquiryForm({ slug, title, guestsMin, guestsMax }: Props) {
       </div>
 
       <p className="mt-5 text-[13px] text-ink-3">
-        We&apos;ll confirm availability and send a tailored quote — no payment now.
+        We&apos;ll confirm availability and send a tailored quote — no payment now. Rather talk it through?{" "}
+        <a href={telHref} className="link-u text-ink">
+          Call {site.phone}
+        </a>
+        .
       </p>
 
       {state === "error" && (

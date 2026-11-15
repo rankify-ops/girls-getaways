@@ -47,7 +47,8 @@ export function PackageJsonLd({ p }: { p: Package }) {
             lowPrice: low,
             highPrice: high,
             offerCount: p.priceTable.length,
-            availability: "https://schema.org/InStock",
+            // No `availability`. It said InStock, and nobody knows that: dates are checked with
+            // each property after an enquiry. A claim a search engine may show is not made here.
             url: origin + packageHref(p),
             // Per person, and it moves with the group — say so rather than
             // letting a crawler read lowPrice as the price of the trip.

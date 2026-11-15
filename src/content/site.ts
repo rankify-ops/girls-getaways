@@ -18,7 +18,13 @@ export const site = {
   live: "https://www.girlsgetaways.com.au",
   instagram: "https://www.instagram.com/girlsgetaways/",
   facebook: "https://www.facebook.com/GirlsGetawaysAu",
+  // On her Contact page and, until now, nowhere else on the site.
+  phone: "1300 161 122",
+  email: "takemeaway@girlsgetaways.com.au",
 };
+
+/** "1300 161 122" as something a phone will dial. */
+export const telHref = `tel:${site.phone.replace(/\s/g, "")}`;
 
 /** Live-site URL helper — for pages this home-page build doesn't have yet. */
 export const live = (path: string) => `${site.live}${path}`;

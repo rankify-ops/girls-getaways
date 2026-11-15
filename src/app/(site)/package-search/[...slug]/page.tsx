@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound, permanentRedirect } from "next/navigation";
+import { notFound, permanentRedirect, redirect } from "next/navigation";
 import Link from "next/link";
 import {
   getCatalogue, getPackage, guestsText, packageHref, placeText, pretty, priceFromOf,
@@ -12,6 +12,7 @@ import { EnquiryPanel } from "@/components/catalogue/EnquiryPanel";
 import { EnquiryForm } from "@/components/catalogue/EnquiryForm";
 import { archiveTarget } from "@/lib/redirects";
 
+import { matchesPlace } from "@/lib/filters";
 export const revalidate = 60;
 
 /** Their URLs are /package-search/<destination>[/<area>]/<slug> — keep every one. */
@@ -52,7 +53,25 @@ export default async function PackagePage({ params }: { params: Promise<{ slug: 
   }
 
   const p = await find(slug);
-  if (!p) notFound();
+  if (!p) {
+    /*
+     * A getaway she no longer sells still has an address people follow.
+     *
+     * Nineteen links in her own blog posts point at packages that have since been
+     * retired, and each one was a "page not found" in the middle of an article
+     * recommending it. Old bookmarks and search results do the same. The address
+     * says where it was (/package-search/hunter-valley/cottage-hideaway), so it
+     * goes to what she offers there now. Only an address with no place she has
+     * getaways in is a missing page.
+     */
+    const all = await getCatalogue();
+    const place = slug
+      .slice(0, -1)
+      .reverse()
+      .find((part) => all.some((x) => matchesPlace({ ...x, state: null }, part)));
+    if (place) redirect(`/package-search/?place=${encodeURIComponent(place)}`);
+    notFound();
+  }
 
   const low = priceFromOf(p);
   const others = (await getCatalogue())

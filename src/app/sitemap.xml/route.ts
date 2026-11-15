@@ -13,6 +13,14 @@ import { getDiaries } from "@/lib/pages";
 
 export const revalidate = 3600;
 
+/*
+ * With the trailing slash, which is where every page on this site lives.
+ *
+ * Every address here was listed without one, so every one of them answered
+ * with a redirect: 153 lines telling a search engine to go and ask again.
+ */
+const slashed = (path: string) => (path.endsWith("/") ? path : `${path}/`);
+
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 export async function GET() {
@@ -24,7 +32,7 @@ export async function GET() {
     { loc: "/package-search", priority: "0.9", freq: "daily" },
     ...packages.map((p) => ({ loc: packageHref(p), priority: "0.8", freq: "weekly" })),
     // The standing pages and the blog, on the addresses they have always had.
-    ...["/how-it-works", "/reviews", "/gg-team", "/gift-cards", "/contact-us", "/frequently-asked-questions", "/couples-getaways", "/booking-terms-and-conditions"]
+    ...["/how-it-works", "/reviews", "/gg-team", "/gift-cards", "/contact-us", "/frequently-asked-questions", "/couples-getaways", "/booking-terms-and-conditions", "/privacy-policy", "/website-terms-of-use"]
       .map((loc) => ({ loc, priority: "0.5", freq: "monthly" })),
     { loc: "/the-gg-diaries", priority: "0.6", freq: "weekly" },
     ...diaries.map((d) => ({ loc: `/the-gg-diaries/${d.slug}`, priority: "0.5", freq: "monthly" })),
@@ -36,7 +44,7 @@ export async function GET() {
     urls
       .map(
         (u) =>
-          `  <url><loc>${esc(origin + u.loc)}</loc>` +
+          `  <url><loc>${esc(origin + slashed(u.loc))}</loc>` +
           `<changefreq>${u.freq}</changefreq><priority>${u.priority}</priority></url>`,
       )
       .join("\n") +

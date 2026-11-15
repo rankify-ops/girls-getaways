@@ -3,10 +3,50 @@
 import { useState } from "react";
 import { asset } from "@/lib/basePath";
 import { IconArrow, IconCheck } from "@/components/ui/Icons";
+import { trackLead } from "@/lib/track";
 
 export function Sisterhood() {
   const [done, setDone] = useState(false);
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [website, setWebsite] = useState(""); // honeypot — a person never sees this
+  const [state, setState] = useState<"idle" | "sending" | "error">("idle");
+
+  /*
+   * It keeps the address.
+   *
+   * This form said "Welcome to the Sisterhood" and sent the email address
+   * nowhere: it set a flag and showed the tick. Every sign-up since the page
+   * was built was thanked and lost.
+   *
+   * Her list is not connected to this site yet (which tool it lives in is a
+   * question for Shaun), so until it is, a sign-up goes to the same inbox as an
+   * enquiry, named for what it is, and the team adds her to the list from
+   * there. It only says welcome once that has been stored.
+   */
+  async function join(e: React.FormEvent) {
+    e.preventDefault();
+    if (state === "sending") return;
+    setState("sending");
+    try {
+      const res = await fetch("/api/enquire/", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          name: name.trim() || "Sisterhood sign-up",
+          email,
+          website,
+          item: "GG Sisterhood sign-up",
+          message: "Asked to join the GG Sisterhood from the website. Please add this address to the list.",
+        }),
+      });
+      if (!res.ok) return setState("error");
+      setDone(true);
+      trackLead("sisterhood");
+    } catch {
+      setState("error");
+    }
+  }
 
   return (
     <section id="sisterhood" className="sec relative overflow-hidden bg-blush">
@@ -26,21 +66,29 @@ export function Sisterhood() {
           </div>
         ) : (
           <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              setDone(true);
-            }}
+            onSubmit={join}
             className="mx-auto mt-9 flex max-w-[620px] flex-col gap-2 rounded-[30px] bg-white p-2 shadow-s sm:flex-row sm:rounded-full"
           >
             <label className="sr-only" htmlFor="ss-name">First name</label>
             <input id="ss-name" value={name} onChange={(e) => setName(e.target.value)} placeholder="First name" autoComplete="given-name" className="h-12 flex-1 rounded-full bg-transparent px-5 text-[15px] text-ink outline-none placeholder:text-ink-3" />
             <span aria-hidden className="hidden w-px self-stretch bg-rule sm:block" />
             <label className="sr-only" htmlFor="ss-email">Email</label>
-            <input id="ss-email" required type="email" placeholder="Email address" autoComplete="email" className="h-12 flex-[1.4] rounded-full bg-transparent px-5 text-[15px] text-ink outline-none placeholder:text-ink-3" />
-            <button type="submit" className="btn btn-ink h-12">
-              Join now <IconArrow size={15} />
+            <input id="ss-email" required type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email address" autoComplete="email" className="h-12 flex-[1.4] rounded-full bg-transparent px-5 text-[15px] text-ink outline-none placeholder:text-ink-3" />
+            {/* Honeypot. Off-screen rather than display:none, which some bots skip. */}
+            <span aria-hidden className="pointer-events-none absolute left-[-9999px] h-0 overflow-hidden">
+              <input tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} aria-label="Website" />
+            </span>
+            <button type="submit" disabled={state === "sending"} className="btn btn-ink h-12 disabled:opacity-50">
+              {state === "sending" ? "Joining…" : "Join now"} <IconArrow size={15} />
             </button>
           </form>
+        )}
+        {!done && (
+          <p className="mx-auto mt-4 max-w-[52ch] text-[12.5px] leading-relaxed text-ink-3" role={state === "error" ? "alert" : undefined}>
+            {state === "error"
+              ? "That didn’t go through. Please try again in a moment."
+              : "By joining you agree to receive emails from Girls Getaways. Unsubscribe any time."}
+          </p>
         )}
 
         <p className="mt-8 text-[14px] text-ink-2">

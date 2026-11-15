@@ -44,6 +44,11 @@ PAGES = {
     # The page's own heading is drawn by the site; the copy starts at its first sentence.
     "booking-terms-and-conditions": {"start_at": "Girls Getaways is a travel service offered by"},
     "frequently-asked-questions": {"start_at": "BEFORE YOU BOOK"},
+    # The footer named both and linked to neither. They are on her live site, so they
+    # come across word for word like the booking terms: this site takes names, emails
+    # and phone numbers and runs an ad pixel, and says what it does with them here.
+    "privacy-policy": {"start_at": "We are passionate about protecting your privacy"},
+    "website-terms-of-use": {"start_at": "Girls Getaways Pty Ltd trading as Girls Getaways"},
 }
 
 

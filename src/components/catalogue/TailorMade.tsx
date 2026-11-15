@@ -3,6 +3,8 @@
 import { useId, useState } from "react";
 import { IconArrow, IconCheck } from "@/components/ui/Icons";
 import { TAILOR_ITEM, WISHES, groupOf, tailorHeadline, tailorMessage } from "@/lib/tailor";
+import { trackLead } from "@/lib/track";
+import { site, telHref } from "@/content/site";
 
 /*
  * "We'll tailor one for you" — what a visitor gets when no set package fits.
@@ -79,7 +81,10 @@ export function TailorMade({ asked, people }: Props) {
       });
       // 503 means the inbox isn't wired up. Say so, so nobody thinks it landed.
       if (res.status === 503) setState("offline");
-      else if (res.ok) setState("sent");
+      else if (res.ok) {
+        setState("sent");
+        trackLead("tailor-made", { item: TAILOR_ITEM, girls: Number(form.groupSize) || undefined });
+      }
       else setState("error");
     } catch {
       setState("error");
@@ -171,6 +176,11 @@ export function TailorMade({ asked, people }: Props) {
 
       <p className="mt-5 text-[13px] text-ink-3">
         An email or a phone number is enough. No payment now, and nothing is booked until you say yes to the plan.
+        Rather talk it through?{" "}
+        <a href={telHref} className="link-u text-ink">
+          Call {site.phone}
+        </a>
+        .
       </p>
 
       {state === "error" && (
