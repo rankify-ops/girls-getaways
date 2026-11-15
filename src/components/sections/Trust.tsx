@@ -1,11 +1,14 @@
 import { IconCheck, IconPin, IconSparkle, IconWallet } from "@/components/ui/Icons";
+import { proof, ratedLine } from "@/content/reviews";
 
-// Each line is a claim the live site already makes.
+// The first three are claims her live site already makes. The fourth is her
+// Google rating (content/reviews.ts), in place of "Made for girl time", which
+// said nothing a visitor could check.
 const items = [
   { icon: IconPin, t: "100+ packages", d: "Boutique getaways Australia-wide" },
   { icon: IconCheck, t: "We book it all", d: "Every inclusion organised for you" },
   { icon: IconWallet, t: "Individual payments", d: "No chasing the group for money" },
-  { icon: IconSparkle, t: "Made for girl time", d: "Birthdays, hens & long weekends" },
+  { icon: IconSparkle, t: ratedLine, d: `From ${proof.count} reviews` },
 ];
 
 export function Trust() {

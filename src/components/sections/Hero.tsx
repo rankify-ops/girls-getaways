@@ -7,6 +7,7 @@ import { Photo } from "@/components/ui/Photo";
 import { IconArrow, IconSearch } from "@/components/ui/Icons";
 import { SearchBar } from "@/components/booking/SearchBar";
 import { heroSlides, packages, whereLabel } from "@/content/site";
+import { ratedLine, tripsLine } from "@/content/reviews";
 
 const slides = heroSlides.map((s) => packages.find((p) => p.slug === s)!);
 const HOLD = 6000;
@@ -55,6 +56,15 @@ export function Hero() {
         </h1>
         <p className="load-in mt-5 max-w-[44ch] text-[16px] leading-relaxed text-white/85 md:text-[17px]" style={{ "--d": "240ms" } as React.CSSProperties}>
           Boutique trips across Australia that give you the chance to escape, indulge and relax — every detail booked for you.
+        </p>
+        {/* The only proof above the fold, and kept to one line: a star, her rating, how many trips. */}
+        <p className="load-in mt-4 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-[12.5px] tracking-[0.04em] text-white/85" style={{ "--d": "300ms" } as React.CSSProperties}>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="m12 3.6 2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9-4.3-4.1 5.9-.8L12 3.6Z" />
+          </svg>
+          <span>{ratedLine}</span>
+          <span aria-hidden className="text-white/50">·</span>
+          <span>{tripsLine}</span>
         </p>
 
         <div ref={searchRef} className="load-in mt-8 md:mt-10" style={{ "--d": "360ms" } as React.CSSProperties}>

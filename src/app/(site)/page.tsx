@@ -7,6 +7,7 @@ import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Specials } from "@/components/sections/Specials";
 import { Sisterhood } from "@/components/sections/Sisterhood";
 import { Concierge } from "@/components/catalogue/Concierge";
+import { FeaturedReview, ReviewTrio } from "@/components/sections/Reviews";
 import { getCatalogue } from "@/lib/catalogue";
 
 // The portal's cache window, so the count on this page follows her catalogue.
@@ -29,9 +30,13 @@ export default async function Home() {
       <Concierge tone="blush" />
       <Regions />
       <Results total={total} />
+      {/* A review with a section to itself, twice, and three more before the sign-up (sections/Reviews.tsx). */}
+      <FeaturedReview index={0} />
       <Experiences />
+      <FeaturedReview index={1} />
       <HowItWorks />
       <Specials />
+      <ReviewTrio />
       <Sisterhood />
     </>
   );

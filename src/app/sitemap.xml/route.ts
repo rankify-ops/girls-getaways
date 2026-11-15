@@ -24,7 +24,7 @@ export async function GET() {
     { loc: "/package-search", priority: "0.9", freq: "daily" },
     ...packages.map((p) => ({ loc: packageHref(p), priority: "0.8", freq: "weekly" })),
     // The standing pages and the blog, on the addresses they have always had.
-    ...["/how-it-works", "/gg-team", "/gift-cards", "/contact-us", "/frequently-asked-questions", "/couples-getaways", "/booking-terms-and-conditions"]
+    ...["/how-it-works", "/reviews", "/gg-team", "/gift-cards", "/contact-us", "/frequently-asked-questions", "/couples-getaways", "/booking-terms-and-conditions"]
       .map((loc) => ({ loc, priority: "0.5", freq: "monthly" })),
     { loc: "/the-gg-diaries", priority: "0.6", freq: "weekly" },
     ...diaries.map((d) => ({ loc: `/the-gg-diaries/${d.slug}`, priority: "0.5", freq: "monthly" })),

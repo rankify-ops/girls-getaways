@@ -19,6 +19,7 @@ export function Footer() {
       links: [
         { label: "How it works", href: "/how-it-works" },
         { label: "FAQs", href: "/frequently-asked-questions" },
+        { label: "Reviews", href: "/reviews" },
         { label: "Contact us", href: "/contact-us" },
         { label: "Gift cards", href: "/gift-cards" },
         { label: "Booking terms", href: "/booking-terms-and-conditions" },
