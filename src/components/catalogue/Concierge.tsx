@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import Link from "next/link";
 import { IconSparkle, IconUsers, IconMoon, IconClose } from "@/components/ui/Icons";
 import { pretty } from "@/lib/catalogue";
+import { TailorMade } from "@/components/catalogue/TailorMade";
 
 /*
  * "Tell us about your trip" — plain English in, her own packages out.
@@ -16,9 +17,13 @@ import { pretty } from "@/lib/catalogue";
  *
  * Three states that are easy to get wrong, so they are deliberate here:
  *
- *  - No matches is an answer, not an error. "Skiing in Japan for 6" genuinely
- *    has nothing behind it, and saying so beats three packages that happen to
- *    fit six people.
+ *  - No matches is not "no". "Skiing in Japan for 6" has no set package behind
+ *    it, and three packages that happen to fit six people would be a worse
+ *    answer than none. But most of what she books is designed to order, so the
+ *    answer to an empty shortlist is "we'll tailor one", with a form that
+ *    takes the trip and their details (TailorMade). The same form is offered
+ *    under real matches too, for the visitor who wanted something close to
+ *    them but not them.
  *  - `url` may be null for a package with no path. The card then renders
  *    unlinked rather than pointing at /null.
  *  - `why` is null while the written layer is switched off, which is the
@@ -68,6 +73,11 @@ export function Concierge() {
   const [what, setWhat] = useState("");
   const [state, setState] = useState<"idle" | "busy" | "done" | "error">("idle");
   const [answer, setAnswer] = useState<Answer | null>(null);
+  // The sentence the answer on screen is an answer to. Not `what`: that is the
+  // box, and they can go on typing in it while the answer is still showing.
+  const [asked, setAsked] = useState("");
+  // Whether the tailor-made form is open under a list of matches.
+  const [tailor, setTailor] = useState(false);
   // Only the newest question may paint. Two quick submissions otherwise race,
   // and the loser can land last and overwrite the answer on screen.
   const turn = useRef(0);
@@ -91,6 +101,8 @@ export function Concierge() {
         return;
       }
       setAnswer((await res.json()) as Answer);
+      setAsked(q);
+      setTailor(false);
       setState("done");
     } catch {
       if (mine === turn.current) setState("error");
@@ -101,6 +113,8 @@ export function Concierge() {
     turn.current++;
     setWhat("");
     setAnswer(null);
+    setAsked("");
+    setTailor(false);
     setState("idle");
   };
 
@@ -128,7 +142,8 @@ export function Concierge() {
             void ask(what);
           }}
         >
-          <label className="flex h-14 flex-1 items-center rounded-full border border-rule bg-white px-6 shadow-[var(--shadow-s)]">
+          {/* min-h as well as h: stacked on a phone this is a flex column, where flex-1 lets the height collapse to the text. */}
+          <label className="flex h-14 min-h-14 flex-1 items-center rounded-full border border-rule bg-white px-6 shadow-[var(--shadow-s)]">
             <span className="sr-only">Describe your getaway</span>
             <input
               value={what}
@@ -181,7 +196,7 @@ export function Concierge() {
                     {read.length > 0 && <> for {read.join(", ")}</>}
                   </>
                 ) : (
-                  <>Nothing in the collection matches that one</>
+                  <>That&apos;s one we&apos;d tailor for you</>
                 )}
               </p>
               <button
@@ -194,19 +209,8 @@ export function Concierge() {
             </div>
 
             {answer.count === 0 ? (
-              <div className="mt-6 rounded-[28px] bg-white px-6 py-14 text-center">
-                <p className="serif text-[27px] leading-tight text-ink">
-                  We don&apos;t have anything like that
-                </p>
-                <p className="lede mx-auto mt-3 max-w-[48ch]">
-                  Not yet, anyway — the girls design getaways to order, so it&apos;s worth asking. Or have a
-                  look through everything on offer.
-                </p>
-                <div className="mt-7">
-                  <Link href="/package-search" className="btn btn-ink w-full sm:w-auto">
-                    Browse every getaway
-                  </Link>
-                </div>
+              <div className="mt-6 max-w-[760px]">
+                <TailorMade key={asked} asked={asked} people={u?.people} />
               </div>
             ) : (
               <>
@@ -219,6 +223,29 @@ export function Concierge() {
                 </ul>
                 {answer.note && (
                   <p className="mt-8 max-w-[62ch] text-[12.5px] leading-relaxed text-ink-3">{answer.note}</p>
+                )}
+
+                {/*
+                  * Close, but not it. A set package is a starting point as often
+                  * as it is the answer, and the visitor who wants the Gold Coast
+                  * one with a brunch added should not have to work out that the
+                  * way to say so is the enquiry form on a package they did not
+                  * quite want.
+                  */}
+                {tailor ? (
+                  <div className="mt-10 max-w-[760px]">
+                    <TailorMade key={asked} asked={asked} people={u?.people} />
+                  </div>
+                ) : (
+                  <div className="mt-10 flex flex-col items-start gap-4 rounded-[28px] bg-white px-6 py-6 sm:flex-row sm:items-center sm:justify-between md:px-8">
+                    <p className="text-[15px] leading-relaxed text-ink-2">
+                      <span className="serif block text-[23px] leading-tight text-ink">Not quite it?</span>
+                      We design getaways to order. Tell us what you&apos;d change and we&apos;ll tailor one.
+                    </p>
+                    <button type="button" onClick={() => setTailor(true)} className="btn btn-ink w-full flex-none sm:w-auto">
+                      Tailor one for us
+                    </button>
+                  </div>
                 )}
               </>
             )}

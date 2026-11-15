@@ -92,7 +92,7 @@ export function Results({ total }: { total: number }) {
           </div>
         ) : (
           <div className="mt-10 rounded-[28px] bg-blush px-6 py-16 text-center">
-            <p className="eyebrow">Nothing matches — yet</p>
+            <p className="eyebrow">Tailor-made</p>
             <p className="serif mx-auto mt-3 max-w-[22ch] text-[34px] leading-[1.05] text-ink">
               We’ll design one around your girls
             </p>

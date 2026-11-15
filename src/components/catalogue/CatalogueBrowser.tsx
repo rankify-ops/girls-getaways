@@ -5,6 +5,7 @@ import Link from "next/link";
 import { IconSearch, IconUsers, IconMoon, IconClose } from "@/components/ui/Icons";
 import { fromPrice, imageAt, type PriceRow } from "@/lib/portal";
 import { pretty } from "@/lib/catalogue";
+import { TailorMade } from "@/components/catalogue/TailorMade";
 import { matchesGirls, matchesPlace, matchesState, readPreset, slugify } from "@/lib/filters";
 
 /*
@@ -102,6 +103,17 @@ export function CatalogueBrowser({ packages, styles, destinations }: Props) {
   }, [packages, q, style, dest, girls, sort, place, stateCode]);
 
   const filtered = Boolean(q || style || dest || girls || place || stateCode);
+  // What they have chosen, as a sentence for the team when no set package fits it.
+  const looking = [
+    style,
+    destinations.find((d) => d.slug === dest)?.name,
+    place && pretty(place),
+    stateCode,
+    girls ? `${girls} girls` : "",
+    q.trim(),
+  ]
+    .filter(Boolean)
+    .join(", ");
   const clear = () => {
     setPlace("");
     setStateCode("");
@@ -236,13 +248,17 @@ export function CatalogueBrowser({ packages, styles, destinations }: Props) {
         </div>
 
         {results.length === 0 ? (
-          <div className="mt-8 rounded-[28px] bg-blush px-6 py-16 text-center">
-            <p className="serif text-[30px] leading-tight text-ink">Nothing matches just yet</p>
-            <p className="lede mx-auto mt-3 max-w-[46ch]">
-              Tell the GG team what you&apos;re after and they&apos;ll design it around your girls.
-            </p>
-            <button type="button" onClick={clear} className="btn btn-line mt-6">
-              Clear filters
+          /*
+           * No set package for what they chose is where a tailor-made one
+           * starts, not where the page ends. This said nothing matched and
+           * offered to clear the filters, which throws away the one thing the
+           * visitor has told us: twelve girls, hens, Byron. The form takes
+           * that as the brief and asks for the rest.
+           */
+          <div className="mt-8 max-w-[760px]">
+            <TailorMade asked={looking} people={girls || null} />
+            <button type="button" onClick={clear} className="link-u mt-5 text-[14px] text-ink-2">
+              Or clear the filters and see every getaway
             </button>
           </div>
         ) : (
