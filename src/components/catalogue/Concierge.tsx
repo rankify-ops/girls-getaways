@@ -245,7 +245,7 @@ export function Concierge({ tone = "sand" }: { tone?: "sand" | "blush" }) {
                   <div className="mt-10 flex flex-col items-start gap-4 rounded-[28px] bg-white px-6 py-6 sm:flex-row sm:items-center sm:justify-between md:px-8">
                     <p className="text-[15px] leading-relaxed text-ink-2">
                       <span className="serif block text-[23px] leading-tight text-ink">Not quite it?</span>
-                      We design getaways to order. Tell us what you&apos;d change and we&apos;ll tailor one.
+                      We design getaways to your preference. Tell us what you want included and we&apos;ll tailor one.
                     </p>
                     <button type="button" onClick={() => setTailor(true)} className="btn btn-ink w-full flex-none sm:w-auto">
                       Tailor one for us
