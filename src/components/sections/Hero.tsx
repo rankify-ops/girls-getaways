@@ -49,7 +49,7 @@ export function Hero() {
 
       <div className="ctr relative z-20 pb-6 md:pb-10">
         <p className="load-in text-[11px] font-semibold uppercase tracking-[0.24em] text-white/85">
-          Girls’ weekends · Hens · Birthdays
+          Girls’ weekends · Hens · Birthdays · Getaways
         </p>
         <h1 className="display load-in mt-4 max-w-[12.5ch] text-white" style={{ "--d": "120ms" } as React.CSSProperties}>
           Effortless getaways with your <em className="italic">best girls.</em>
